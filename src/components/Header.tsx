@@ -27,6 +27,7 @@ export default function Header() {
     { name: "About Us", path: "/about" },
     { name: "Services", path: "/services" },
     { name: "Facilities", path: "/facilities" },
+    { name: "International Patients", path: "/international" },
     { name: "FAQ", path: "/faq" },
     { name: "Blog", path: "/blog" },
     { name: "Contact Us", path: "/contact" },

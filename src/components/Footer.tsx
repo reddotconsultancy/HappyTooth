@@ -8,6 +8,7 @@ export default function Footer() {
     { name: "About Us", path: "/about" },
     { name: "Services", path: "/services" },
     { name: "Facilities", path: "/facilities" },
+    { name: "International Patients", path: "/international" },
     { name: "FAQ", path: "/faq" },
     { name: "Blog", path: "/blog" },
     { name: "Contact Us", path: "/contact" },
@@ -151,9 +152,14 @@ export default function Footer() {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <a href="tel:+918714470808" className="hover:text-primary-teal transition-colors">
-                  +91 87144 70808
-                </a>
+                <div className="flex flex-col text-xs md:text-sm">
+                  <a href="tel:+918714470808" className="hover:text-primary-teal transition-colors">
+                    Kallambalam: +91 87144 70808
+                  </a>
+                  <a href="tel:+917356100602" className="hover:text-primary-teal transition-colors mt-1">
+                    Murukkumpuzha: +91 73561 00602
+                  </a>
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <svg
@@ -189,7 +195,15 @@ export default function Footer() {
                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                <span>Monday - Friday<br />8.00 am - 5.00 pm</span>
+                <div className="text-xs">
+                  <span className="block font-semibold text-white">Hours:</span>
+                  <span className="block text-gray-300 mt-1">
+                    Kallambalam: Mon–Sat, 9:00 AM – 6:30 PM (Sun closed)
+                  </span>
+                  <span className="block text-gray-300 mt-1">
+                    Murukkumpuzha: All 7 days, 9:30 AM – 6:30 PM
+                  </span>
+                </div>
               </li>
             </ul>
           </div>

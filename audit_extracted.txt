@@ -1,0 +1,592 @@
+--- PAGE 1 ---
+4.2/10
+OVERALL READINESS
+The site looks the part, but it doesn't
+◆ WEBSITE AUDIT · CONFIDENTIAL
+A critical review of
+happytoothdental.in
+A page-by-page analysis covering broken elements, content gaps, brand
+architecture, SEO, healthcare compliance, conversion design, and a
+prioritised ﬁx list.
+SITE
+happytoothdental.in
+REVIEWED
+21 May 2026
+PAGES AUDITED
+5 (Home, About, Services,
+Facilities, Contact)
+PLATFORM
+WordPress + Elementor 4.0.6
+--- PAGE 2 ---
+The site looks the part, but it doesn't
+yet work the part.
+Visually, the theme and brand language read well — calm, professional, on-
+brand teal-and-gold cues. Underneath, however, there are broken contact
+paths, an inconsistent email address (.com vs .in), empty service detail
+sections, and missing trust signals that a patient-acquisition site cannot
+a!ord. The pre-launch draft audit ﬂagged several of these months ago; many
+remain. Before promoting this URL on Google Business Proﬁle, Instagram, or
+any signage at HappyTooth Smile Studio, the items in Section 2 must be ﬁxed.
+01
+Findings at aglance 31 issues across 6 categories
+10CRITICAL / BROKEN
+11HIGH PRIORITY
+7MEDIUM PRIORITY
+3NICE-TO-HAVE
+5WHAT'S WORKING
+--- PAGE 3 ---
+The ﬁve things working in your favour: the teal-and-gold pale!e translates
+cleanly to the site; the navigation is simple and predictable; image quality is
+decent for a starter site; the WhatsApp-friendly phone number is correctly
+listed in most places; and a real domain with on-brand email convention is
+set up. Everything else needs work — and a fair amount of it is genuinely
+broken, not just stylistic.
+02
+Critical — must fixbefore promotingthe site 10 issues · severity: blocker
+These are not opinions about design taste — these are broken
+functionality, lost patient enquiries, and brand-damaging
+inconsistencies. Many would have been caught by a 10-minute QA pass
+before launch.
+Email address is inconsistent
+across the site — patient enquiries
+may be going to a dead inbox
+CRITICAL · DATA LOSS
+Contact page body · vs · Footer (every page)
+Contact page shows smile@happytoothdental.com (dot COM) while the
+footer everywhere shows smile@happytoothdental.in (dot IN). Only one
+of these will work. If .com is unregistered, every patient who clicks the
+contact-page email is sending into the void. If both are registered,
+enquiries are fragmented across two inboxes.
+--- PAGE 4 ---
+FIXFIXFIXFIX
+Standardise to one address site-wide (recommend
+smile@happytoothdental.in since that matches your domain). Set up a
+forward from the other if you own both. Test by sending a real email today.
+Primary "Make Appointment"
+button leads to nowhere (<>)
+CRITICAL · CONVERSION
+Homepage hero · "About More" · "More Services" · multiple CTA buttons
+The hero "Make Appointment" CTA, the "About More" link in the About
+teaser, and the "More Services" link under the services grid all resolve to
+empty !" placeholder anchors. This is the single most important bu"on
+on the page and it doesn’t go anywhere. The header "Make Appointment"
+bu"on works (links to /contact/), but the in-body ones don’t.
+FIXFIXFIXFIX
+Replace all <> hrefs with the correct targets — /contact/ for appointments,
+/about/ for "About More" , /services/ for "More Services" . This is a 5-minute
+Elementor edit.
+Service detail sections are empty —
+only headings, no content
+CRITICAL · CONTENT
+/services/ — Endodontics, Cosmetic, Orthodontics, Preventive,
+Restorative, Pediatric
+Each service has sub-headings like "When you may need it:", "What you
+can expect:", "Our treatments include:", "Ideal for:", "Treatment
+options:" — but the bullet content underneath is missing entirely. The
+reader sees a label and then nothing. This is the page where a prospective
+patient decides whether to book, and it’s mostly blank.
+FIXFIXFIXFIX
+Have Dr. Thushara dictate 4–6 bullets per sub-heading for each of the 6
+services. That’s ~30 bullet lists, each one or two lines long. Budget: half a day of
+writing, half a day of CMS entry. This is the highest content-ROI ﬁx on the site.
+--- PAGE 5 ---
+Phone and email in footer are not
+tappable on mobile
+CRITICAL · MOBILE UX
+Footer · all pages
+The phone and email shown in the footer are linked to # instead of
+tel:+918714470808 and mailto:smile@happytoothdental.in. On a
+mobile phone — where the majority of dental enquiries originate in Kerala —
+a patient cannot tap to call or tap to email. They have to manually copy the
+number. Conservatively, this loses 20–40% of mobile conversions.
+FIXFIXFIXFIX
+Change footer phone link to tel:+918714470808 and email link to
+mailto:smile@happytoothdental.in. Also add a ﬂoating sticky "Call Now"
+bu!on visible on mobile screens.
+Phone number missing
+country code on Contact page
+footer
+CRITICAL · NAP CONSISTENCY
+/contact/ — footer block
+Footer of the Contact page shows +87144 70808 — missing the 91
+country code. Every other page shows +91 87144 70808. This breaks NAP
+(Name-Address-Phone) consistency, which Google uses to rank local-
+business listings. Even a single page with an inconsistent number can
+suppress your Google Business Proﬁle rankings.
+FIXFIXFIXFIX
+Correct to +91 87144 70808. Audit every page for the same string. Add a single
+phone variable in WordPress so it can’t drift again.
+"Reason to Choose Happy Tooth"
+block is duplicated twice on the
+homepage
+CRITICAL · EDITORIAL
+Homepage
+The same six-bullet "Reason to Choose" block, with identical copy and
+--- PAGE 6 ---
+identical image, appears twice on the homepage — once near the top and
+once further down. This looks unprofessional and signals to Google that
+the page has thin/duplicated content (a small but real SEO negative).
+FIXFIXFIXFIX
+Delete one instance. If the intent was to have two di"erent value-prop blocks,
+write a second distinct block (e.g., one about clinical quality, one about patient
+experience).
+Terms & Conditions and Privacy
+Policy links are dead
+CRITICAL · LEGAL
+Footer · all pages
+Both legal links point to #. For a healthcare site that collects patient
+name, phone, email, and appointment date through a form, this is a
+direct violation of India’s Digital Personal Data Protection Act, 2023 (DPDP
+Act). A Privacy Policy disclosing purpose, retention, and grievance o$icer is
+mandatory the moment you process personal data.
+FIXFIXFIXFIX
+Publish a Privacy Policy and a basic Terms of Use page. Include a "Notice" section
+on data collection, lawful purpose, retention, the grievance o"icer’s name and
+email, and patient rights to access/erase data. Without these, you are exposed
+under DPDP enforcement.
+Contact form has no visible
+success/error feedback or
+backend conﬁrmation
+CRITICAL · LEAD CAPTURE
+/contact/ — booking form
+A standard 5-ﬁeld form is present (Name, Phone, Email, Date, Message)
+with a Send bu"on, but it’s unclear whether submissions actually trigger
+an email to the clinic, whether there is a database log, or whether the user
+sees any "Thanks, we'll be in touch" conﬁrmation. If this is a default
+Elementor form with no SMTP plugin conﬁgured, submissions may be
+silently failing.
+--- PAGE 7 ---
+FIXFIXFIXFIX
+Submit a real test enquiry today. Verify it lands in smile@happytoothdental.in.
+Install WP Mail SMTP with a real sender (e.g., Zoho Mail SMTP). Add a success
+page or inline conﬁrmation. Add a hidden honeypot or CAPTCHA to prevent bot
+spam.
+Page <title> tag is literally
+"happytoothdental.in" — zero SEO value
+CRITICAL · SEO
+Homepage and all pages
+The homepage browser tab title is just the domain name. The About page
+is About – happytoothdental.in. The title tag is the single most
+important on-page SEO element — it is the blue clickable headline on
+Google. Right now, you are invisible for the searches that ma"er: "dentist
+in Kallambalam", "root canal Varkala", "endodontist Trivandrum", "dental
+clinic Murukkumpuzha".
+FIXFIXFIXFIX
+Set Home title to "Happy Tooth Dental Care & Root Canal Centre · Kallambalam &
+Murukkumpuzha, Trivandrum". Each service page gets a keyword-driven title.
+Use Yoast SEO or Rank Math plugin for control.
+Facilities page is almost empty —
+single bullet under each heading
+CRITICAL · CONTENT
+/facilities/
+The Facilities page promises three pillars — Modern Care, Advanced Dental
+Technology, Sterilization & Hygiene — and then delivers exactly one bullet
+under each. "Digital X-ray systems for quick and precise imaging" is the
+only speciﬁc claim about your technology. For a clinic about to launch with
+a Helios 680 intraoral scanner, a Woodpecker PT-B ultrasonic, a Faazo F300
+chair, autoclave, RVG, etc., the Facilities page should be a strong proof
+asset.
+FIXFIXFIXFIX
+Build out each pillar with 5–7 speciﬁc items. Under "Advanced Tech" list the
+brand-name equipment (this is a trust accelerator in Indian dentistry — patients
+--- PAGE 8 ---
+Google brands). Under "Sterilization" list autoclave class, instrument cycle,
+surface disinfection, BMW disposal. Add 4–6 interior photos once available from
+Canvo’s ﬁt-out.
+03
+High priority —addressedwithin 2–3weeks 11 issues · severity: significant
+Doctor proﬁle is a single sentence with no
+photo, no full credentials, no registration
+number
+HIGH · TRUST
+/about/
+The only mention of Dr. Thushara Sudhakaran is: "Our chief doctor Dr.
+Thushara Sudhakaran BDS MDS, specializes in Endodontics (Root Canal
+Treatment)." That’s it. For a specialist clinic where the dentist’s credentials
+are the product, this is the most under-leveraged page on the site.
+Patients want to see: photograph, full degrees with college names, years
+of experience, KDC (Kerala Dental Council) registration number, areas of
+clinical interest, publications/CME if any, and a one-paragraph philosophy
+of care. This was ﬂagged in your earlier draft audit and has not been
+resolved.
+FIXFIXFIXFIX
+Build a proper doctor proﬁle section: professional headshot (white-coat or
+smart-casual against neutral background), 150–200 word bio in ﬁrst or third
+person, registration number prominently visible (also a compliance requirement
+— see Section 6), education timeline, special interest in endodontics with a 2-
+--- PAGE 9 ---
+line explainer of why endodontics.
+No Google Maps embed for either
+location
+HIGH · LOCAL SEO
+/contact/
+Two addresses are listed in text only: Mangalasseri Tower in
+Murukkumpuzha (the new HappyTooth Smile Studio) and Alinmoodu on
+Kallambalam–Varkala Road (the existing 5-year-old clinic). Neither has a
+map embed, neither has a "Get Directions" bu"on. For a clinic where ~70%
+of patients drive in from a 5–10 km catchment, this is a huge missed
+conversion. It also weakens Google’s link between the site and the Google
+Business Proﬁle.
+FIXFIXFIXFIX
+Embed two Google Maps iframes side-by-side. Add a "Get Directions" bu!on
+under each that opens in Google Maps app. Once your Google Business Proﬁle is
+veriﬁed for the Murukkumpuzha clinic, link it from the footer.
+No testimonials, no patient reviews,
+no Google rating widget
+HIGH · SOCIAL PROOF
+All pages
+Five years of operating the Kallambalam clinic must have produced a
+meaningful pool of happy patients, yet not one review or testimonial
+appears on the site. Indian patients are heavily review-driven — Practo,
+Justdial, Google Maps reviews are checked before any ﬁrst appointment. A
+4.7-star Google rating widget on the homepage would convert harder than
+any other element on the page.
+FIXFIXFIXFIX
+Add a testimonials slider with 4–6 quotes (with patient initials only, no full names
+without consent). Embed a live Google reviews widget (free plugins available —
+e.g., "WP Business Reviews"). Set up a post-treatment SMS asking patients to
+leave a Google review at the Kallambalam clinic right now to build the base
+before Murukkumpuzha opens.
+--- PAGE 10 ---
+No WhatsApp click-to-chat button HIGH · CONVERSION
+All pages
+In Kerala, WhatsApp is the dominant channel for clinic enquiries —
+signiﬁcantly higher tap-through than email or contact forms. The site has
+no wa.me/918714470808 link, no ﬂoating WhatsApp bu"on, no "Chat on
+WhatsApp" CTA. This is the single highest-conversion element you can
+add in one hour.
+FIXFIXFIXFIX
+Install a ﬂoating WhatsApp bu!on plugin (e.g., "Click to Chat"). Default
+message: "Hi, I'd like to book an appointment at Happy Tooth". Set business
+hours so it shows di"erent status outside hours.
+Operating hours only list Mon–
+Fri 8am–5pm — Saturday
+missing, no Sunday note
+HIGH · DISCOVERABILITY
+Footer · all pages
+Standard Indian dental clinic hours are 6 days a week with Sunday o$ or by
+appointment. Listing Mon–Fri only either understates your availability or is
+a real gap that should be ﬁlled. Either way, patients searching at 11am on a
+Saturday will assume you’re closed and call someone else.
+FIXFIXFIXFIX
+Conﬁrm actual hours for both clinics. Display each location’s hours separately.
+Add Sunday line ("By appointment" or "Closed"). Mirror exactly on Google
+Business Proﬁle for ranking beneﬁt.
+Brand architecture is muddled —
+HappyTooth Smile Studio (new) is
+invisible
+HIGH · BRAND
+Homepage, About, Footer
+The homepage hero says "trusted dental clinic in Kallambalam, Varkala".
+The Murukkumpuzha clinic — your upcoming specialist studio, the bigger
+--- PAGE 11 ---
+investment — gets a single address line in the footer. There is no
+positioning, no "specialist studio vs neighbourhood clinic" distinction, no
+opening date, no preview render. Visitors who arrive expecting the new
+clinic will be confused; visitors who don’t know about it will never learn.
+FIXFIXFIXFIX
+Decide brand architecture: one brand with two branches, or two distinct sub-
+brands. Once decided, add a "Our Locations" section on the homepage with two
+cards — HappyTooth Dental Care, Kallambalam and HappyTooth Smile Studio,
+Murukkumpuzha (Opening June 2026). Each card: photo, address, hours, "Get
+Directions" and "Call" . Once Smile Studio opens, a dedicated landing page is
+worth building.
+No structured data (LocalBusiness /
+Dentist schema) for local SEO
+HIGH · SEO
+Entire site
+Google relies on structured data (Schema.org JSON-LD) to populate rich
+snippets — star ratings, opening hours, address, phone. The site has none.
+For a healthcare practice with two physical locations, @type: "Dentist"
+schema with @type: "Place" sub-entries should be present on the
+homepage and Contact page.
+FIXFIXFIXFIX
+Add Dentist + LocalBusiness JSON-LD to the homepage and a Place schema per
+location. Yoast SEO or Rank Math both handle this. Validate via Google Rich
+Results Test.
+No indicative pricing or "starting
+from" range for any service
+HIGH · CONVERSION
+/services/
+Indian dental patients now expect transparent pricing — Clove Dental,
+Sabka Dentist, FMS Dental all publish starting-from ranges. You don’t need
+an exhaustive price list; you need a sense-of-anchor. Listing "Single-si!ing
+RCT — from ₹3,500", "Zirconia crown — from ₹8,000", "Cleaning & polishing
+— ₹1,200" signals conﬁdence and ﬁlters out price-shoppers before the call.
+--- PAGE 12 ---
+FIXFIXFIXFIX
+Publish "starting from" prices for the 6–8 most common procedures. Add a
+footer note: "Final pricing depends on individual case complexity." Optionally,
+build a separate /pricing/ page.
+No before/after gallery for cosmetic
+and smile design
+HIGH · CONVERSION
+/services/#COSMETIC
+Cosmetic dentistry is sold visually. Right now, the cosmetic service shows
+a stock image of teeth being checked — not an actual transformation. Two
+or three real before/after pairs (with patient consent, lower face only)
+would signiﬁcantly outperform any amount of copy.
+FIXFIXFIXFIX
+Collect 3–5 cases from Dr. Thushara’s existing patient base, with signed photo-
+consent forms. Build a simple slider. Include short case notes (treatment type,
+si!ings, timeframe — not patient names).
+Service "Read More" anchors point to
+fragments that may not match
+section IDs
+HIGH · NAVIGATION
+Homepage and /services/ — links to #ENDODONTICS, #COSMETIC,
+#Orthodontics, #Preventive, #Restorative, #Pediatric
+Anchor capitalisation is inconsistent and the corresponding section IDs
+are not clearly emi"ed in the rendered HTML. If the anchor IDs do not exist
+exactly as wri"en, the link "works" but doesn’t scroll to the right section —
+it just lands at the top of the services page, which feels broken.
+FIXFIXFIXFIX
+Standardise all anchor IDs to lowercase, hyphenated (#endodontics,
+#cosmetic-dentistry, etc.) and verify each by clicking from the homepage.
+Be!er still — convert each service into its own page (/services/root-canal/,
+etc.) for SEO beneﬁt.
+--- PAGE 13 ---
+Blog navigation item present but
+no posts visible
+HIGH · SEO & CONTENT
+Top nav — /blog/
+An empty blog signals "we haven’t go"en to this yet" to visitors and gives
+Google nothing to index for long-tail keyword searches like "is single si!ing
+RCT safe", "cost of zirconia crown in Trivandrum", "teeth whitening
+Kallambalam". These are the exact searches that drive patient acquisition.
+FIXFIXFIXFIX
+Either remove the Blog nav item until you have at least 4–5 posts, or publish 4
+starter posts now. Topics that work: What to expect during a root canal, How
+often should children visit a dentist, Zirconia vs PFM crowns explained, Why
+does my tooth hurt when I drink cold water. Each ~500 words, wri!en for plain-
+language search.
+04
+Medium priority
+— Phase 2improvements7 issues · severity: enhancement
+Image alt text and ﬁlenames
+are generic / stock
+MEDIUM · ACCESSIBILITY & SEO
+All image-bearing pages
+Filenames like false-teeth-2026-01-08-05-40-32-utc.webp and
+illustrating-dental-implant-procedure-on-model-2026-01-07-07-10-
+50-utc.webp reveal these are stock library purchases (probably Envato or
+Adobe Stock). The alt text is also auto-generated stock captions. Google's
+--- PAGE 14 ---
+image search and accessibility readers both rely on alt text.
+FIXFIXFIXFIX
+Rewrite alt text in plain descriptive English with location-relevant keywords
+where natural. Example: "Patient undergoing root canal treatment at Happy
+Tooth Dental Care, Kallambalam". Over Phase 2, replace stock with real clinic
+photography.
+No FAQ section anywhereMEDIUM · SEO & PATIENT EDUCATION
+Site-wide
+FAQs do three jobs at once: (1) answer the questions that come up on
+every ﬁrst call, (2) populate Google’s "People also ask" boxes via FAQPage
+schema, (3) reduce phone time. A 10–12 question FAQ on the homepage or
+a dedicated /faq/ page is a high-leverage addition.
+FIXFIXFIXFIX
+Start with the 12 questions your reception sta" hears most often. Add FAQPage
+JSON-LD schema. Include questions like "Do you accept cashless insurance?",
+"Is parking available?", "How many si"ings does a root canal take?", "Do you treat
+children?".
+No payment / insurance
+information disclosed
+MEDIUM · CONVERSION
+Site-wide
+Patients hesitate to book without knowing whether they can pay by UPI,
+card, EMI, or whether insurance/CGHS is accepted. None of this is on the
+site.
+FIXFIXFIXFIX
+Add a small "Payments & Insurance" block on the Contact page or in the footer.
+List: UPI accepted, all major cards, no-cost EMI on treatments above a threshold
+(if applicable), any TPA or insurance tie-ups.
+--- PAGE 15 ---
+No support team / sta&
+acknowledgment
+MEDIUM · TRUST
+/about/
+The clinic appears to be a one-doctor operation, which it isn’t. Even
+mentioning "Our team includes trained dental assistants and a front-o$ice
+coordinator" humanises the experience.
+FIXFIXFIXFIX
+Once Smile Studio is sta"ed (June 2026), add a short team section. Even
+silhoue!es with ﬁrst names and role labels work if individual photos aren’t ready.
+No emergency dental care
+messaging
+MEDIUM · ACQUISITION
+Site-wide
+"Dental emergency near me" is a high-intent, high-conversion search.
+There is no banner, no dedicated page, no after-hours number indicating
+that emergencies are handled.
+FIXFIXFIXFIX
+Add a small "Dental emergency?" strip at the top of the homepage or in the
+header, with a tap-to-call link. Even if you don’t o"er 24×7 care, "Same-day
+emergency appointments available" is a winning line.
+Catchment-area landing pages are
+missing
+MEDIUM · LOCAL SEO
+Site architecture
+Your business plan already identiﬁes catchment areas — Kazhakoo"am,
+A"ingal, Pothencode, Chanthavila, Menamkulam. A small landing page for
+each ("Dentist serving patients from Kazhakoo!am") with locally-relevant
+content is a proven local-SEO tactic.
+FIXFIXFIXFIX
+Phase 2 build. One page per catchment area, 300–400 words each, mentioning
+--- PAGE 16 ---
+distance, route, and why patients from that area visit Happy Tooth. Don’t
+keyword-stu" — write for humans.
+Hero copy is generic — could
+belong to any dental clinic
+MEDIUM · BRAND VOICE
+Homepage hero
+"Your Smile Deserves Expert Care" / "Welcome to Happy Tooth Dental Care,
+where modern dentistry meets genuinely gentle care" is well-formed but
+undi$erentiated. A specialist endodontist-led practice has a sharper
+message available.
+FIXFIXFIXFIX
+Consider a more speciﬁc hero: "Specialist root canal care, gentler than you'd
+expect." or "An endodontist-led dental practice in Trivandrum." The speciﬁcity
+converts be!er than the warm-but-generic line.
+05
+Healthcare
+& legal
+complianceIndia-specific — must address before
+scaling marketing
+India regulates dental practice and dental advertising fairly strictly. The site
+currently fails on several disclosure requirements that, while rarely actively
+policed, become a real risk the moment a complaint is ﬁled (typically by a
+competing clinic).
+REQUIREMENTREQUIREMENTREQUIREMENTREQUIREMENT STATUSSTATUSSTATUSSTATUS NOTESNOTESNOTESNOTES
+--- PAGE 17 ---
+Kerala Dental
+Council registration
+number displayed
+MissingDCI Code of Ethics Regulations require
+display of registration number on all
+printed/digital media. Add Dr. Thushara's
+KDC reg number on the About page and
+footer.
+Clinic registration /
+Clinical
+Establishments Act
+number
+MissingOnce the K-SWIFT registration (NIC
+86202) is issued for HappyTooth Smile
+Studio, display it in the footer.
+Privacy Policy (DPDP
+Act 2023)
+MissingThe contact form processes personal
+data. Privacy Policy mandatory. Must
+name a Grievance O$icer.
+Terms of Use /
+Disclaimer
+MissingMust include a clear medical disclaimer
+— content is not a substitute for in-
+person consultation.
+No misleading
+superlatives ("best
+dentist" ,
+"guaranteed" , "100%
+painless")
+OK Current copy is restrained — good.
+Maintain this discipline.
+No before/after that
+promises speciﬁc
+outcomes
+OK
+(none
+yet)
+When you add before/afters in Phase 2,
+accompany with realistic outcome
+caveats.
+Cookie consent
+banner
+Not
+visible
+Less strict in India than EU, but
+recommended for any analytics use.
+Add a basic banner.
+--- PAGE 18 ---
+06
+Technical & performancenotes 3 nice-to-haves
+Elementor 4.0.6 — page weight likely
+high, mobile performance worth
+checking
+LOW · PERFORMANCE
+Elementor adds signiﬁcant CSS/JS overhead. Run a PageSpeed Insights
+test on the homepage. If LCP > 2.5s or CLS > 0. 1, consider enabling a
+caching plugin (WP Rocket, ~₹4,500/year, or LiteSpeed Cache free) and an
+image-CDN. For a brochure site this is medium-priority, but for Google
+ranking it ma"ers.
+No analytics setup conﬁrmed LOW · MEASUREMENT
+No Google Analytics 4 or Meta Pixel signal visible in the page source.
+Without these, you cannot measure form submissions, source a"ribution,
+or run remarketing campaigns.
+No favicon variants for high-DPI devices LOW · POLISH
+A single 300×300 favicon is referenced. Generate the full favicon set (16,
+32, 96, 180, 192, 512) via realfavicongenerator.net for clean rendering
+across browsers, iOS home screen, and Android.
+--- PAGE 19 ---
+07
+Prioritised
+action plan Recommended sequence over 4 weeks
+#ACTION
+01Fix the email mismatch (.com vs .in) and test that form submissions
+land in the right inbox.
+02Replace all <> placeholder links on hero CTA, "About More" , "More
+Services" .
+03Make phone and email tappable (tel:, mailto:) in footer + add
+ﬂoating Call & WhatsApp bu%ons.
+04
+Fix the country-code phone inconsistency on the Contact page
+footer and remove the duplicate "Reason to Choose" block on the
+homepage.
+05Write and publish Privacy Policy + Terms of Use. Name a Grievance
+O$icer for DPDP compliance.
+06Fill all empty bullet sections on the Services page (6 services × 4–5
+bullet groups each).
+07Rewrite all page titles and meta descriptions with geo + service
+keywords. Install Yoast or Rank Math.
+08Build the doctor proﬁle: photo, full bio, KDC registration number,
+education timeline, philosophy.
+09Embed Google Maps for both locations + add "Our Locations" section
+on homepage with Smile Studio "Opening June 2026" .
+--- PAGE 20 ---
+10Expand Facilities page with named equipment (Helios 680,
+Woodpecker PT-B, Faazo F300, etc.) and real photos once available.
+11Add Google reviews widget + 4–6 testimonials from existing
+Kallambalam patients.
+12Publish 4 starter blog posts on common patient questions.
+13Add LocalBusiness/Dentist structured data for both locations.
+14Set up Google Analytics 4 + Google Search Console veriﬁcation + Meta
+Pixel.
+15Run PageSpeed Insights, ﬁx any LCP/CLS issues, install caching.
+One pragmatic recommendation
+Items #01 to #04 take less than a day in total and remove the most
+embarrassing problems. If nothing else gets done before the HappyTooth
+Smile Studio launch in June 2026, do those four. Items #05 to #09 are the
+next priority and together would take a focused freelancer about a week to
+execute properly. Avoid the temptation to rebuild the site from scratch on
+a di$erent theme — the foundation is workable; the content and the link
+wiring are not.
+--- PAGE 21 ---
+08
+Three things to do thisevening Under 60 minutes total
+01 · 10 minutes
+Send a test enquiry from the Contact page
+Fill out the booking form yourself with your own phone number. Did the email
+arrive? In which inbox? If nothing came, the form has been silently failing — possibly
+since launch.
+02 · 20 minutes
+Replace every <> with the right link
+Open the homepage in Elementor. Find the hero "Make Appointment" , "About More" ,
+and "More Services" bu!ons. Point each at the correct page. Test by clicking
+through.
+03 · 15 minutes
+Fix the email domain and country code
+Decide which email is the real one (probably smile@happytoothdental.in).
+Update the Contact page. Add 91 back to the phone number in the Contact page
+footer. Save.
+Audit report · happytoothdental.in
+PREPARED 21 MAY 2026 · INTERNAL USE ONLY
+--- PAGE 22 ---

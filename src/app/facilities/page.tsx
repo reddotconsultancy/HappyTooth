@@ -15,8 +15,8 @@ export default function Facilities() {
       desc: "Digital X-rays produce a clear, detailed image of the tooth and surrounding bone in seconds — visible on screen immediately, with significantly less radiation than older film-based systems. There's no waiting, no chemical processing, and the image can be zoomed and examined in detail. For patients who feel anxious about X-rays, the speed and simplicity help.",
     },
     {
-      title: "Intraoral Scanner",
-      desc: "The traditional way of taking a dental impression involved filling a tray with putty and asking patients to hold it in their mouth for several minutes — uncomfortable, and occasionally triggering a gag reflex. The intraoral scanner replaces that entirely. A small wand is passed gently over the teeth and produces a precise 3D digital model in under two minutes. Used for crowns, bridges, aligners, and treatment planning.",
+      title: "Intraoral Scanner (Helios 680)",
+      desc: "The traditional way of taking a dental impression involved filling a tray with putty and asking patients to hold it in their mouth for several minutes — uncomfortable, and occasionally triggering a gag reflex. The state-of-the-art Helios 680 intraoral scanner replaces that entirely. A small wand is passed gently over the teeth and produces a precise 3D digital model in under two minutes. Used for crowns, bridges, aligners, and treatment planning.",
     },
     {
       title: "Intraoral Camera",
@@ -26,12 +26,12 @@ export default function Facilities() {
 
   const treatmentGear = [
     {
-      title: "Latest Dental Chairs",
-      desc: "Dental chairs at Smile Studio are modern units designed for patient comfort and clinical efficiency. Smooth electronic positioning, padded headrests, and proper lumbar support make a real difference during longer procedures. The chair adjusts precisely for each treatment — rather than the patient having to sit in an awkward position because the equipment is limited.",
+      title: "Latest Dental Chairs (Faazo F300)",
+      desc: "Dental chairs at Smile Studio are modern Faazo F300 units designed for patient comfort and clinical efficiency. Smooth electronic positioning, padded headrests, and proper lumbar support make a real difference during longer procedures. The chair adjusts precisely for each treatment — rather than the patient having to sit in an awkward position because the equipment is limited.",
     },
     {
-      title: "Advanced Ultrasonic Scaler with Air Polishing",
-      desc: "Scaling — the removal of tartar and hardened deposits — has a reputation for being uncomfortable. The ultrasonic scaler at Smile Studio uses precisely controlled vibrations to remove deposits with significantly less pressure and sensitivity than older manual instruments. The integrated air polishing removes surface stains and biofilm gently using a fine spray of water, air, and polishing powder — leaving teeth visibly cleaner with minimal abrasion and far less discomfort.",
+      title: "Advanced Ultrasonic Scaler with Air Polishing (Woodpecker PT-B)",
+      desc: "Scaling — the removal of tartar and hardened deposits — has a reputation for being uncomfortable. The advanced Woodpecker PT-B ultrasonic scaler at Smile Studio uses precisely controlled vibrations to remove deposits with significantly less pressure and sensitivity than older manual instruments. The integrated air polishing removes surface stains and biofilm gently using a fine spray of water, air, and polishing powder — leaving teeth visibly cleaner with minimal abrasion and far less discomfort.",
     },
   ];
 

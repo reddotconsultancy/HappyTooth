@@ -3,6 +3,7 @@ import { Rubik, Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FloatingActions from "@/components/FloatingActions";
 
 const rubik = Rubik({
   variable: "--font-rubik",
@@ -43,6 +44,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
+        <FloatingActions />
       </body>
     </html>
   );
