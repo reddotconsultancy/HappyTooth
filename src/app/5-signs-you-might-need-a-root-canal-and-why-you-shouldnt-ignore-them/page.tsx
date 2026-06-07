@@ -15,7 +15,7 @@ export default function BlogPost() {
       <BreadcrumbHero
         title="5 Signs You Might Need a Root Canal (And Why You Shouldn’t Ignore Them)"
         currentPage="Blog"
-        bgImage="/images/Blog-1.webp"
+        bgImage="/images/indian_toothache_blog.png"
       />
 
       {/* Main post layout */}
@@ -27,7 +27,7 @@ export default function BlogPost() {
               {/* Featured Image */}
               <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-md">
                 <Image
-                  src="/images/Blog-1.webp"
+                  src="/images/indian_toothache_blog.png"
                   alt="Root Canal treatment diagnosis illustration"
                   fill
                   className="object-cover"

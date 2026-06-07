@@ -210,7 +210,7 @@ export default function Home() {
               <div className="absolute -bottom-4 -right-4 w-12 h-12 border-b-4 border-r-4 border-primary-teal rounded-br-2xl"></div>
               <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
                 <Image
-                  src="/images/happytooth-side.webp"
+                  src="/images/indian_patient_smile.png"
                   alt="Healthy Smiles at Happy Tooth"
                   width={600}
                   height={600}

@@ -140,7 +140,7 @@ export default function InternationalPatients() {
               <div className="rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
                 <div className="relative h-96 rounded-2xl overflow-hidden">
                   <Image
-                    src="/images/happydental.webp"
+                    src="/images/indian_dentist_consult.png"
                     alt="International Patient Dental Care Kerala"
                     fill
                     className="object-cover"

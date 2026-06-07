@@ -279,7 +279,7 @@ export default function FAQ() {
   return (
     <div className="bg-white min-h-screen">
       {/* Breadcrumb Header */}
-      <BreadcrumbHero title="Frequently Asked Questions" currentPage="FAQs" bgImage="/images/FAQs.webp" />
+      <BreadcrumbHero title="Frequently Asked Questions" currentPage="FAQs" bgImage="/images/happytooth-varkala8.jpg" />
 
       {/* Main Content Area */}
       <section className="py-16 md:py-24">

@@ -19,7 +19,7 @@ export default function Blog() {
       category: "Uncategorized",
       excerpt:
         "Tooth pain is something most people try to ignore — hoping it will go away on its own. But sometimes, your tooth is trying to tell you something more serious. A root canal is often misunderstood and feared, but in reality, it is a safe and effective way to save your natural tooth and relieve pain.",
-      image: "/images/Blog-1.webp",
+      image: "/images/indian_toothache_blog.png",
     },
     {
       title: "Cosmetic Dentistry: Smile Makeover Options That Change Lives",
@@ -30,7 +30,7 @@ export default function Blog() {
       category: "Cosmetic Dentistry",
       excerpt:
         "If you have ever felt self-conscious about gaps, discoloration, or chipped edges, cosmetic dentistry is designed around your unique features. Dental veneers and professional whitening can elevate your confidence and keep your bite functional and balanced.",
-      image: "/images/Blog-4.webp",
+      image: "/images/indian_dental_health.png",
     },
     {
       title: "Preventive Dental Tips for Families: Daily Actions for Strong Teeth",
@@ -41,14 +41,14 @@ export default function Blog() {
       category: "Preventive Dentistry",
       excerpt:
         "Keeping teeth clean isn’t just about visiting the clinic twice a year — it starts at home. Simple daily actions like fluoride toothpaste usage, standard flossing, and minimizing sugary drinks prevent plaque buildup and keep gums secure.",
-      image: "/images/Blog-5.webp",
+      image: "/images/indian_family_smile.png",
     },
   ];
 
   return (
     <div>
       {/* Breadcrumb Header */}
-      <BreadcrumbHero title="Blog" currentPage="Blog" bgImage="/images/Blog-4.webp" />
+      <BreadcrumbHero title="Blog" currentPage="Blog" bgImage="/images/indian_dental_health.png" />
 
       {/* Main content grid */}
       <section className="py-20 bg-white">

@@ -44,7 +44,7 @@ export default function Services() {
       expectTitle: "What to expect:",
       expectDesc: "Local anaesthesia, no pain during the procedure, and mild soreness for 1–2 days post-treatment. Most patients return to normal the next day.",
       whyHere: "Having a dedicated MDS Endodontist on site — not a referral elsewhere — means complex root canals are handled with specialist-level expertise from the first appointment.",
-      image: "/images/happytooth-denist1.jpg"
+      image: "/images/indian_rct_procedure.png"
     },
     {
       id: "COSMETIC",
@@ -64,7 +64,7 @@ export default function Services() {
       expectTitle: "Treatment timeline:",
       expectDesc: "Varies by case. Simple smile makeovers (whitening + veneers on front teeth) can be completed in 2–3 visits over 2–3 weeks. More comprehensive cases involving multiple teeth and gum correction may take 4–8 weeks.",
       whyHere: "Our first step is always a consultation and smile assessment — with no commitment required at that stage.",
-      image: "/images/happytooth-denist3.jpg"
+      image: "/images/indian_smile_design.png"
     },
     {
       id: "Orthodontics",
@@ -84,7 +84,7 @@ export default function Services() {
       expectTitle: "Treatment duration:",
       expectDesc: "Mild corrections: 6–9 months. Moderate cases: 12–18 months. Complex full-arch alignment: 18–24+ months.",
       whyHere: "We design orthodontic setups tailored to your comfort and visual requirements, balancing ceramic brackets, metal rigs, or clear aligners.",
-      image: "/images/happytooth-denist4.jpg"
+      image: "/images/indian_aligners.png"
     },
     {
       id: "TeethWhitening",
@@ -124,7 +124,7 @@ export default function Services() {
       expectTitle: "First visit age:",
       expectDesc: "Ideally by age 1, or within 6 months of the first tooth erupting. At the latest, before age 3. We encourage parents to stay in the room to help the child stay calm.",
       whyHere: "Our specialized pediatric care is built around patience, play, and positive associations, making visits something children look forward to rather than fear.",
-      image: "/images/happytooth-denist7.jpg"
+      image: "/images/indian_pediatric_dentist.png"
     },
     {
       id: "DentalImplants",
@@ -184,7 +184,7 @@ export default function Services() {
       expectTitle: "Longevity expectations:",
       expectDesc: "Porcelain veneers: 10–20 years with proper oral hygiene. Composite veneers: 5–8 years. Both require avoiding excessive biting force (like ice or hard candy) on bonded surfaces.",
       whyHere: "We prepare detailed wax-ups and digital previews so you can inspect the size, shape, and shade before any permanent tooth structure is altered.",
-      image: "/images/happydental.webp"
+      image: "/images/indian_veneers_smile.png"
     },
     {
       id: "GumCare",
@@ -204,7 +204,7 @@ export default function Services() {
       expectTitle: "Systemic health connection:",
       expectDesc: "Untreated periodontitis is associated with poorer blood sugar control in diabetic patients, increased cardiovascular risks, and complications in pregnancy. Gum care is a medical priority, not just cosmetic.",
       whyHere: "We implement lifelong structured maintenance programmes (scaling/polishing every 3–6 months) to arrest periodontitis and protect your jawbone.",
-      image: "/images/happytooth-denist5.jpg"
+      image: "/images/indian_gum_care.png"
     },
     {
       id: "Preventive",
@@ -244,7 +244,7 @@ export default function Services() {
       expectTitle: "Surgical safety:",
       expectDesc: "Surgical extractions, where bone removal or tooth sectioning is required, are performed under local anaesthesia with high precision, mapping the dental nerve carefully.",
       whyHere: "We provide detailed written instructions and a direct follow-up call after every extraction, ensuring smooth healing.",
-      image: "/images/happytooth-denist6.jpg"
+      image: "/images/indian_wisdom_xray.png"
     },
     {
       id: "DenturesRehab",
@@ -304,7 +304,7 @@ export default function Services() {
       expectTitle: "After-Hours emergencies:",
       expectDesc: "For after-hours emergencies, our contact details and emergency guidance are available. For life-threatening jaw trauma or airway compromise, proceed to the nearest hospital ER.",
       whyHere: "We make every effort to offer same-day relief, focusing first on stopping pain and controlling infection before planning long-term restoration.",
-      image: "/images/happytooth-denist8.jpg"
+      image: "/images/indian_emergency_dentist.png"
     }
   ];
 
