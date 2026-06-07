@@ -55,8 +55,8 @@ export default function Header() {
           }`}
         >
           <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-            {/* Left: Email or General text */}
-            <div className="hidden lg:flex items-center gap-2 text-gray-300">
+            {/* Left: Email */}
+            <div className="flex items-center gap-2 text-gray-300">
               <span>Email:</span>
               <a href="mailto:smile@happytoothdental.in" className="hover:text-primary-teal transition-colors text-white font-semibold">
                 smile@happytoothdental.in
