@@ -277,7 +277,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-transparent min-h-screen">
       {/* Breadcrumb Header */}
       <BreadcrumbHero title="Frequently Asked Questions" currentPage="FAQs" bgImage="/images/happytooth-varkala8.jpg" />
 

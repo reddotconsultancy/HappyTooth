@@ -355,7 +355,7 @@ export default function Services() {
       </section>
 
       {/* DETAILED SERVICES SECTIONS */}
-      <div className="divide-y divide-gray-100 border-t border-gray-100 bg-white">
+      <div className="divide-y divide-gray-100 border-t border-gray-100 bg-transparent">
         {servicesData.map((svc, idx) => {
           const isEven = idx % 2 === 0;
           return (

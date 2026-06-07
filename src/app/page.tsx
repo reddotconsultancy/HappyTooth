@@ -71,7 +71,7 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       {/* 1. UPGRADED HERO SECTION */}
-      <section className="relative bg-gradient-to-b from-bg-light-blue via-bg-light-blue/20 to-white py-20 lg:py-28">
+      <section className="relative bg-gradient-to-b from-bg-light-blue/30 via-bg-light-blue/10 to-transparent py-20 lg:py-28">
         {/* Glow backdrop halos */}
         <div className="absolute top-10 right-[15%] w-[32rem] h-[32rem] bg-primary-teal/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-5 left-5 w-96 h-96 bg-accent-teal/5 rounded-full blur-3xl"></div>

@@ -52,9 +52,19 @@
   }
 
   body {
-    background: var(--background);
+    background: 
+      radial-gradient(circle, rgba(0, 136, 110, 0.035) 1.5px, transparent 1.5px) 0 0 / 24px 24px,
+      linear-gradient(180deg, #FCFDFD 0%, #F5FAF8 45%, #ECF4F2 100%);
+    background-attachment: fixed;
     color: var(--foreground);
     font-family: var(--font-poppins);
+    min-height: 100vh;
+  }
+
+  section.bg-white {
+    background-color: rgba(255, 255, 255, 0.45) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
   }
 
   h1, h2, h3, h4, h5, h6 {
