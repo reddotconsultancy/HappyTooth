@@ -50,9 +50,7 @@ export default function Header() {
       >
         {/* Top Info Bar displaying phone numbers of both centers */}
         <div
-          className={`bg-navy-blue text-white text-[10px] sm:text-xs font-bold transition-all duration-300 overflow-hidden ${
-            isScrolled ? "h-0 py-0 opacity-0" : "py-2 px-4 sm:px-6 lg:px-8 border-b border-white/5 opacity-100"
-          }`}
+          className="bg-navy-blue text-white text-[10px] sm:text-xs font-bold py-2 px-4 sm:px-6 lg:px-8 border-b border-white/5 opacity-100 transition-all duration-300"
         >
           <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
             {/* Left: Email */}
@@ -217,7 +215,7 @@ export default function Header() {
       </header>
 
       {/* Spacer for sticky header */}
-      <div className="h-28"></div>
+      <div className="h-[136px] sm:h-28"></div>
 
       {/* Mobile Menu Drawer */}
       <div
