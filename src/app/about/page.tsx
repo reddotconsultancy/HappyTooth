@@ -8,10 +8,7 @@ export const metadata = {
 };
 
 export default function About() {
-  const stats = [
-    { value: "18+", label: "Specialist doctors across both clinics" },
-    { value: "8", label: "Dental specialisations covered" },
-  ];
+
 
   const specialisations = [
     {
@@ -70,7 +67,7 @@ export default function About() {
     {
       year: "2021",
       title: "Happy Tooth Dental Care & Root Canal Centre — Kallambalam",
-      subtitle: "Her first clinic in southern Thiruvananthapuram",
+      subtitle: "Her first clinic in Thiruvananthapuram",
       desc: "Over five years it has built a steady, largely word-of-mouth following among patients seeking to save compromised teeth with specialized root canals and conservative dentistry.",
     },
     {
@@ -159,14 +156,14 @@ export default function About() {
                   HOW WE WORK
                 </h3>
                 <h4 className="font-extrabold text-navy-blue text-sm md:text-base leading-snug">
-                  Every case is seen by the right specialist — not a generalist filling in
+                  Every case is handled by the right specialist — not a generalist filling in
                 </h4>
                 <div className="text-xs md:text-sm text-soft-gray space-y-3 leading-relaxed">
                   <p>
                     At most dental clinics, general dentists handle a wide range of treatments — including cases that technically require a specialist. We have made a deliberate choice not to work that way.
                   </p>
                   <p>
-                    At HappyTooth, every patient is seen by a dentist who is a specialist in that specific field. An orthodontic case is handled by an orthodontist. A child's dental issue is seen by a paediatric dentist. Gum problems are treated by a periodontist. This applies without exception — regardless of how routine or complex the case appears.
+                    At HappyTooth, your first visit is a consultation and diagnosis. From there, your treatment is assigned to the specialist trained for it — an orthodontic case goes to an orthodontist, a child's treatment to a paediatric dentist, gum problems to a periodontist, and so on. Every treatment is carried out by a specialist from our team of doctors.
                   </p>
                 </div>
               </div>
@@ -191,15 +188,7 @@ export default function About() {
                 Every doctor on our team brings dedicated years of training and clinical experience in their own field. You are never seen by someone working outside their area of expertise.
               </p>
 
-              {/* Mini stats count */}
-              <div className="grid grid-cols-2 gap-4 pt-4">
-                {stats.map((st, idx) => (
-                  <div key={idx} className="space-y-1 border-l-2 border-primary-teal pl-4">
-                    <span className="block text-2xl font-extrabold text-navy-blue">{st.value}</span>
-                    <span className="block text-[10px] text-soft-gray font-bold leading-tight">{st.label}</span>
-                  </div>
-                ))}
-              </div>
+
             </div>
 
             {/* Right side: 8 specializations list */}

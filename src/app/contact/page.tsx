@@ -33,7 +33,7 @@ export default function Contact() {
       phone: "+91 87144 70808",
       telLink: "tel:+918714470808",
       waLink: "https://wa.me/918714470808",
-      timings: "9:00 AM – 6:30 PM (Monday to Saturday)",
+      timings: "9:30 AM – 6:30 PM (Monday to Saturday)",
       parking: "Street parking available near front",
       dentist: "Dr. Thushara Sudhakaran BDS, MDS",
       dentistRole: "Specialist Endodontist · Lead Dentist",
@@ -88,19 +88,6 @@ export default function Contact() {
                     {/* Details content */}
                     <div className="p-6 md:p-8 flex-grow space-y-6">
                       
-                      {/* Clinical Lead */}
-                      <div className="p-4 bg-bg-light-blue/40 border border-primary-teal/10 rounded-2xl flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary-teal border border-gray-100 shadow-xs shrink-0">
-                          <svg className="w-5 h-5 text-primary-teal" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                          </svg>
-                        </div>
-                        <div>
-                          <span className="block text-[10px] font-bold text-soft-gray uppercase tracking-wider">Clinical Lead</span>
-                          <span className="block text-xs font-extrabold text-navy-blue">{clinic.dentist}</span>
-                          <span className="block text-[10px] text-soft-gray">{clinic.dentistRole}</span>
-                        </div>
-                      </div>
 
                       {/* Location Details */}
                       <div className="space-y-4 text-xs md:text-sm text-soft-gray">

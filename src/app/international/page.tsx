@@ -206,29 +206,7 @@ export default function InternationalPatients() {
         </div>
       </section>
 
-      {/* 4. MALDIVES TOURISM BANNER */}
-      <section className="py-16 bg-navy-blue text-white relative overflow-hidden">
-        <div className="absolute top-[-20%] right-[-20%] w-[32rem] h-[32rem] bg-primary-teal/10 rounded-full blur-3xl"></div>
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6">
-          <span className="text-[10px] font-black text-accent-teal tracking-widest uppercase bg-white/10 py-1.5 px-4 rounded-full inline-block">
-            Medical Tourism
-          </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-black">Travelling from the Maldives?</h2>
-          <p className="text-xs sm:text-sm md:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Thiruvananthapuram is one of the closest major cities to the Maldives, and a well-established destination for patients seeking specialist dental and medical care. A short flight brings you to a city with direct access to specialist treatment at a fraction of the cost available elsewhere. We work with Maldivian patients regularly — contact us on WhatsApp to plan your visit, and we'll have everything ready before you land.
-          </p>
-          <div className="pt-2">
-            <a
-              href="https://wa.me/917356100602"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-primary-teal hover:bg-white hover:text-navy-blue text-white font-bold py-3.5 px-8 rounded-full transition-all duration-300 shadow-md text-xs"
-            >
-              Contact Maldives Desk on WhatsApp
-            </a>
-          </div>
-        </div>
-      </section>
+
 
       {/* 5. PRACTICAL INFORMATION CARDS */}
       <section className="py-20 bg-bg-light-blue/20">

@@ -4,25 +4,25 @@ import BreadcrumbHero from "@/components/BreadcrumbHero";
 
 export const metadata = {
   title: "Specialist Dental Services | Happy Tooth Dental Care",
-  description: "Explore our 14 dental treatments at HappyTooth Smile Studio, including root canals, smile designing, aligners, implants, pediatric care, and emergency dental assistance.",
+  description: "Explore our specialised dental treatments at HappyTooth Smile Studio, including root canals, smile designing, aligners, implants, pediatric care, and emergency dental assistance.",
 };
 
 export default function Services() {
   const serviceCards = [
-    { name: "01. Root Canal", link: "#ENDODONTICS" },
-    { name: "02. Smile Design", link: "#COSMETIC" },
-    { name: "03. Aligners & Braces", link: "#Orthodontics" },
-    { name: "04. Teeth Whitening", link: "#TeethWhitening" },
-    { name: "05. Paediatric Dentistry", link: "#Pediatric" },
-    { name: "06. Dental Implants", link: "#DentalImplants" },
-    { name: "07. Crowns & Bridges", link: "#Restorative" },
-    { name: "08. Dental Veneers", link: "#DentalVeneers" },
-    { name: "09. Gum Care", link: "#GumCare" },
-    { name: "10. Scaling & Polishing", link: "#Preventive" },
-    { name: "11. Extractions", link: "#ExtractionsWisdom" },
-    { name: "12. Dentures & Rehab", link: "#DenturesRehab" },
-    { name: "13. Diagnostics & X-Rays", link: "#XraysDiagnostics" },
-    { name: "14. Emergency Care", link: "#EmergencyCare" },
+    { name: "Root Canal", link: "#ENDODONTICS" },
+    { name: "Smile Design", link: "#COSMETIC" },
+    { name: "Aligners & Braces", link: "#Orthodontics" },
+    { name: "Teeth Whitening", link: "#TeethWhitening" },
+    { name: "Paediatric Dentistry", link: "#Pediatric" },
+    { name: "Dental Implants", link: "#DentalImplants" },
+    { name: "Crowns & Bridges", link: "#Restorative" },
+    { name: "Dental Veneers", link: "#DentalVeneers" },
+    { name: "Gum Care", link: "#GumCare" },
+    { name: "Scaling & Polishing", link: "#Preventive" },
+    { name: "Extractions", link: "#ExtractionsWisdom" },
+    { name: "Dentures & Rehab", link: "#DenturesRehab" },
+    { name: "Diagnostics & X-Rays", link: "#XraysDiagnostics" },
+    { name: "Emergency Care", link: "#EmergencyCare" },
   ];
 
   const servicesData = [
@@ -83,7 +83,7 @@ export default function Services() {
       ],
       expectTitle: "Treatment duration:",
       expectDesc: "Mild corrections: 6–9 months. Moderate cases: 12–18 months. Complex full-arch alignment: 18–24+ months.",
-      whyHere: "We design orthodontic setups tailored to your comfort and visual requirements, balancing ceramic brackets, metal rigs, or clear invisalign-style aligners.",
+      whyHere: "We design orthodontic setups tailored to your comfort and visual requirements, balancing ceramic brackets, metal rigs, or clear aligners.",
       image: "/images/happytooth-denist4.jpg"
     },
     {
@@ -341,7 +341,7 @@ export default function Services() {
             Comprehensive Treatments
           </span>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-navy-blue leading-tight mb-4">
-            14 Specialised Dental Treatments
+            Specialised Dental Treatments
           </h2>
           <p className="text-xs md:text-sm text-soft-gray leading-relaxed">
             A complete guide to the dental treatments available at HappyTooth Smile Studio. Each service listed here is delivered by our specialist team, led by Dr. Thushara Sudhakaran (BDS, MDS, Endodontist), with a focus on precision, patient comfort, and outcomes that last.
@@ -382,10 +382,7 @@ export default function Services() {
                         />
                       </div>
                     </div>
-                    {/* Floating Service Number Badge */}
-                    <div className={`absolute -top-4 bg-primary-teal text-white font-black text-xs md:text-sm py-2 px-4 rounded-xl shadow-lg ${isEven ? "-left-2" : "right-10"}`}>
-                      Service {svc.serviceNumber}
-                    </div>
+
                   </div>
 
                   {/* Right Column: Copy details */}
