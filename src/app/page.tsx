@@ -200,7 +200,7 @@ export default function Home() {
       </section>
 
       {/* 2. NEIGHBOURHOOD SPECIALIST FOCUS */}
-      <section className="py-20 bg-white relative">
+      <section className="py-20 bg-bg-light-blue/10 relative">
         <div className="absolute top-1/3 left-0 w-80 h-80 bg-primary-teal/5 rounded-full blur-3xl"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -256,7 +256,7 @@ export default function Home() {
       </section>
 
       {/* 3. OUR STORY TIMELINE */}
-      <section className="py-20 bg-bg-light-blue/20 border-t border-b border-gray-100 relative">
+      <section className="py-20 bg-white border-t border-b border-gray-100 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
@@ -343,7 +343,7 @@ export default function Home() {
       </section>
 
       {/* 4. WHY CHOOSE US (6 Core Points from PDF) */}
-      <section className="py-20 bg-white relative">
+      <section className="py-20 bg-bg-light-blue/10 relative">
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent-teal/5 rounded-full blur-3xl"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
@@ -384,7 +384,7 @@ export default function Home() {
       </section>
 
       {/* 5. LEAD CLINICIAN SECTION */}
-      <section className="py-20 bg-bg-light-blue/20 border-t border-gray-100">
+      <section className="py-20 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
@@ -450,8 +450,99 @@ export default function Home() {
       </section>
 
 
+      {/* 6. PATIENT TESTIMONIALS (GOOGLE REVIEWS) */}
+      <section className="py-20 bg-bg-light-blue/20 border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-primary-teal/10 py-1.5 px-4 rounded-full inline-block">
+              Patient Stories
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
+              Patient Google Reviews
+            </h2>
+            <p className="text-soft-gray text-xs md:text-sm max-w-md mx-auto font-medium">
+              Read feedback from patients who completed root canal treatments, pediatric care, and restorative procedures at our clinics.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 md:p-8 rounded-3xl border border-gray-100 flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+              <div className="space-y-4">
+                <div className="flex items-center gap-1 text-amber-500">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
+                  "Dr. Thushara explained my root canal treatment so clearly and performed it absolutely painlessly. Her honest answers and specialist approach made me feel extremely comfortable. Truly the best specialist clinic in Thiruvananthapuram."
+                </p>
+              </div>
+              <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
+                <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
+                  AR
+                </div>
+                <div>
+                  <span className="block text-xs font-bold text-navy-blue">Ananthakrishnan R.</span>
+                  <span className="block text-[10px] text-soft-gray">Kallambalam Patient</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 md:p-8 rounded-3xl border border-gray-100 flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+              <div className="space-y-4">
+                <div className="flex items-center gap-1 text-amber-500">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
+                  "I was very anxious about my child's dental treatment, but the patience and care shown here was amazing. They took time to explain everything to him. Very professional setup and highly recommended for families!"
+                </p>
+              </div>
+              <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
+                <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
+                  SL
+                </div>
+                <div>
+                  <span className="block text-xs font-bold text-navy-blue">Soumya L.</span>
+                  <span className="block text-[10px] text-soft-gray">Mother of 6yo Patient</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 md:p-8 rounded-3xl border border-gray-100 flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+              <div className="space-y-4">
+                <div className="flex items-center gap-1 text-amber-500">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
+                  "Unlike other places where they push expensive crowns or extractions, Dr. Thushara advised keeping my natural tooth and gave a clear treatment plan before starting. Very honest and professional specialist dental team."
+                </p>
+              </div>
+              <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
+                <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
+                  VN
+                </div>
+                <div>
+                  <span className="block text-xs font-bold text-navy-blue">Vipin Nair</span>
+                  <span className="block text-[10px] text-soft-gray">Murukkumpuzha Patient</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* OUR CLINICS CONTACT SECTION */}
-      <section className="py-20 bg-bg-light-blue/20 border-t border-b border-gray-250">
+      <section className="py-20 bg-white border-t border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
@@ -479,7 +570,7 @@ export default function Home() {
                   </span>
                 </div>
                 <h3 className="text-lg md:text-xl font-black leading-tight h-10 flex items-center">HappyTooth Smile Studio</h3>
-                <p className="text-xs text-gray-300 font-medium">Flagship Studio · Opening Shortly</p>
+                <p className="text-xs text-gray-300 font-medium">Flagship Studio · Murukkumpuzha, Thiruvananthapuram</p>
               </div>
 
               <div className="p-6 md:p-8 flex-grow space-y-6">
@@ -560,8 +651,8 @@ export default function Home() {
                     Closed on Sundays
                   </span>
                 </div>
-                <h3 className="text-lg md:text-xl font-black leading-tight h-10 flex items-center">Happy Tooth Dental Care & Root Canal Centre</h3>
-                <p className="text-xs text-gray-300 font-medium">Established Clinic · Running 5+ years</p>
+                <h3 className="text-lg md:text-xl font-black leading-tight h-10 flex items-center">Happy Tooth Dental Care</h3>
+                <p className="text-xs text-gray-300 font-medium">Root Canal Centre · Kallambalam, Thiruvananthapuram</p>
               </div>
 
               <div className="p-6 md:p-8 flex-grow space-y-6">

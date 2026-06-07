@@ -11,7 +11,7 @@ export default function Contact() {
   const clinics = [
     {
       name: "HappyTooth Smile Studio",
-      branch: "Murukkumpuzha",
+      branch: "Murukkumpuzha, Thiruvananthapuram",
       badge: "Flagship Studio · Open Daily",
       status: "Open All 7 Days",
       address: "Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram – 695302",
@@ -26,7 +26,7 @@ export default function Contact() {
     },
     {
       name: "Happy Tooth Dental Care & Root Canal Centre",
-      branch: "Kallambalam",
+      branch: "Kallambalam, Thiruvananthapuram",
       badge: "Established Clinic · 5+ Years",
       status: "Closed on Sundays",
       address: "Mavinmoodu, Kallambalam–Varkala Road, Kallambalam, Thiruvananthapuram – 695605",

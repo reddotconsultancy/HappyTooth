@@ -104,7 +104,7 @@ export default function Services() {
       expectTitle: "How long it lasts:",
       expectDesc: "Results typically last 12–24 months with normal dietary habits. Avoiding heavy tea, coffee, and tobacco significantly extends the effect. A take-home kit can be provided for maintenance.",
       whyHere: "We calibrate whitening intensity to match your facial profile, avoiding an artificial chalky look.",
-      image: "/images/dentist-with-tooth-anatomy-model-oral-teeth-decay-2026-01-08-06-40-02-utc.webp"
+      image: "/images/teeth_whitening_smile.png"
     },
     {
       id: "Pediatric",
@@ -144,7 +144,7 @@ export default function Services() {
       expectTitle: "Treatment timeline:",
       expectDesc: "3–4 months healing after placement (longer if bone grafting is needed), followed by crown fitting. Total duration is typically 4–6 months from placement to final restoration.",
       whyHere: "Implants, when properly placed and maintained with regular cleaning and check-ups, routinely last 15–25+ years. Many last a lifetime.",
-      image: "/images/illustrating-dental-implant-procedure-on-model-2026-01-07-07-10-50-utc.webp"
+      image: "/images/dental_implant_model.png"
     },
     {
       id: "Restorative",
@@ -224,7 +224,7 @@ export default function Services() {
       expectTitle: "Post-appointment sensation:",
       expectDesc: "Some patients experience mild sensitivity to cold or hot liquids for 24–48 hours, particularly where the gums were inflamed before scaling. This is temporary and resolves as gums heal.",
       whyHere: "Detecting a cavity at 6 months means a small, simple filling. Waiting 2 years can mean a root canal and a crown. We focus on interception.",
-      image: "/images/female-dentist-with-assistant-working-in-dental-cl-2026-01-08-00-11-38-utc.webp"
+      image: "/images/indian_dentist_lobby.png"
     },
     {
       id: "ExtractionsWisdom",

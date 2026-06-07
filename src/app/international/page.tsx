@@ -98,7 +98,7 @@ export default function InternationalPatients() {
       <BreadcrumbHero
         title="International Patients"
         currentPage="International Patients"
-        bgImage="/images/group-of-talented-multiracial-doctors-and-nurses-i-2026-01-09-06-11-37-utc.webp"
+        bgImage="/images/indian_dentist_team.png"
       />
 
       {/* 1. Header description */}

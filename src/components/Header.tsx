@@ -97,9 +97,9 @@ export default function Header() {
                   <Image
                     src="/images/happytooth-logo-1.png"
                     alt="Happy Tooth Logo"
-                    width={180}
-                    height={50}
-                    className="w-auto h-12 md:h-14 object-contain"
+                    width={220}
+                    height={60}
+                    className="w-auto h-14 md:h-16 object-contain"
                     priority
                   />
                 </div>
@@ -242,9 +242,9 @@ export default function Header() {
               <Image
                 src="/images/happytooth-logo-1.png"
                 alt="Happy Tooth Logo"
-                width={140}
-                height={40}
-                className="w-auto h-10 object-contain"
+                width={160}
+                height={46}
+                className="w-auto h-12 object-contain"
               />
             </Link>
             <button
