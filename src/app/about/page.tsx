@@ -226,7 +226,7 @@ export default function About() {
               <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
                 <div className="relative h-[32rem] rounded-[2rem] overflow-hidden">
                   <Image
-                    src="/images/Doctors-1.webp"
+                    src="/images/indian_dentist_consult.png"
                     alt="Dr. Thushara Sudhakaran Clinical Director Specialist Endodontist"
                     fill
                     className="object-cover object-top"
