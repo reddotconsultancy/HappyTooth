@@ -264,7 +264,7 @@ export default function Services() {
       expectTitle: "Fixed vs. Removable:",
       expectDesc: "Implant-supported fixed restorations are maintained just like natural teeth (brushing, flossing, check-ups) and eliminate the slip and soreness associated with traditional plates.",
       whyHere: "We custom-design denture bases to match the natural shade of your gum tissue, ensuring the boundary is invisible to others.",
-      image: "/images/indian_dentist_team.png"
+      image: "/images/indian_dentist_consult.png"
     },
     {
       id: "XraysDiagnostics",

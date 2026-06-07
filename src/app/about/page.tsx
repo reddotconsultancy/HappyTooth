@@ -127,7 +127,7 @@ export default function About() {
               <div className="absolute -bottom-6 -right-6 w-12 h-12 border-b-4 border-r-4 border-primary-teal rounded-br-2xl"></div>
               <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
                 <Image
-                  src="/images/Doctors-5.webp"
+                  src="/images/indian_dentist_team.png"
                   alt="Happy Tooth Dental Clinic Specialist Team Portrait"
                   width={600}
                   height={600}
