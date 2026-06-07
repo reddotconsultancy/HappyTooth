@@ -159,8 +159,8 @@ export default function Home() {
                 <div className="absolute top-4 left-6 w-[80%] h-[75%] rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-3 z-10 transform hover:scale-[1.01] transition duration-500">
                   <div className="relative w-full h-full rounded-2xl overflow-hidden">
                     <Image
-                      src="/images/happytooth-varkala11.jpg"
-                      alt="Clinic interior treatment cabin"
+                      src="/images/indian_dentist_consult.png"
+                      alt="Indian Dentist explaining scan to patient"
                       fill
                       className="object-cover"
                       priority
@@ -184,8 +184,8 @@ export default function Home() {
                 <div className="absolute top-16 left-0 w-[40%] h-[35%] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white p-2 z-20 transform hover:-rotate-1 hover:scale-102 transition duration-500 hidden sm:block">
                   <div className="relative w-full h-full rounded-xl overflow-hidden">
                     <Image
-                      src="/images/happytooth-varkala12.jpg"
-                      alt="Clinic dental chair facility"
+                      src="/images/indian_dentist_team.png"
+                      alt="Indian Dentist Specialist Team"
                       fill
                       className="object-cover"
                     />

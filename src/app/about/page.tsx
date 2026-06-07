@@ -114,7 +114,7 @@ export default function About() {
       <BreadcrumbHero
         title="About Us"
         currentPage="About Us"
-        bgImage="/images/happytooth-varkala1.jpg"
+        bgImage="/images/indian_dental_health.png"
       />
 
       {/* 1. Core Philosophy & Tagline */}
@@ -362,8 +362,8 @@ export default function About() {
           {/* Accent Image Callout */}
           <div className="mt-16 rounded-3xl overflow-hidden shadow-xl border border-gray-100 bg-white p-3 relative h-64 md:h-96">
             <Image
-              src="/images/happytooth-varkala10.jpg"
-              alt="Happy Tooth Clinic Sterilized Waiting Lobby"
+              src="/images/indian_family_smile.png"
+              alt="Happy Indian family smiling with healthy teeth"
               fill
               className="object-cover rounded-2xl"
             />
