@@ -465,75 +465,159 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 md:p-8 rounded-3xl border border-gray-100 flex flex-col justify-between hover:shadow-xl transition-all duration-300">
-              <div className="space-y-4">
-                <div className="flex items-center gap-1 text-amber-500">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
-                  "Dr. Thushara explained my root canal treatment so clearly and performed it absolutely painlessly. Her honest answers and specialist approach made me feel extremely comfortable. Truly the best specialist clinic in Thiruvananthapuram."
-                </p>
-              </div>
-              <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
-                <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
-                  AR
-                </div>
-                <div>
-                  <span className="block text-xs font-bold text-navy-blue">Ananthakrishnan R.</span>
-                  <span className="block text-[10px] text-soft-gray">Kallambalam Patient</span>
-                </div>
-              </div>
-            </div>
+          <div className="w-full overflow-hidden relative py-4">
+            {/* Subtle gradient overlays to fade edges */}
+            <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-[#F5F2EB] to-transparent z-10 pointer-events-none"></div>
+            <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-[#F5F2EB] to-transparent z-10 pointer-events-none"></div>
 
-            <div className="bg-white p-6 md:p-8 rounded-3xl border border-gray-100 flex flex-col justify-between hover:shadow-xl transition-all duration-300">
-              <div className="space-y-4">
-                <div className="flex items-center gap-1 text-amber-500">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
+            <div className="flex animate-marquee whitespace-nowrap w-max">
+              {/* Set 1 */}
+              <div className="flex items-stretch gap-6 pr-6">
+                <div className="bg-white p-6 md:p-8 rounded-3xl border border-gray-100/80 shadow-sm flex flex-col justify-between w-[290px] sm:w-[420px] shrink-0 whitespace-normal hover:shadow-xl transition-all duration-300">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-1 text-amber-500">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
+                      "Dr. Thushara explained my root canal treatment so clearly and performed it absolutely painlessly. Her honest answers and specialist approach made me feel extremely comfortable. Truly the best specialist clinic in Thiruvananthapuram."
+                    </p>
+                  </div>
+                  <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
+                    <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
+                      AR
+                    </div>
+                    <div>
+                      <span className="block text-xs font-bold text-navy-blue">Ananthakrishnan R.</span>
+                      <span className="block text-[10px] text-soft-gray">Kallambalam Patient</span>
+                    </div>
+                  </div>
                 </div>
-                <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
-                  "I was very anxious about my child's dental treatment, but the patience and care shown here was amazing. They took time to explain everything to him. Very professional setup and highly recommended for families!"
-                </p>
-              </div>
-              <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
-                <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
-                  SL
-                </div>
-                <div>
-                  <span className="block text-xs font-bold text-navy-blue">Soumya L.</span>
-                  <span className="block text-[10px] text-soft-gray">Mother of 6yo Patient</span>
-                </div>
-              </div>
-            </div>
 
-            <div className="bg-white p-6 md:p-8 rounded-3xl border border-gray-100 flex flex-col justify-between hover:shadow-xl transition-all duration-300">
-              <div className="space-y-4">
-                <div className="flex items-center gap-1 text-amber-500">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
+                <div className="bg-white p-6 md:p-8 rounded-3xl border border-gray-100/80 shadow-sm flex flex-col justify-between w-[290px] sm:w-[420px] shrink-0 whitespace-normal hover:shadow-xl transition-all duration-300">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-1 text-amber-500">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
+                      "I was very anxious about my child's dental treatment, but the patience and care shown here was amazing. They took time to explain everything to him. Very professional setup and highly recommended for families!"
+                    </p>
+                  </div>
+                  <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
+                    <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
+                      SL
+                    </div>
+                    <div>
+                      <span className="block text-xs font-bold text-navy-blue">Soumya L.</span>
+                      <span className="block text-[10px] text-soft-gray">Mother of 6yo Patient</span>
+                    </div>
+                  </div>
                 </div>
-                <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
-                  "Unlike other places where they push expensive crowns or extractions, Dr. Thushara advised keeping my natural tooth and gave a clear treatment plan before starting. Very honest and professional specialist dental team."
-                </p>
+
+                <div className="bg-white p-6 md:p-8 rounded-3xl border border-gray-100/80 shadow-sm flex flex-col justify-between w-[290px] sm:w-[420px] shrink-0 whitespace-normal hover:shadow-xl transition-all duration-300">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-1 text-amber-500">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
+                      "Unlike other places where they push expensive crowns or extractions, Dr. Thushara advised keeping my natural tooth and gave a clear treatment plan before starting. Very honest and professional specialist dental team."
+                    </p>
+                  </div>
+                  <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
+                    <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
+                      VN
+                    </div>
+                    <div>
+                      <span className="block text-xs font-bold text-navy-blue">Vipin Nair</span>
+                      <span className="block text-[10px] text-soft-gray">Murukkumpuzha Patient</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
-                <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
-                  VN
+
+              {/* Set 2 (Duplicate for loop) */}
+              <div className="flex items-stretch gap-6 pr-6" aria-hidden="true">
+                <div className="bg-white p-6 md:p-8 rounded-3xl border border-gray-100/80 shadow-sm flex flex-col justify-between w-[290px] sm:w-[420px] shrink-0 whitespace-normal hover:shadow-xl transition-all duration-300">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-1 text-amber-500">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
+                      "Dr. Thushara explained my root canal treatment so clearly and performed it absolutely painlessly. Her honest answers and specialist approach made me feel extremely comfortable. Truly the best specialist clinic in Thiruvananthapuram."
+                    </p>
+                  </div>
+                  <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
+                    <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
+                      AR
+                    </div>
+                    <div>
+                      <span className="block text-xs font-bold text-navy-blue">Ananthakrishnan R.</span>
+                      <span className="block text-[10px] text-soft-gray">Kallambalam Patient</span>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <span className="block text-xs font-bold text-navy-blue">Vipin Nair</span>
-                  <span className="block text-[10px] text-soft-gray">Murukkumpuzha Patient</span>
+
+                <div className="bg-white p-6 md:p-8 rounded-3xl border border-gray-100/80 shadow-sm flex flex-col justify-between w-[290px] sm:w-[420px] shrink-0 whitespace-normal hover:shadow-xl transition-all duration-300">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-1 text-amber-500">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
+                      "I was very anxious about my child's dental treatment, but the patience and care shown here was amazing. They took time to explain everything to him. Very professional setup and highly recommended for families!"
+                    </p>
+                  </div>
+                  <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
+                    <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
+                      SL
+                    </div>
+                    <div>
+                      <span className="block text-xs font-bold text-navy-blue">Soumya L.</span>
+                      <span className="block text-[10px] text-soft-gray">Mother of 6yo Patient</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white p-6 md:p-8 rounded-3xl border border-gray-100/80 shadow-sm flex flex-col justify-between w-[290px] sm:w-[420px] shrink-0 whitespace-normal hover:shadow-xl transition-all duration-300">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-1 text-amber-500">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
+                      "Unlike other places where they push expensive crowns or extractions, Dr. Thushara advised keeping my natural tooth and gave a clear treatment plan before starting. Very honest and professional specialist dental team."
+                    </p>
+                  </div>
+                  <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
+                    <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
+                      VN
+                    </div>
+                    <div>
+                      <span className="block text-xs font-bold text-navy-blue">Vipin Nair</span>
+                      <span className="block text-[10px] text-soft-gray">Murukkumpuzha Patient</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
