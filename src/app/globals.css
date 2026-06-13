@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F5F2EB;           /* Solid Premium Alabaster Stone Background */
-  --foreground: #1C242E;           /* Midnight Charcoal */
+  --background: #101E2E;           /* Midnight Slate Ink Background */
+  --foreground: #FFFFFF;           /* Pure White Text */
 }
 
 @theme {
-  --color-bg-main: #F5F2EB;        /* Alabaster Stone background */
+  --color-bg-main: #101E2E;        /* Midnight Slate Ink Background */
   --color-primary-teal: #101E2E;   /* Deep Midnight Slate Ink */
   --color-accent-teal: #AC9266;    /* Muted Platinum Bronze */
   --color-navy-blue: #101E2E;      /* Deep Midnight Slate Ink */
   --color-gold: #C0A87F;           /* Traditional Luxury Gold */
-  --color-bg-light-blue: #EFECE5;  /* Soft Warm Alabaster Gray */
-  --color-dark-text: #1C242E;      /* Midnight Charcoal for text */
-  --color-soft-gray: #787E85;      /* Slate-Charcoal Gray */
-  --color-border-gray: #E0DDD6;    /* Warm Stone Border */
+  --color-bg-light-blue: #142231;  /* Dark Navy Slate for alternating sections */
+  --color-dark-text: #FFFFFF;      /* White text */
+  --color-soft-gray: #A3AEB9;      /* Muted Silver-Slate */
+  --color-border-gray: #2D3F55;    /* Muted Dark Border */
 
   --font-rubik: "Times New Roman", Times, serif;
   --font-poppins: "Times New Roman", Times, serif;
@@ -68,7 +68,7 @@
   }
 
   body {
-    background: var(--background); /* Solid Premium Background */
+    background: var(--background); /* Midnight Slate Background */
     color: var(--foreground);
     min-height: 100vh;
   }
@@ -77,13 +77,44 @@
     background-color: transparent !important;
   }
 
+  /* Force all cards to use a premium dark slate blue */
+  .bg-white, [class*="bg-white"] {
+    background-color: #162534 !important;
+  }
+
+  /* Force text colors to be legible against dark backgrounds */
+  .text-navy-blue, [class*="text-navy-blue"] {
+    color: #ffffff !important;
+  }
+
+  .text-soft-gray, [class*="text-soft-gray"] {
+    color: #A3AEB9 !important; /* Muted silver-slate */
+  }
+
+  .text-dark-text, [class*="text-dark-text"] {
+    color: #ffffff !important;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    color: var(--color-navy-blue);
+    color: #ffffff !important;
+  }
+
+  /* Borders */
+  .border-gray-100, .border-gray-200, .border-gray-100\/80, .border-gray-100\/50,
+  [class*="border-gray-100"], [class*="border-gray-200"], [class*="border-gray-100\/80"], [class*="border-gray-100\/50"] {
+    border-color: #2D3F55 !important;
+  }
+
+  /* Inputs, selects, textareas */
+  input, select, textarea {
+    background-color: #1A2B3C !important;
+    color: #ffffff !important;
+    border-color: #2D3F55 !important;
   }
 
   footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
-    color: #ffffff;
+    color: #ffffff !important;
   }
 
   /* Hide all AI-like glowing backdrop blur halos */
@@ -104,7 +135,7 @@
 
 /* Fallback/compatibility class for standard gradient text utility */
 .text-gradient {
-  background: linear-gradient(135deg, var(--color-navy-blue) 0%, var(--color-accent-teal) 100%);
+  background: linear-gradient(135deg, #AC9266 0%, #FFFFFF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
