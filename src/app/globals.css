@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F7F6F3;           /* Cream Chalk */
-  --foreground: #151617;           /* True Matte Black */
+  --background: #FAF9F6;           /* Warm Sea-Salt White */
+  --foreground: #111F24;           /* Deep Navy Black */
 }
 
 @theme {
-  --color-bg-main: #F7F6F3;        /* Cream Chalk background */
-  --color-primary-teal: #1F2022;   /* Matte Charcoal */
-  --color-accent-teal: #C5A880;    /* Muted Brass Gold */
-  --color-navy-blue: #1F2022;      /* Matte Charcoal */
-  --color-gold: #D3C2A9;           /* Warm Soft Brass Gold */
-  --color-bg-light-blue: #ECEAE3;  /* Chalk Light Gray */
-  --color-dark-text: #151617;      /* True Matte Black for text */
-  --color-soft-gray: #5C5E61;      /* Matte Gray */
-  --color-border-gray: #E2E0D8;    /* Warm Chalk Border */
+  --color-bg-main: #FAF9F6;        /* Warm Sea-Salt White background */
+  --color-primary-teal: #0C2329;   /* Deep Spruce Blue */
+  --color-accent-teal: #C9AB83;    /* Sand Gold */
+  --color-navy-blue: #0C2329;      /* Deep Spruce Blue */
+  --color-gold: #D3C3AD;           /* Muted Champagne Gold */
+  --color-bg-light-blue: #EAE8E2;  /* Soft Warm Gray */
+  --color-dark-text: #111F24;      /* Deep Navy Black for text */
+  --color-soft-gray: #5F6B6F;      /* Muted Spruce Gray */
+  --color-border-gray: #EAE8E2;    /* Warm Sea-Salt Border */
 
   --font-rubik: "Times New Roman", Times, serif;
   --font-poppins: "Times New Roman", Times, serif;
