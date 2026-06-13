@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FCFAF7;           /* Linen Silk White */
-  --foreground: #1A2B27;           /* Deep Forest Charcoal */
+  --background: #F8FAFC;           /* Pure Ice White */
+  --foreground: #111E2F;           /* Deep Navy Black */
 }
 
 @theme {
-  --color-bg-main: #FCFAF7;        /* Linen Silk White background */
-  --color-primary-teal: #0B2A22;   /* Deep Forest Emerald */
-  --color-accent-teal: #C5A059;    /* Brushed Champagne Gold */
-  --color-navy-blue: #0B2A22;      /* Deep Forest Emerald */
-  --color-gold: #CBB593;           /* Brushed Brass Gold */
-  --color-bg-light-blue: #F2EEE7;  /* Soft Pearl Linen */
-  --color-dark-text: #1A2B27;      /* Deep Forest Charcoal for text */
-  --color-soft-gray: #60736F;      /* Muted Sage Gray */
-  --color-border-gray: #E9E6DF;    /* Warm Silk Border */
+  --color-bg-main: #F8FAFC;        /* Pure Ice White background */
+  --color-primary-teal: #0F1E36;   /* Deep Sapphire Blue */
+  --color-accent-teal: #7C95B3;    /* Platinum Silver / Ice Blue */
+  --color-navy-blue: #0F1E36;      /* Deep Sapphire Blue */
+  --color-gold: #8C9EA6;           /* Muted Steel Gold */
+  --color-bg-light-blue: #E8EEF5;  /* Soft Ice Blue Gray */
+  --color-dark-text: #111E2F;      /* Deep Navy Black for text */
+  --color-soft-gray: #5F6F81;      /* Slate Silver Gray */
+  --color-border-gray: #E2EAF3;    /* Ice Blue Border */
 
   --font-rubik: "Times New Roman", Times, serif;
   --font-poppins: "Times New Roman", Times, serif;
