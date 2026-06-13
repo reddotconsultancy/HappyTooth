@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FAF6F5;           /* Soft Blush White */
-  --foreground: #2C1423;           /* Plum Black */
+  --background: #F7F6F3;           /* Cream Chalk */
+  --foreground: #151617;           /* True Matte Black */
 }
 
 @theme {
-  --color-bg-main: #FAF6F5;        /* Soft Blush White background */
-  --color-primary-teal: #3B1A30;   /* Royal Plum */
-  --color-accent-teal: #C59B93;    /* Rose Gold */
-  --color-navy-blue: #3B1A30;      /* Royal Plum */
-  --color-gold: #D4B3AB;           /* Soft Muted Rose Gold */
-  --color-bg-light-blue: #F5EDE9;  /* Warm Soft Cream */
-  --color-dark-text: #2C1423;      /* Plum Black for text */
-  --color-soft-gray: #75626F;      /* Muted Plum Gray */
-  --color-border-gray: #EDE1DE;    /* Soft Warm Border */
+  --color-bg-main: #F7F6F3;        /* Cream Chalk background */
+  --color-primary-teal: #1F2022;   /* Matte Charcoal */
+  --color-accent-teal: #C5A880;    /* Muted Brass Gold */
+  --color-navy-blue: #1F2022;      /* Matte Charcoal */
+  --color-gold: #D3C2A9;           /* Warm Soft Brass Gold */
+  --color-bg-light-blue: #ECEAE3;  /* Chalk Light Gray */
+  --color-dark-text: #151617;      /* True Matte Black for text */
+  --color-soft-gray: #5C5E61;      /* Matte Gray */
+  --color-border-gray: #E2E0D8;    /* Warm Chalk Border */
 
   --font-rubik: "Times New Roman", Times, serif;
   --font-poppins: "Times New Roman", Times, serif;
