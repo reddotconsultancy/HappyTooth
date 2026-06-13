@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #101E2E;           /* Midnight Slate Ink Background */
-  --foreground: #FFFFFF;           /* Pure White Text */
+  --background: #F0EAE1;           /* Warm Editorial Linen Background */
+  --foreground: #101E2E;           /* Midnight Slate Ink Text */
 }
 
 @theme {
-  --color-bg-main: #101E2E;        /* Midnight Slate Ink Background */
+  --color-bg-main: #F0EAE1;        /* Warm Editorial Linen Background */
   --color-primary-teal: #101E2E;   /* Deep Midnight Slate Ink */
   --color-accent-teal: #AC9266;    /* Muted Platinum Bronze */
   --color-navy-blue: #101E2E;      /* Deep Midnight Slate Ink */
   --color-gold: #C0A87F;           /* Traditional Luxury Gold */
-  --color-bg-light-blue: #142231;  /* Dark Navy Slate for alternating sections */
-  --color-dark-text: #FFFFFF;      /* White text */
-  --color-soft-gray: #A3AEB9;      /* Muted Silver-Slate */
-  --color-border-gray: #2D3F55;    /* Muted Dark Border */
+  --color-bg-light-blue: #E8E0D4;  /* Slightly darker warm linen for alternate sections */
+  --color-dark-text: #101E2E;      /* Midnight Slate text */
+  --color-soft-gray: #6B6150;      /* Muted Warm Brownish-Slate Gray */
+  --color-border-gray: #DFD7C8;    /* Warm Stone Border */
 
   --font-rubik: "Times New Roman", Times, serif;
   --font-poppins: "Times New Roman", Times, serif;
@@ -68,7 +68,7 @@
   }
 
   body {
-    background: var(--background); /* Midnight Slate Background */
+    background: var(--background); /* Warm Linen Background */
     color: var(--foreground);
     min-height: 100vh;
   }
@@ -77,40 +77,45 @@
     background-color: transparent !important;
   }
 
-  /* Force all cards to use a premium dark slate blue */
+  /* Force all cards to use a premium light warm cream background instead of white */
   .bg-white, [class*="bg-white"] {
-    background-color: #162534 !important;
+    background-color: #F8F5EE !important;
   }
 
-  /* Force text colors to be legible against dark backgrounds */
+  /* Force alternate light blue backgrounds to use warm linen */
+  .bg-bg-light-blue, [class*="bg-bg-light-blue"] {
+    background-color: #E8E0D4 !important;
+  }
+
+  /* Force text colors to match brand dark slate */
   .text-navy-blue, [class*="text-navy-blue"] {
-    color: #ffffff !important;
+    color: #101E2E !important;
   }
 
   .text-soft-gray, [class*="text-soft-gray"] {
-    color: #A3AEB9 !important; /* Muted silver-slate */
+    color: #6B6150 !important;
   }
 
   .text-dark-text, [class*="text-dark-text"] {
-    color: #ffffff !important;
+    color: #101E2E !important;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    color: #ffffff !important;
+    color: #101E2E !important;
   }
 
   /* Borders */
   .border-gray-100, .border-gray-200, .border-gray-100\/80, .border-gray-100\/50,
   [class*="border-gray-100"], [class*="border-gray-200"], [class*="border-gray-100\/80"], [class*="border-gray-100\/50"] {
-    border-color: #2D3F55 !important;
+    border-color: #DFD7C8 !important;
   }
 
   /* Inputs, selects, textareas */
   input, select, textarea {
-    background-color: #1A2B3C !important;
-    color: #ffffff !important;
-    border-color: #2D3F55 !important;
+    background-color: #FAF8F5 !important;
+    color: #101E2E !important;
+    border-color: #DFD7C8 !important;
   }
 
   footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
@@ -135,7 +140,7 @@
 
 /* Fallback/compatibility class for standard gradient text utility */
 .text-gradient {
-  background: linear-gradient(135deg, #AC9266 0%, #FFFFFF 100%);
+  background: linear-gradient(135deg, #101E2E 0%, #AC9266 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
