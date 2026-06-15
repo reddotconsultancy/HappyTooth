@@ -78,36 +78,36 @@
   }
 
   /* Force all cards to use a premium light warm cream background instead of white */
-  .bg-white, [class*="bg-white"] {
+  .bg-white {
     background-color: #F8F5EE !important;
   }
 
   /* Force alternate light blue backgrounds to use warm linen */
-  .bg-bg-light-blue, [class*="bg-bg-light-blue"] {
+  .bg-bg-light-blue {
     background-color: #E8E0D4 !important;
   }
 
   /* Force text colors to match brand dark slate */
-  .text-navy-blue, [class*="text-navy-blue"] {
+  .text-navy-blue {
     color: #101E2E !important;
   }
 
-  .text-soft-gray, [class*="text-soft-gray"] {
+  .text-soft-gray {
     color: #6B6150 !important;
   }
 
-  .text-dark-text, [class*="text-dark-text"] {
+  .text-dark-text {
     color: #101E2E !important;
   }
 
+  /* Headings: default to brand dark slate, but allow text-white or utility classes to override on dark backgrounds */
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    color: #101E2E !important;
+    color: #101E2E;
   }
 
   /* Borders */
-  .border-gray-100, .border-gray-200, .border-gray-100\/80, .border-gray-100\/50,
-  [class*="border-gray-100"], [class*="border-gray-200"], [class*="border-gray-100\/80"], [class*="border-gray-100\/50"] {
+  .border-gray-100, .border-gray-200, .border-gray-100\/80, .border-gray-100\/50 {
     border-color: #DFD7C8 !important;
   }
 
