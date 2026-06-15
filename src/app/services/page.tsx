@@ -366,7 +366,7 @@ export default function Services() {
             A complete guide to the dental treatments available at HappyTooth Smile Studio. Each service listed here is delivered by our specialist team, led by Dr. Thushara Sudhakaran BDS MDS, Clinical Director & Root Canal Specialist, with a focus on precision, patient comfort, and outcomes that last.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 mt-6 text-xs text-navy-blue font-extrabold">
-            <span className="bg-bg-light-blue py-1.5 px-3 rounded-lg border border-gray-100">✓ 5-chair facility</span>
+            <span className="bg-bg-light-blue py-1.5 px-3 rounded-lg border border-gray-100">✓ Advanced chair facility</span>
             <span className="bg-bg-light-blue py-1.5 px-3 rounded-lg border border-gray-100">✓ Digital diagnostics</span>
             <span className="bg-bg-light-blue py-1.5 px-3 rounded-lg border border-gray-100">✓ Specialist endodontist on site</span>
           </div>

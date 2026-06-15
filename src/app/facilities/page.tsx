@@ -132,7 +132,7 @@ export default function Facilities() {
                   HappyTooth Smile Studio is built from scratch as a full-service specialist clinic. Every piece of equipment here was chosen for a reason — not to fill a checklist, but because it changes something real about how treatment is delivered or how patients experience it.
                 </p>
                 <p className="text-xs md:text-sm border-l-4 border-primary-teal pl-4 py-1.5 bg-bg-light-blue/40 rounded-r-xl">
-                  The facilities listed here are at our Murukkumpuzha clinic. Our Kallambalam clinic, which has been running for over five years, covers the core clinical services. Smile Studio is where everything comes together.
+                  The facilities listed here are at our Murukkumpuzha clinic. Our Kallambalam clinic, which has been serving patients since 2021, covers the core clinical services. Smile Studio is where everything comes together.
                 </p>
               </div>
             </div>

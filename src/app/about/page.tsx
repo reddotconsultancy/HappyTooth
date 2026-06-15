@@ -68,7 +68,7 @@ export default function About() {
       year: "2021",
       title: "Happy Tooth Dental Care & Root Canal Centre — Kallambalam",
       subtitle: "Her first clinic in Thiruvananthapuram",
-      desc: "Over five years it has built a steady, largely word-of-mouth following among patients seeking to save compromised teeth with specialized root canals and conservative dentistry.",
+      desc: "Since 2021, it has built a steady, largely word-of-mouth following among patients seeking to save compromised teeth with specialized root canals and conservative dentistry.",
     },
     {
       year: "Opening Soon / June 2026",

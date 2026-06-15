@@ -29,7 +29,7 @@ export default function KallambalamClinic() {
       id: "kallambalam",
       name: "Happy Tooth Dental Care & Root Canal Centre",
       branch: "Kallambalam, Thiruvananthapuram",
-      badge: "Established Clinic · 5+ Years",
+      badge: "Established Clinic · Serving since 2021",
       status: "Closed on Sundays",
       address: "Mavinmoodu, Kallambalam–Varkala Road, Kallambalam, Thiruvananthapuram – 695605",
       phone: "+91 87144 70808",

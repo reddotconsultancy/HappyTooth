@@ -173,7 +173,7 @@ export default function FAQContent() {
           <div className="bg-bg-light-blue/40 border border-gray-100 p-4 rounded-xl">
             <span className="block text-xs font-black text-primary-teal tracking-wide uppercase mb-1">Established Clinic</span>
             <strong className="block text-navy-blue text-sm">Kallambalam</strong>
-            <p className="text-xs text-soft-gray mt-1">Mavinmoodu, Kallambalam–Varkala Road, Kallambalam. Serving families for over five years.</p>
+            <p className="text-xs text-soft-gray mt-1">Mavinmoodu, Kallambalam–Varkala Road, Kallambalam. Serving families since 2021.</p>
             <a href="tel:+918714470808" className="block text-xs font-bold text-navy-blue mt-2 hover:underline">Phone: +91 87144 70808</a>
           </div>
         </div>
@@ -240,7 +240,7 @@ export default function FAQContent() {
       question: "Is the new Murukkumpuzha clinic open yet?",
       answer: (
         <p>
-          Happy Tooth Smile Studio in Murukkumpuzha is our newest clinic, opening in <strong>June 2026</strong> as a modern, fully-equipped specialist studio. Our Kallambalam clinic continues to serve patients as it has for over five years. Follow us on Instagram and Facebook for opening updates, or call us to be among the first to book.
+          Happy Tooth Smile Studio in Murukkumpuzha is our newest clinic, opening in <strong>June 2026</strong> as a modern, fully-equipped specialist studio. Our Kallambalam clinic continues to serve patients as it has since 2021. Follow us on Instagram and Facebook for opening updates, or call us to be among the first to book.
         </p>
       ),
     },

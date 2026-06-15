@@ -103,7 +103,7 @@ export default function Home() {
                 <span className="bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">Than Just Fine.</span>
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-soft-gray leading-relaxed max-w-xl mx-auto lg:mx-0">
-                HappyTooth has been saving teeth in Thiruvananthapuram for over five years. Our Kallambalam Root Canal Centre built that reputation — honest answers, specialist-led treatment, and a dentist who actually explains what is going on. Now we are bringing that same standard to a larger, state-of-the-art specialist facility: the new Smile Studio in Murukkumpuzha, equipped for everything from a routine clean to a full smile transformation.
+                HappyTooth has been saving teeth in Thiruvananthapuram since 2021. Our Kallambalam Root Canal Centre built that reputation — honest answers, specialist-led treatment, and a dentist who actually explains what is going on. Now we are bringing that same standard to a larger, state-of-the-art specialist facility: the new Smile Studio in Murukkumpuzha, equipped for everything from a routine clean to a full smile transformation.
               </p>
 
               {/* Clean trust checkmarks row */}
@@ -284,7 +284,7 @@ export default function Home() {
                 OUR STORY
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
-                Five years of fixing teeth. <br />
+                Serving since 2021. <br />
                 <span className="text-primary-teal bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">Two locations, one standard.</span>
               </h2>
 
@@ -306,7 +306,7 @@ export default function Home() {
                   The Kallambalam Practice
                 </h4>
                 <p className="text-xs text-soft-gray leading-relaxed">
-                  Our original clinic — Happy Tooth Dental Care & Root Canal Centre in Kallambalam — has been treating patients for over 5 years. HappyTooth Smile Studio brings that same standard to a larger, fully-equipped specialist studio.
+                  Our original clinic — Happy Tooth Dental Care & Root Canal Centre in Kallambalam — has been treating patients since 2021. HappyTooth Smile Studio brings that same standard to a larger, fully-equipped specialist studio.
                 </p>
               </div>
             </div>
@@ -329,7 +329,7 @@ export default function Home() {
                     <svg className="w-5 h-5 text-accent-teal shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <span className="text-xs text-gray-200 font-bold">5 Advanced Dental Chairs</span>
+                    <span className="text-xs text-gray-200 font-bold">All Advanced Dental Chairs</span>
                   </div>
                   <div className="flex items-center gap-3 justify-center lg:justify-start">
                     <svg className="w-5 h-5 text-accent-teal shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -443,7 +443,7 @@ export default function Home() {
 
               <div className="space-y-4 text-xs md:text-sm text-soft-gray leading-relaxed">
                 <p>
-                  Dr. Thushara Sudhakaran completed her BDS from a recognised dental college and went on to earn her MDS in Endodontics — the specialisation that covers root canal treatment, dental pulp disease, and the science of saving teeth that have been badly damaged or infected. She has been in clinical practice for over five years, during which time she has built a reputation in Thiruvananthapuram for being thorough, honest, and technically precise.
+                  Dr. Thushara Sudhakaran completed her BDS from a recognised dental college and went on to earn her MDS in Endodontics — the specialisation that covers root canal treatment, dental pulp disease, and the science of saving teeth that have been badly damaged or infected. She has been in clinical practice since 2021, during which time she has built a reputation in Thiruvananthapuram for being thorough, honest, and technically precise.
                 </p>
                 <p>
                   She does not oversell treatment. If a tooth can be saved, she will tell you how. If it cannot, she will explain why clearly — and discuss the best replacement option for your situation. Patients who have come to her expecting an extraction have left with their tooth intact more often than they expected.
