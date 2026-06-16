@@ -23,7 +23,7 @@ export default function Contact() {
       parking: "Ample private parking (fits 6+ cars)",
       dentist: "Dr. Thushara Sudhakaran BDS MDS",
       dentistRole: "Clinical Director & Root Canal Specialist",
-      mapUrl: "https://maps.google.com/?q=Ground+Floor,+Mangalasseri+Tower,+Murukkumpuzha,+Thiruvananthapuram",
+      mapUrl: "https://maps.google.com/?q=HappyTooth+Smile+Studio,+Murukkumpuzha,+Thiruvananthapuram",
     },
     {
       name: "Happy Tooth Dental Care & Root Canal Centre",

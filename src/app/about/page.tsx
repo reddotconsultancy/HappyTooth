@@ -224,12 +224,12 @@ export default function About() {
             {/* Left image of Dr. Thushara */}
             <div className="lg:col-span-5 relative">
               <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
-                <div className="relative h-[32rem] rounded-[2rem] overflow-hidden">
+                <div className="relative aspect-[3/4] w-full rounded-[2rem] overflow-hidden">
                   <Image
-                    src="/images/dr_thushara.jpg"
+                    src="/images/dr_thushara.png"
                     alt="Dr. Thushara Sudhakaran Clinical Director Specialist Endodontist"
                     fill
-                    className="object-cover object-top"
+                    className="object-cover object-center"
                   />
                 </div>
               </div>
