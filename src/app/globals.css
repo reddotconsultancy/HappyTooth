@@ -87,18 +87,7 @@
     background-color: #E8E0D4 !important;
   }
 
-  /* Force text colors to match brand dark slate */
-  .text-navy-blue {
-    color: #101E2E !important;
-  }
 
-  .text-soft-gray {
-    color: #6B6150 !important;
-  }
-
-  .text-dark-text {
-    color: #101E2E !important;
-  }
 
   /* Headings: default to brand dark slate, but allow text-white or utility classes to override on dark backgrounds */
   h1, h2, h3, h4, h5, h6 {
