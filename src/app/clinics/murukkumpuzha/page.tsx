@@ -68,7 +68,7 @@ export default function MurukkumpuzhaClinic() {
               .filter((c) => c.id === "murukkumpuzha")
               .map((clinic, idx) => {
                 return (
-                  <div key={idx} className="max-w-2xl mx-auto">
+                  <div key={idx} className="max-w-3xl mx-auto">
                     <ClinicCard
                       name={clinic.name}
                       branch={clinic.branch}

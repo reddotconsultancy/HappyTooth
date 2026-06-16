@@ -66,7 +66,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             {/* Clinics separate spaces (Left Column) */}
             <div className="lg:col-span-8 space-y-12">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 gap-8">
                 {clinics.map((clinic, idx) => (
                   <ClinicCard
                     key={idx}
