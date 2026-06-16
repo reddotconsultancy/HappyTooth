@@ -61,14 +61,14 @@ export default function ClinicCard({
       <div className="p-8 md:p-10 flex-grow space-y-6">
         {/* Address Row */}
         <div className="flex items-start gap-4 border-b border-border-gray/15 pb-5">
-          <div className="text-accent-teal shrink-0 mt-0.5">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.75" viewBox="0 0 24 24">
+          <div className="w-8 h-8 rounded-full bg-accent-teal/5 flex items-center justify-center text-accent-teal shrink-0 mt-0.5">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
           </div>
-          <div>
-            <span className="block text-accent-teal text-[9px] font-bold uppercase tracking-[0.2em] mb-1">
+          <div className="flex-grow grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-1 sm:gap-4 items-start mt-1">
+            <span className="block text-accent-teal text-[9px] font-bold uppercase tracking-[0.2em]">
               Address
             </span>
             <span className="text-sm text-navy-blue/80 font-medium leading-relaxed">
@@ -79,13 +79,13 @@ export default function ClinicCard({
 
         {/* Phone Row */}
         <div className="flex items-start gap-4 border-b border-border-gray/15 pb-5">
-          <div className="text-accent-teal shrink-0 mt-0.5">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.75" viewBox="0 0 24 24">
+          <div className="w-8 h-8 rounded-full bg-accent-teal/5 flex items-center justify-center text-accent-teal shrink-0 mt-0.5">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
           </div>
-          <div>
-            <span className="block text-accent-teal text-[9px] font-bold uppercase tracking-[0.2em] mb-1">
+          <div className="flex-grow grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-1 sm:gap-4 items-start mt-1">
+            <span className="block text-accent-teal text-[9px] font-bold uppercase tracking-[0.2em]">
               Phone
             </span>
             <a
@@ -99,13 +99,13 @@ export default function ClinicCard({
 
         {/* Working Hours Row */}
         <div className="flex items-start gap-4 border-b border-border-gray/15 pb-5">
-          <div className="text-accent-teal shrink-0 mt-0.5">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.75" viewBox="0 0 24 24">
+          <div className="w-8 h-8 rounded-full bg-accent-teal/5 flex items-center justify-center text-accent-teal shrink-0 mt-0.5">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <div>
-            <span className="block text-accent-teal text-[9px] font-bold uppercase tracking-[0.2em] mb-1">
+          <div className="flex-grow grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-1 sm:gap-4 items-start mt-1">
+            <span className="block text-accent-teal text-[9px] font-bold uppercase tracking-[0.2em]">
               Working Hours
             </span>
             <span className="text-sm text-navy-blue/80 font-medium leading-relaxed">
@@ -116,15 +116,15 @@ export default function ClinicCard({
 
         {/* Parking Row */}
         <div className="flex items-start gap-4">
-          <div className="text-accent-teal shrink-0 mt-0.5">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.75" viewBox="0 0 24 24">
+          <div className="w-8 h-8 rounded-full bg-accent-teal/5 flex items-center justify-center text-accent-teal shrink-0 mt-0.5">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M19 16h-1c0-1.1-.9-2-2-2s-2 .9-2 2H10c0-1.1-.9-2-2-2s-2 .9-2 2H5c-1.1 0-2-.9-2-2V9c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v5c0 1.1-.9 2-2 2zM12 3v4" />
               <circle cx="8" cy="16" r="1" />
               <circle cx="16" cy="16" r="1" />
             </svg>
           </div>
-          <div>
-            <span className="block text-accent-teal text-[9px] font-bold uppercase tracking-[0.2em] mb-1">
+          <div className="flex-grow grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-1 sm:gap-4 items-start mt-1">
+            <span className="block text-accent-teal text-[9px] font-bold uppercase tracking-[0.2em]">
               Parking
             </span>
             <span className="text-sm text-navy-blue/80 font-medium leading-relaxed">
