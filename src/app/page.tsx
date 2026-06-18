@@ -157,7 +157,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4 pt-2">
                 <Link
                   href="/contact"
-                  className="w-full sm:w-auto bg-navy-blue hover:bg-primary-teal text-white font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-md text-center transform hover:-translate-y-0.5 active:scale-98"
+                  className="w-full sm:w-auto bg-navy-blue hover:bg-accent-teal text-white font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-sm hover:shadow-md text-center transform hover:-translate-y-0.5 active:scale-95"
                 >
                   Book an Appointment
                 </Link>
