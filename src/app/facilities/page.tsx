@@ -169,7 +169,7 @@ export default function Facilities() {
                       <span className="w-1.5 h-4 bg-primary-teal rounded-full"></span>
                       {dg.title}
                     </h4>
-                    <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify">
+                    <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-left">
                       {dg.desc}
                     </p>
                   </div>
@@ -235,7 +235,7 @@ export default function Facilities() {
                       <span className="w-1.5 h-4 bg-primary-teal rounded-full"></span>
                       {tg.title}
                     </h4>
-                    <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify">
+                    <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-left">
                       {tg.desc}
                     </p>
                   </div>
@@ -277,7 +277,7 @@ export default function Facilities() {
                 <h3 className="text-base md:text-lg font-black text-navy-blue leading-snug">
                   {feat.title}
                 </h3>
-                <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify">
+                <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-left">
                   {feat.desc}
                 </p>
               </div>

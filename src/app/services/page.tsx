@@ -399,7 +399,7 @@ export default function Services() {
                       </span>
                     </div>
 
-                    <div className="space-y-4 text-xs md:text-sm text-soft-gray leading-relaxed text-justify">
+                    <div className="space-y-4 text-xs md:text-sm text-soft-gray leading-relaxed text-left">
                       <p>{svc.desc}</p>
                       <p>{svc.methodDetail}</p>
                     </div>
