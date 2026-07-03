@@ -13,6 +13,7 @@ export default function AppointmentForm() {
   });
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [focusedField, setFocusedField] = useState<string | null>(null);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -21,6 +22,10 @@ export default function AppointmentForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!formData.location) {
+      setIsDropdownOpen(true);
+      return;
+    }
     setStatus("submitting");
     
     // Simulate API call
@@ -39,6 +44,14 @@ export default function AppointmentForm() {
 
   return (
     <div className="bg-white rounded-[2rem] shadow-2xl shadow-navy-blue/5 border border-gray-150 p-8 md:p-10 relative overflow-hidden">
+      {/* Click outside overlay for custom dropdown */}
+      {isDropdownOpen && (
+        <div 
+          className="fixed inset-0 z-40 cursor-default" 
+          onClick={() => setIsDropdownOpen(false)}
+        />
+      )}
+
       {/* Decorative gradient border at top */}
       <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary-teal via-accent-teal to-gold"></div>
 
@@ -198,33 +211,78 @@ export default function AppointmentForm() {
         </div>
 
         {/* Preferred Location */}
-        <div className="relative">
+        <div className="relative z-50">
           <label 
             htmlFor="location" 
             className={`block text-sm font-extrabold transition-colors duration-200 mb-1.5 ${
-              focusedField === "location" ? "text-primary-teal" : "text-navy-blue"
+              focusedField === "location" || isDropdownOpen ? "text-primary-teal" : "text-navy-blue"
             }`}
           >
             Preferred Clinic Location *
           </label>
-          <select
+          <button
+            type="button"
             id="location"
-            name="location"
-            required
-            value={formData.location}
-            onChange={handleChange}
-            onFocus={() => setFocusedField("location")}
-            onBlur={() => setFocusedField(null)}
-            className={`w-full text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 text-navy-blue ${
-              focusedField === "location" 
-                ? "border-primary-teal ring-2 ring-primary-teal/15 bg-white" 
-                : "border-gray-200 bg-gray-50/50 hover:bg-gray-50 focus:bg-white"
+            onClick={() => {
+              setIsDropdownOpen(!isDropdownOpen);
+            }}
+            className={`w-full flex items-center justify-between text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 text-left bg-white ${
+              isDropdownOpen 
+                ? "border-primary-teal ring-2 ring-primary-teal/15" 
+                : "border-gray-200 bg-gray-50/50 hover:bg-gray-50"
             }`}
           >
-            <option value="">Select Clinic Location...</option>
-            <option value="Kallambalam Clinic">Kallambalam Clinic</option>
-            <option value="Murukkumpuzha Studio">Murukkumpuzha Studio</option>
-          </select>
+            <span className={formData.location ? "text-navy-blue font-bold" : "text-soft-gray font-normal"}>
+              {formData.location || "Select Clinic Location..."}
+            </span>
+            <svg 
+              className={`w-5 h-5 text-soft-gray shrink-0 transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""}`} 
+              fill="none" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          {isDropdownOpen && (
+            <div className="absolute left-0 right-0 mt-2 bg-white rounded-2xl border border-gray-150 shadow-2xl py-2 z-50 animate-fade-in">
+              <button
+                type="button"
+                onClick={() => {
+                  setFormData((prev) => ({ ...prev, location: "" }));
+                  setIsDropdownOpen(false);
+                }}
+                className="w-full text-left text-sm font-bold py-3 px-5 hover:bg-bg-light-blue/30 text-soft-gray transition-colors"
+              >
+                Select Clinic Location...
+              </button>
+              {[
+                "Kallambalam Clinic",
+                "Murukkumpuzha Studio"
+              ].map((loc) => (
+                <button
+                  key={loc}
+                  type="button"
+                  onClick={() => {
+                    setFormData((prev) => ({ ...prev, location: loc }));
+                    setIsDropdownOpen(false);
+                  }}
+                  className={`w-full text-left text-sm font-bold py-3 px-5 transition-colors flex items-center justify-between ${
+                    formData.location === loc 
+                      ? "bg-[#FAF7F2] text-accent-teal" 
+                      : "hover:bg-bg-light-blue/30 text-navy-blue"
+                  }`}
+                >
+                  <span>{loc}</span>
+                  {formData.location === loc && (
+                    <span className="text-accent-teal text-xs font-black">✓</span>
+                  )}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Message */}
