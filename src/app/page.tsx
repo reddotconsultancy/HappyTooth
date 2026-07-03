@@ -238,7 +238,7 @@ export default function Home() {
                             setSelectedLocation("");
                             setIsLocationDropdownOpen(false);
                           }}
-                          className="w-full text-left text-xs font-bold py-2.5 px-4 hover:bg-bg-light-blue/30 text-soft-gray transition-colors"
+                          className="w-full text-left text-xs font-normal py-2.5 px-4 hover:bg-bg-light-blue/30 text-soft-gray transition-colors"
                         >
                           Select Clinic Location...
                         </button>
@@ -253,7 +253,7 @@ export default function Home() {
                               setSelectedLocation(loc);
                               setIsLocationDropdownOpen(false);
                             }}
-                            className={`w-full text-left text-xs font-bold py-2.5 px-4 transition-colors flex items-center justify-between ${
+                            className={`w-full text-left text-xs font-normal py-2.5 px-4 transition-colors flex items-center justify-between ${
                               selectedLocation === loc 
                                 ? "bg-[#FAF7F2] text-accent-teal" 
                                 : "hover:bg-bg-light-blue/30 text-navy-blue"

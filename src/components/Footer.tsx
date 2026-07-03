@@ -146,7 +146,7 @@ export default function Footer() {
                 </svg>
                 <div className="text-left">
                   <span className="block text-gray-300 text-left">All 7 days</span>
-                  <span className="block font-bold text-white text-left">9:30 AM - 6:30 PM</span>
+                  <span className="block text-white text-left">9:30 AM - 6:30 PM</span>
                 </div>
               </li>
             </ul>
@@ -179,7 +179,7 @@ export default function Footer() {
                 </svg>
                 <div className="text-left">
                   <span className="block text-gray-300 text-left">Monday - Saturday</span>
-                  <span className="block font-bold text-white text-left">9:30 AM - 6:30 PM</span>
+                  <span className="block text-white text-left">9:30 AM - 6:30 PM</span>
                   <span className="block text-red-400 text-xs text-left">Closed on Sunday</span>
                 </div>
               </li>
