@@ -4,8 +4,8 @@ import AppointmentForm from "@/components/AppointmentForm";
 import ClinicCard from "@/components/ClinicCard";
 
 export const metadata = {
-  title: "Contact Happy Tooth Clinics | Book a Dentist Appointment",
-  description: "Book a dental consultation or root canal appointment at Happy Tooth. Find addresses, maps, phone numbers, WhatsApp links, and timings for Murukkumpuzha & Kallambalam.",
+  title: "Contact HappyTooth Clinics | Book a Dentist Appointment",
+  description: "Book a dental consultation or root canal appointment at HappyTooth. Find addresses, maps, phone numbers, WhatsApp links, and timings for Murukkumpuzha & Kallambalam.",
 };
 
 export default function Contact() {
@@ -26,7 +26,7 @@ export default function Contact() {
       mapUrl: "https://maps.google.com/?q=HappyTooth+Smile+Studio,+Murukkumpuzha,+Thiruvananthapuram",
     },
     {
-      name: "Happy Tooth Dental Care & Root Canal Centre",
+      name: "HappyTooth Dental Care & Root Canal Centre",
       branch: "Kallambalam, Thiruvananthapuram",
       badge: "Established Clinic · Serving since 2021",
       status: "Closed on Sundays",

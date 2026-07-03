@@ -299,7 +299,7 @@ export default function Home() {
                   The Kallambalam Practice
                 </h4>
                 <p className="text-xs text-soft-gray leading-relaxed">
-                  Our original clinic, Happy Tooth Dental Care & Root Canal Centre in Kallambalam, has been treating patients since 2021. HappyTooth Smile Studio brings that same standard to a larger, fully-equipped specialist studio.
+                  Our original clinic, HappyTooth Dental Care & Root Canal Centre in Kallambalam, has been treating patients since 2021. HappyTooth Smile Studio brings that same standard to a larger, fully-equipped specialist studio.
                 </p>
               </div>
             </div>
@@ -372,7 +372,7 @@ export default function Home() {
               <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
                 <Image
                   src="/images/indian_patient_smile.png"
-                  alt="Healthy Smiles at Happy Tooth"
+                  alt="Healthy Smiles at HappyTooth"
                   width={600}
                   height={600}
                   className="rounded-2xl w-full h-auto object-cover transform hover:scale-[1.02] transition-transform duration-700"
@@ -616,7 +616,7 @@ export default function Home() {
             />
 
             <ClinicCard
-              name="Happy Tooth Dental Care"
+              name="HappyTooth Dental Care"
               branch="Kallambalam, Thiruvananthapuram"
               badge="Root Canal Centre · Serving since 2021"
               status="Closed on Sundays"

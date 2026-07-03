@@ -142,7 +142,7 @@ export default function BlogPost() {
                 <div>
                   <h3 className="text-xl font-bold text-navy-blue mb-2">Conclusion</h3>
                   <p>
-                    Your teeth don’t heal on their own when there’s an infection inside. The sooner you act, the easier it is to treat. At Happy Tooth Dental Care, we specialize in pain-free root canal treatments using modern techniques to ensure comfort and long-lasting results.
+                    Your teeth don’t heal on their own when there’s an infection inside. The sooner you act, the easier it is to treat. At HappyTooth Dental Care, we specialize in pain-free root canal treatments using modern techniques to ensure comfort and long-lasting results.
                   </p>
                 </div>
 

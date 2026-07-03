@@ -240,7 +240,7 @@ export default function FAQContent() {
       question: "Is the new Murukkumpuzha clinic open yet?",
       answer: (
         <p>
-          Happy Tooth Smile Studio in Murukkumpuzha is our newest clinic, opening in <strong>July 2026</strong> as a modern, fully-equipped specialist studio. Our Kallambalam clinic continues to serve patients as it has since 2021. Follow us on Instagram and Facebook for opening updates, or call us to be among the first to book.
+          HappyTooth Smile Studio in Murukkumpuzha is our newest clinic, opening in <strong>July 2026</strong> as a modern, fully-equipped specialist studio. Our Kallambalam clinic continues to serve patients as it has since 2021. Follow us on Instagram and Facebook for opening updates, or call us to be among the first to book.
         </p>
       ),
     },

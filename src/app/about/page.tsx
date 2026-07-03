@@ -4,7 +4,7 @@ import BreadcrumbHero from "@/components/BreadcrumbHero";
 
 export const metadata = {
   title: "Meet Dr. Thushara Sudhakaran | Clinical Director & Endodontist",
-  description: "Meet Dr. Thushara Sudhakaran (BDS, MDS), root canal specialist and Clinical Director at Happy Tooth. Learn about our dental care philosophy and clinic team serving Thiruvananthapuram.",
+  description: "Meet Dr. Thushara Sudhakaran (BDS, MDS), root canal specialist and Clinical Director at HappyTooth. Learn about our dental care philosophy and clinic team serving Thiruvananthapuram.",
 };
 
 export default function About() {
@@ -66,7 +66,7 @@ export default function About() {
     },
     {
       year: "2021",
-      title: "Happy Tooth Dental Care & Root Canal Centre, Kallambalam",
+      title: "HappyTooth Dental Care & Root Canal Centre, Kallambalam",
       subtitle: "Her first clinic in Thiruvananthapuram",
       desc: "Since 2021, it has built a steady, largely word-of-mouth following among patients seeking to save compromised teeth with specialized root canals and conservative dentistry.",
     },
@@ -128,7 +128,7 @@ export default function About() {
               <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
                 <Image
                   src="/images/indian_dentist_team.png"
-                  alt="Happy Tooth Dental Clinic Specialist Team Portrait"
+                  alt="HappyTooth Dental Clinic Specialist Team Portrait"
                   width={600}
                   height={600}
                   className="rounded-2xl w-full h-auto object-cover transform hover:scale-[1.01] transition-transform duration-500"

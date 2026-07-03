@@ -27,7 +27,7 @@ export default function MurukkumpuzhaClinic() {
     },
     {
       id: "kallambalam",
-      name: "Happy Tooth Dental Care & Root Canal Centre",
+      name: "HappyTooth Dental Care & Root Canal Centre",
       branch: "Kallambalam, Thiruvananthapuram",
       badge: "Established Clinic · Serving since 2021",
       status: "Closed on Sundays",

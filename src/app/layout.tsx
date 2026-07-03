@@ -22,10 +22,10 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://happytoothdental.in"),
   title: {
-    default: "Happy Tooth Dental Clinics | Murukkumpuzha & Kallambalam",
-    template: "%s | Happy Tooth Dental Clinics",
+    default: "HappyTooth Dental Clinics | Murukkumpuzha & Kallambalam",
+    template: "%s | HappyTooth Dental Clinics",
   },
-  description: "Experience modern, patient-friendly specialized dental care at Happy Tooth. Featuring clinic locations in Murukkumpuzha and Kallambalam, Thiruvananthapuram. Led by specialist Endodontist Dr. Thushara Sudhakaran (BDS, MDS).",
+  description: "Experience modern, patient-friendly specialized dental care at HappyTooth. Featuring clinic locations in Murukkumpuzha and Kallambalam, Thiruvananthapuram. Led by specialist Endodontist Dr. Thushara Sudhakaran (BDS, MDS).",
   keywords: [
     "dentist Thiruvananthapuram",
     "dental clinic Kallambalam",
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
     "hygienic dental clinic Trivandrum"
   ],
   authors: [{ name: "Dr. Thushara Sudhakaran", url: "https://happytoothdental.in" }],
-  creator: "Happy Tooth Clinics",
-  publisher: "Happy Tooth Clinics",
+  creator: "HappyTooth Clinics",
+  publisher: "HappyTooth Clinics",
   formatDetection: {
     email: false,
     address: true,
@@ -54,16 +54,16 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Happy Tooth Dental Clinics | Murukkumpuzha & Kallambalam",
-    description: "Experience modern, patient-friendly specialized dental care at Happy Tooth. Featuring clinic locations in Murukkumpuzha and Kallambalam, Thiruvananthapuram. Led by specialist Endodontist Dr. Thushara Sudhakaran (BDS, MDS).",
+    title: "HappyTooth Dental Clinics | Murukkumpuzha & Kallambalam",
+    description: "Experience modern, patient-friendly specialized dental care at HappyTooth. Featuring clinic locations in Murukkumpuzha and Kallambalam, Thiruvananthapuram. Led by specialist Endodontist Dr. Thushara Sudhakaran (BDS, MDS).",
     url: "https://happytoothdental.in",
-    siteName: "Happy Tooth Dental Clinics",
+    siteName: "HappyTooth Dental Clinics",
     images: [
       {
         url: "/images/happytooth-logo-1.png",
         width: 800,
         height: 600,
-        alt: "Happy Tooth Dental Clinics Logo",
+        alt: "HappyTooth Dental Clinics Logo",
       },
     ],
     locale: "en_IN",
@@ -71,8 +71,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Happy Tooth Dental Clinics | Murukkumpuzha & Kallambalam",
-    description: "Experience modern, patient-friendly specialized dental care at Happy Tooth. Featuring clinic locations in Murukkumpuzha and Kallambalam, Thiruvananthapuram. Led by specialist Endodontist Dr. Thushara Sudhakaran (BDS, MDS).",
+    title: "HappyTooth Dental Clinics | Murukkumpuzha & Kallambalam",
+    description: "Experience modern, patient-friendly specialized dental care at HappyTooth. Featuring clinic locations in Murukkumpuzha and Kallambalam, Thiruvananthapuram. Led by specialist Endodontist Dr. Thushara Sudhakaran (BDS, MDS).",
     images: ["/images/happytooth-logo-1.png"],
   },
   robots: {
@@ -105,12 +105,12 @@ export default function RootLayout({
       {
         "@type": "MedicalOrganization",
         "@id": "https://happytoothdental.in/#organization",
-        "name": "Happy Tooth Dental Clinics",
+        "name": "HappyTooth Dental Clinics",
         "url": "https://happytoothdental.in",
         "logo": {
           "@type": "ImageObject",
           "url": "https://happytoothdental.in/images/happytooth-logo-1.png",
-          "caption": "Happy Tooth Dental Clinics Logo"
+          "caption": "HappyTooth Dental Clinics Logo"
         },
         "image": "https://happytoothdental.in/images/happytooth-varkala12-1.jpg",
         "description": "Premium specialist dental clinics in Murukkumpuzha and Kallambalam, Thiruvananthapuram, Kerala.",
@@ -120,7 +120,7 @@ export default function RootLayout({
       {
         "@type": "Dentist",
         "@id": "https://happytoothdental.in/#clinic-kallambalam",
-        "name": "Happy Tooth Dental Care & Root Canal Centre (Kallambalam)",
+        "name": "HappyTooth Dental Care & Root Canal Centre (Kallambalam)",
         "parentOrganization": {
           "@id": "https://happytoothdental.in/#organization"
         },
@@ -165,7 +165,7 @@ export default function RootLayout({
       {
         "@type": "Dentist",
         "@id": "https://happytoothdental.in/#clinic-murukkumpuzha",
-        "name": "Happy Tooth Smile Studio (Murukkumpuzha)",
+        "name": "HappyTooth Smile Studio (Murukkumpuzha)",
         "parentOrganization": {
           "@id": "https://happytoothdental.in/#organization"
         },

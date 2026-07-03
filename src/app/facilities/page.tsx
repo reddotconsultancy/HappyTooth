@@ -86,7 +86,7 @@ export default function Facilities() {
                 <div className="relative w-full h-full rounded-xl overflow-hidden">
                   <Image
                     src="/images/happytooth-varkala4.jpg"
-                    alt="Happy Tooth Smile Studio Waiting Lobby"
+                    alt="HappyTooth Smile Studio Waiting Lobby"
                     fill
                     className="object-cover"
                   />
@@ -183,7 +183,7 @@ export default function Facilities() {
                 <div className="relative h-96 rounded-2xl overflow-hidden">
                   <Image
                     src="/images/happytooth-varkala3.jpg"
-                    alt="Happy Tooth X-Ray and Diagnostic equipment room"
+                    alt="HappyTooth X-Ray and Diagnostic equipment room"
                     fill
                     className="object-cover"
                   />
@@ -415,7 +415,7 @@ export default function Facilities() {
               <span className="text-[10px] font-black text-accent-teal tracking-widest uppercase bg-white/10 py-1 px-3 rounded-full inline-block">
                 Kallambalam Clinic
               </span>
-              <h3 className="text-lg font-black text-white">Happy Tooth Dental Care & Root Canal Centre</h3>
+              <h3 className="text-lg font-black text-white">HappyTooth Dental Care & Root Canal Centre</h3>
               <div className="space-y-4 text-xs text-gray-200">
                 <div className="flex items-start gap-3">
                   <svg className="w-5 h-5 text-primary-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">

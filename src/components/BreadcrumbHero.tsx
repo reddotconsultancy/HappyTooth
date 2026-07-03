@@ -23,7 +23,7 @@ export default function BreadcrumbHero({
           {/* Left Column: Page Titles & Breadcrumbs */}
           <div className="space-y-4 border-l-4 border-primary-teal pl-6 md:pl-8 text-left">
             <span className="inline-block text-primary-teal font-extrabold text-[10px] md:text-xs tracking-widest uppercase bg-primary-teal/10 py-1.5 px-4 rounded-full">
-              Happy Tooth Clinic
+              HappyTooth Clinic
             </span>
             {/* Dark navy color explicitly styled via inline-style or text-navy-blue to override global CSS overrides */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-navy-blue leading-tight animate-fade-in-up">

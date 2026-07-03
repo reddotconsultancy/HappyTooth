@@ -34,14 +34,14 @@ export default function Footer() {
             <Link href="/" className="inline-block">
               <Image
                 src="/images/happytooth-logo-white.png"
-                alt="Happy Tooth White Logo"
+                alt="HappyTooth White Logo"
                 width={180}
                 height={50}
                 className="w-auto h-12 object-contain"
               />
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
-              At Happy Tooth, we focus on delivering reliable, patient-friendly treatments using modern techniques, while making sure every visit feels calm, clear, and reassuring.
+              At HappyTooth, we focus on delivering reliable, patient-friendly treatments using modern techniques, while making sure every visit feels calm, clear, and reassuring.
             </p>
             <div className="text-xs text-gray-300">
               <strong>Email:</strong>{" "}

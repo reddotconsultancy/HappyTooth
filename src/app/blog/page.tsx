@@ -5,7 +5,7 @@ import BreadcrumbHero from "@/components/BreadcrumbHero";
 
 export const metadata = {
   title: "Blog",
-  description: "Read our latest dental care insights and tips from the experts at Happy Tooth Dental Care.",
+  description: "Read our latest dental care insights and tips from the experts at HappyTooth Dental Care.",
 };
 
 export default function Blog() {

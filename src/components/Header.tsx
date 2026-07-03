@@ -94,7 +94,7 @@ export default function Header() {
                 <div className="relative overflow-hidden transition-transform duration-300 group-hover:scale-[1.02]">
                   <Image
                     src="/images/happytooth-logo-1.png"
-                    alt="Happy Tooth Logo"
+                    alt="HappyTooth Logo"
                     width={280}
                     height={80}
                     className="w-auto h-14 lg:h-20 object-contain"
@@ -247,7 +247,7 @@ export default function Header() {
             <Link href="/" onClick={() => setIsOpen(false)}>
               <Image
                 src="/images/happytooth-logo-1.png"
-                alt="Happy Tooth Logo"
+                alt="HappyTooth Logo"
                 width={160}
                 height={46}
                 className="w-auto h-12 object-contain"

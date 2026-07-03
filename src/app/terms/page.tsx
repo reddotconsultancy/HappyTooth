@@ -3,7 +3,7 @@ import BreadcrumbHero from "@/components/BreadcrumbHero";
 
 export const metadata = {
   title: "Terms & Conditions",
-  description: "Terms and conditions for Happy Tooth Dental Care & Root Canal Centre website use.",
+  description: "Terms and conditions for HappyTooth Dental Care & Root Canal Centre website use.",
 };
 
 export default function Terms() {
@@ -14,7 +14,7 @@ export default function Terms() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose text-soft-gray space-y-6">
           <h2 className="text-2xl font-bold text-navy-blue">Website Usage Agreement</h2>
           <p>
-            Welcome to the Happy Tooth Dental Care & Root Canal Centre website. By accessing or using this website, you agree to comply with and be bound by the following terms and conditions of use.
+            Welcome to the HappyTooth Dental Care & Root Canal Centre website. By accessing or using this website, you agree to comply with and be bound by the following terms and conditions of use.
           </p>
           
           <h3 className="text-xl font-bold text-navy-blue">1. Medical Information Disclaimer</h3>
@@ -29,7 +29,7 @@ export default function Terms() {
 
           <h3 className="text-xl font-bold text-navy-blue">3. Intellectual Property</h3>
           <p>
-            All content and assets on this website, including logos, designs, text, and images, are the property of Happy Tooth Dental Care and are protected by applicable intellectual property laws. Reproduction or distribution of any materials without written permission is prohibited.
+            All content and assets on this website, including logos, designs, text, and images, are the property of HappyTooth Dental Care and are protected by applicable intellectual property laws. Reproduction or distribution of any materials without written permission is prohibited.
           </p>
 
           <h3 className="text-xl font-bold text-navy-blue">4. Modifications to Terms</h3>
