@@ -474,7 +474,7 @@ export default function Home() {
                 <h3 className="text-base md:text-lg font-black text-navy-blue leading-snug">
                   {item.title}
                 </h3>
-                <p className="text-xs md:text-sm text-soft-gray leading-relaxed">
+                <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify hyphens-auto">
                   {item.desc}
                 </p>
               </div>
