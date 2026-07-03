@@ -221,13 +221,13 @@ export default function InternationalPatients() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {cards.map((c, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm flex flex-col justify-between">
+              <div key={idx} className="bg-white p-6 md:p-8 rounded-3xl border border-gray-100 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
                 <div className="space-y-2">
-                  <h4 className="font-extrabold text-navy-blue text-sm md:text-base">{c.title}</h4>
-                  <span className="block text-[10px] font-black text-primary-teal uppercase tracking-wide">
+                  <h4 className="font-extrabold text-navy-blue text-base md:text-lg">{c.title}</h4>
+                  <span className="block text-xs font-bold text-accent-teal uppercase tracking-wider">
                     {c.badge}
                   </span>
-                  <p className="text-xs text-soft-gray leading-relaxed pt-1 text-justify hyphens-auto">{c.desc}</p>
+                  <p className="text-xs md:text-sm text-soft-gray leading-relaxed pt-1 text-justify hyphens-auto">{c.desc}</p>
                 </div>
               </div>
             ))}
