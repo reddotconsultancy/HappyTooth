@@ -146,7 +146,7 @@ export default function About() {
                 <span className="text-primary-teal bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">specialist care seriously</span>
               </h2>
               <p className="text-soft-gray text-base leading-relaxed">
-                HappyTooth covers the full range of dental needs — from a child's first visit to complex restorative treatment in later years. What sets us apart is not the treatments we offer, but the standard to which we deliver them.
+                  {`HappyTooth covers the full range of dental needs — from a child's first visit to complex restorative treatment in later years. What sets us apart is not the treatments we offer, but the standard to which we deliver them.`}
               </p>
 
               {/* How we work card */}
@@ -163,7 +163,7 @@ export default function About() {
                     At most dental clinics, general dentists handle a wide range of treatments — including cases that technically require a specialist. We have made a deliberate choice not to work that way.
                   </p>
                   <p>
-                    At HappyTooth, your first visit is a consultation and diagnosis. From there, your treatment is assigned to the specialist trained for it — an orthodontic case goes to an orthodontist, a child's treatment to a paediatric dentist, gum problems to a periodontist, and so on. Every treatment is carried out by a specialist from our team of doctors.
+                    {`At HappyTooth, your first visit is a consultation and diagnosis. From there, your treatment is assigned to the specialist trained for it — an orthodontic case goes to an orthodontist, a child's treatment to a paediatric dentist, gum problems to a periodontist, and so on. Every treatment is carried out by a specialist from our team of doctors.`}
                   </p>
                 </div>
               </div>
@@ -288,7 +288,7 @@ export default function About() {
             </span>
             <h2 className="text-3xl font-extrabold text-navy-blue">Timeline of Expertise</h2>
             <p className="text-soft-gray text-xs md:text-sm max-w-xl mx-auto">
-              Follow Dr. Thushara's professional path from academic excellence to establishing leading specialist centers in Thiruvananthapuram.
+              {`Follow Dr. Thushara's professional path from academic excellence to establishing leading specialist centers in Thiruvananthapuram.`}
             </p>
           </div>
 

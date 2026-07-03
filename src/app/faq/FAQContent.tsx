@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 
 interface FAQItem {
@@ -41,7 +41,7 @@ export default function FAQContent() {
             <li><strong>Online Form:</strong> Fill out the appointment form on our Contact page, and we will call you back to confirm a slot.</li>
             <li><strong>Walk-In:</strong> Walk in during clinic hours — though booking ahead means little to no waiting.</li>
           </ul>
-          <p className="text-xs text-soft-gray italic mt-1">We will confirm your appointment, the doctor's availability, and roughly how long the visit will take.</p>
+          <p className="text-xs text-soft-gray italic mt-1">{`We will confirm your appointment, the doctor's availability, and roughly how long the visit will take.`}</p>
         </div>
       ),
     },
@@ -255,17 +255,15 @@ export default function FAQContent() {
     },
   ];
 
-  const filteredFaqs = useMemo(() => {
-    return faqs.filter((faq) => {
-      const categoryMatch = activeCategory === "all" || faq.category === activeCategory;
-      const searchMatch =
-        faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        (typeof faq.answer === "string"
-          ? faq.answer.toLowerCase().includes(searchQuery.toLowerCase())
-          : false);
-      return categoryMatch && searchMatch;
-    });
-  }, [activeCategory, searchQuery]);
+  const filteredFaqs = faqs.filter((faq) => {
+    const categoryMatch = activeCategory === "all" || faq.category === activeCategory;
+    const searchMatch =
+      faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      (typeof faq.answer === "string"
+        ? faq.answer.toLowerCase().includes(searchQuery.toLowerCase())
+        : false);
+    return categoryMatch && searchMatch;
+  });
 
   const toggleAccordion = (idx: number) => {
     setOpenIndex(openIndex === idx ? null : idx);

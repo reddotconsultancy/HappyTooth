@@ -126,10 +126,10 @@ export default function Facilities() {
               
               <div className="space-y-4 text-soft-gray text-base leading-relaxed">
                 <p className="font-bold text-navy-blue">
-                  Good dentistry needs the right tools. We've invested in equipment that makes treatment more accurate, faster, and genuinely more comfortable.
+                  {`Good dentistry needs the right tools. We've invested in equipment that makes treatment more accurate, faster, and genuinely more comfortable.`}
                 </p>
                 <p>
-                  HappyTooth Smile Studio is built from scratch as a full-service specialist clinic. Every piece of equipment here was chosen for a reason — not to fill a checklist, but because it changes something real about how treatment is delivered or how patients experience it.
+                  {`HappyTooth Smile Studio is built from scratch as a full-service specialist clinic. Every piece of equipment here was chosen for a reason — not to fill a checklist, but because it changes something real about how treatment is delivered or how patients experience it.`}
                 </p>
                 <p className="text-xs md:text-sm border-l-4 border-primary-teal pl-4 py-1.5 bg-bg-light-blue/40 rounded-r-xl">
                   The facilities listed here are at our Murukkumpuzha clinic. Our Kallambalam clinic, which has been serving patients since 2021, covers the core clinical services. Smile Studio is where everything comes together.
@@ -157,7 +157,7 @@ export default function Facilities() {
                   Diagnosis drives everything
                 </h2>
                 <p className="text-xs md:text-sm text-soft-gray font-semibold leading-relaxed">
-                  The more clearly a dentist can see what's happening — in the mouth, under the gum, inside a tooth — the better the treatment decision that follows.
+                  {`The more clearly a dentist can see what's happening — in the mouth, under the gum, inside a tooth — the better the treatment decision that follows.`}
                 </p>
               </div>
 
@@ -322,7 +322,7 @@ export default function Facilities() {
                   STERILISATION & HYGIENE
                 </span>
                 <h2 className="text-3xl font-extrabold text-navy-blue">
-                  This is the part most patients don't see — and that's exactly why it matters
+                  {`This is the part most patients don't see — and that's exactly why it matters`}
                 </h2>
                 <p className="text-soft-gray text-base leading-relaxed">
                   The cleanliness of instruments used in your mouth is non-negotiable. At Smile Studio, every reusable instrument goes through a validated sterilisation cycle before it is used again.

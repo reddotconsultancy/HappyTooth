@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 
@@ -115,7 +114,7 @@ export default function InternationalPatients() {
                 <span className="text-primary-teal bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">planned around your visit.</span>
               </h2>
               <p className="text-soft-gray text-base leading-relaxed">
-                Whether you're an NRI visiting family, a tourist passing through Thiruvananthapuram, or travelling specifically for treatment — we make sure your dental care fits around your time here, not the other way around.
+                {`Whether you're an NRI visiting family, a tourist passing through Thiruvananthapuram, or travelling specifically for treatment — we make sure your dental care fits around your time here, not the other way around.`}
               </p>
               <div className="text-xs font-bold text-navy-blue flex items-center gap-3">
                 <span className="bg-bg-light-blue py-1.5 px-4 rounded-lg flex items-center gap-1.5">
@@ -127,10 +126,10 @@ export default function InternationalPatients() {
               </div>
               <div className="text-sm text-soft-gray space-y-4">
                 <p>
-                  Many of our patients are visiting Kerala from abroad — NRIs back home for a few weeks, tourists who've extended their stay, or patients from the Maldives who make the short trip across for specialist dental treatment. What they all have in common is that their time here is limited and their expectations are high.
+                  {`Many of our patients are visiting Kerala from abroad — NRIs back home for a few weeks, tourists who've extended their stay, or patients from the Maldives who make the short trip across for specialist dental treatment. What they all have in common is that their time here is limited and their expectations are high.`}
                 </p>
                 <p>
-                  We've built a straightforward process for international patients: consult before you arrive, plan your treatment schedule in advance, and walk in knowing exactly what's going to happen. No surprises, no wasted trips.
+                  {`We've built a straightforward process for international patients: consult before you arrive, plan your treatment schedule in advance, and walk in knowing exactly what's going to happen. No surprises, no wasted trips.`}
                 </p>
               </div>
             </div>
@@ -240,10 +239,10 @@ export default function InternationalPatients() {
       <section className="py-20 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 text-center space-y-6">
           <h2 className="text-2xl sm:text-3xl font-black text-navy-blue">
-            Start with a message. We'll take it from there.
+            {`Start with a message. We'll take it from there.`}
           </h2>
           <p className="text-xs md:text-sm text-soft-gray leading-relaxed max-w-xl mx-auto">
-            You don't need to wait until you arrive to know what your treatment will involve or what it will cost. Send us a message, share whatever reports or scans you have, and we'll give you a clear picture before you travel.
+            {`You don't need to wait until you arrive to know what your treatment will involve or what it will cost. Send us a message, share whatever reports or scans you have, and we'll give you a clear picture before you travel.`}
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">

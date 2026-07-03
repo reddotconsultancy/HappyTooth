@@ -465,7 +465,7 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
-                      "Dr. Thushara did a great job in getting my Root canal treatment (RCT) done. Clinic has got a very pleasant ambience, staffs are all great too. Best dental clinic in Kallambalam."
+                      {`"Dr. Thushara did a great job in getting my Root canal treatment (RCT) done. Clinic has got a very pleasant ambience, staffs are all great too. Best dental clinic in Kallambalam."`}
                     </p>
                   </div>
                   <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
@@ -489,7 +489,7 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
-                      "Best dental clinic now at Kallambalam. And best care and good service. Thank you."
+                      {`"Best dental clinic now at Kallambalam. And best care and good service. Thank you."`}
                     </p>
                   </div>
                   <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
@@ -513,7 +513,7 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
-                      "The customer service was great! The staff were very friendly and helpful. They gave good supervision during my visit, which made me feel safe. The care I received was gentle and kind. I also appreciated the quick service; I didn't have to wait long. Overall, it was an excellent visit!"
+                      {`"The customer service was great! The staff were very friendly and helpful. They gave good supervision during my visit, which made me feel safe. The care I received was gentle and kind. I also appreciated the quick service; I didn't have to wait long. Overall, it was an excellent visit!"`}
                     </p>
                   </div>
                   <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
@@ -540,7 +540,7 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
-                      "Dr. Thushara did a great job in getting my Root canal treatment (RCT) done. Clinic has got a very pleasant ambience, staffs are all great too. Best dental clinic in Kallambalam."
+                      {`"Dr. Thushara did a great job in getting my Root canal treatment (RCT) done. Clinic has got a very pleasant ambience, staffs are all great too. Best dental clinic in Kallambalam."`}
                     </p>
                   </div>
                   <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
@@ -564,7 +564,7 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
-                      "Best dental clinic now at Kallambalam. And best care and good service. Thank you."
+                      {`"Best dental clinic now at Kallambalam. And best care and good service. Thank you."`}
                     </p>
                   </div>
                   <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
@@ -588,7 +588,7 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
-                      "The customer service was great! The staff were very friendly and helpful. They gave good supervision during my visit, which made me feel safe. The care I received was gentle and kind. I also appreciated the quick service; I didn't have to wait long. Overall, it was an excellent visit!"
+                      {`"The customer service was great! The staff were very friendly and helpful. They gave good supervision during my visit, which made me feel safe. The care I received was gentle and kind. I also appreciated the quick service; I didn't have to wait long. Overall, it was an excellent visit!"`}
                     </p>
                   </div>
                   <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
