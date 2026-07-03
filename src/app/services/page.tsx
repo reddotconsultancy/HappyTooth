@@ -407,10 +407,10 @@ export default function Services() {
                     {/* Checkmarks / Detail Blocks row */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-gray-100">
                       <div>
-                        <h4 className="font-extrabold text-navy-blue mb-3 text-xs uppercase tracking-wider">
+                        <h4 className="font-extrabold text-navy-blue mb-3 text-xs md:text-sm uppercase tracking-wider">
                           {svc.whoNeedsTitle}
                         </h4>
-                        <ul className="space-y-2.5 text-xs text-soft-gray font-medium">
+                        <ul className="space-y-2.5 text-xs md:text-sm text-soft-gray font-medium">
                           {svc.whoNeedsItems.map((item, keyIdx) => (
                             <li key={keyIdx} className="flex items-start gap-2">
                               <span className="flex-shrink-0 w-4 h-4 rounded-full bg-primary-teal/15 flex items-center justify-center text-primary-teal text-[10px] mt-0.5">✓</span>
@@ -423,20 +423,22 @@ export default function Services() {
                       {/* Expectation highlight box */}
                       <div className="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm flex flex-col justify-between">
                         <div className="space-y-2">
-                          <h4 className="font-extrabold text-navy-blue text-xs uppercase tracking-wider">
+                          <h4 className="font-extrabold text-navy-blue text-xs md:text-sm uppercase tracking-wider">
                             {svc.expectTitle}
                           </h4>
-                          <p className="text-xs text-soft-gray leading-relaxed">
+                          <p className="text-xs md:text-sm text-soft-gray leading-relaxed">
                             {svc.expectDesc}
                           </p>
                         </div>
-                        <div className="mt-4 pt-3 border-t border-gray-50 text-[10px] font-bold text-primary-teal leading-snug">
-                          <span className="inline-flex items-center gap-1.5">
-                            <span className="uppercase text-[9px] font-black tracking-wider px-2 py-0.5 bg-primary-teal/15 text-primary-teal rounded-full shrink-0">
+                        <div className="mt-4 pt-4 border-t border-gray-100 flex flex-col gap-2">
+                          <div>
+                            <span className="uppercase text-[9px] font-black tracking-wider px-2 py-0.5 bg-primary-teal/15 text-primary-teal rounded-full inline-block">
                               Clinical Insight
                             </span>
-                            <span>{svc.whyHere}</span>
-                          </span>
+                          </div>
+                          <p className="text-xs md:text-sm text-navy-blue font-semibold leading-relaxed">
+                            {svc.whyHere}
+                          </p>
                         </div>
                       </div>
                     </div>

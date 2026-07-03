@@ -77,7 +77,7 @@ export default function Footer() {
 
           {/* Quick Links Section */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-primary-teal">
+            <h4 className="text-sm font-extrabold uppercase tracking-wider mb-6 relative pb-2 text-white after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-primary-teal">
               Quick Links
             </h4>
             <ul className="space-y-3">
@@ -87,7 +87,9 @@ export default function Footer() {
                     href={link.path}
                     className="text-gray-300 hover:text-accent-teal transition-colors duration-200 text-sm flex items-center gap-2 group"
                   >
-                    <span className="h-1.5 w-1.5 rounded-full bg-gray-500 group-hover:bg-accent-teal transition-all"></span>
+                    <svg className="w-2.5 h-2.5 text-accent-teal/60 group-hover:text-accent-teal group-hover:translate-x-0.5 transition-all shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
                     {link.name}
                   </Link>
                 </li>
@@ -95,9 +97,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services Section */}
+          {/* Our Services Section */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-primary-teal">
+            <h4 className="text-sm font-extrabold uppercase tracking-wider mb-6 relative pb-2 text-white after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-primary-teal">
               Our Services
             </h4>
             <ul className="space-y-3">
@@ -107,7 +109,9 @@ export default function Footer() {
                     href={link.path}
                     className="text-gray-300 hover:text-accent-teal transition-colors duration-200 text-sm flex items-center gap-2 group"
                   >
-                    <span className="h-1.5 w-1.5 rounded-full bg-gray-500 group-hover:bg-accent-teal transition-all"></span>
+                    <svg className="w-2.5 h-2.5 text-accent-teal/60 group-hover:text-accent-teal group-hover:translate-x-0.5 transition-all shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
                     {link.name}
                   </Link>
                 </li>
@@ -117,16 +121,16 @@ export default function Footer() {
 
           {/* Murukkumpuzha Clinic Contact */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-primary-teal text-white uppercase tracking-wider">
+            <h4 className="text-sm font-extrabold uppercase tracking-wider mb-6 relative pb-2 text-white after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-primary-teal">
               Murukkumpuzha Studio
             </h4>
-            <ul className="space-y-4 text-xs text-gray-300">
+            <ul className="space-y-4 text-sm text-gray-300">
               <li className="flex items-start gap-2.5">
                 <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span>Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram – 695302</span>
+                <span>Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram - 695302</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -142,7 +146,7 @@ export default function Footer() {
                 </svg>
                 <div>
                   <span className="block text-gray-300">All 7 days</span>
-                  <span className="block font-bold text-white">9:30 AM – 6:30 PM</span>
+                  <span className="block font-bold text-white">9:30 AM - 6:30 PM</span>
                 </div>
               </li>
             </ul>
@@ -150,16 +154,16 @@ export default function Footer() {
 
           {/* Kallambalam Clinic Contact */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-primary-teal text-white uppercase tracking-wider">
+            <h4 className="text-sm font-extrabold uppercase tracking-wider mb-6 relative pb-2 text-white after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-primary-teal">
               Kallambalam Clinic
             </h4>
-            <ul className="space-y-4 text-xs text-gray-300">
+            <ul className="space-y-4 text-sm text-gray-300">
               <li className="flex items-start gap-2.5">
                 <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span>Mavinmoodu, Kallambalam–Varkala Road, Kallambalam, Thiruvananthapuram – 695605</span>
+                <span>Mavinmoodu, Kallambalam - Varkala Road, Kallambalam, Thiruvananthapuram - 695605</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -174,9 +178,9 @@ export default function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <div>
-                  <span className="block text-gray-300">Monday – Saturday</span>
-                  <span className="block font-bold text-white">9:30 AM – 6:30 PM</span>
-                  <span className="block text-red-400 text-[10px]">Closed on Sunday</span>
+                  <span className="block text-gray-300">Monday - Saturday</span>
+                  <span className="block font-bold text-white">9:30 AM - 6:30 PM</span>
+                  <span className="block text-red-400 text-xs">Closed on Sunday</span>
                 </div>
               </li>
             </ul>
