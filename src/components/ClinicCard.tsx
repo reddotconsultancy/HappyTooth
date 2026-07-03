@@ -90,7 +90,7 @@ export default function ClinicCard({
             </span>
             <a
               href={telLink}
-              className="text-sm font-extrabold text-navy-blue hover:text-accent-teal transition-colors duration-200 sm:h-8 sm:flex sm:items-center"
+              className="text-sm font-normal text-navy-blue hover:text-accent-teal transition-colors duration-200 sm:h-8 sm:flex sm:items-center"
             >
               {phone}
             </a>
