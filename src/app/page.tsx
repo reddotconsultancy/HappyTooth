@@ -148,7 +148,7 @@ export default function Home() {
               )}
 
               {/* Interactive Feature: Quick Treatment selector widget */}
-              <div className="bg-white p-4 sm:p-5 rounded-[2rem] shadow-xl border border-gray-100 max-w-2xl mx-auto lg:mx-0 relative z-50 mt-6">
+              <div className="bg-white p-4 sm:p-5 rounded-[2rem] shadow-xl border border-gray-100 max-w-2xl mx-auto lg:mx-0 relative z-[55] mt-6">
                 <form onSubmit={handleQuickBook} className="flex flex-col md:flex-row gap-3">
                   {/* Service Custom Dropdown */}
                   <div className="flex-grow relative">
@@ -173,7 +173,7 @@ export default function Home() {
                     </button>
 
                     {isServiceDropdownOpen && (
-                      <div className="absolute left-0 right-0 mt-2 bg-white rounded-2xl border border-gray-150 shadow-2xl py-2 z-50 max-h-60 overflow-y-auto animate-fade-in">
+                      <div className="absolute left-0 right-0 mt-2 bg-white rounded-2xl border border-gray-150 shadow-2xl py-2 z-[60] max-h-60 overflow-y-auto animate-fade-in">
                         <button
                           type="button"
                           onClick={() => {
@@ -231,7 +231,7 @@ export default function Home() {
                     </button>
 
                     {isLocationDropdownOpen && (
-                      <div className="absolute left-0 right-0 mt-2 bg-white rounded-2xl border border-gray-150 shadow-2xl py-2 z-50 animate-fade-in">
+                      <div className="absolute left-0 right-0 mt-2 bg-white rounded-2xl border border-gray-150 shadow-2xl py-2 z-[60] animate-fade-in">
                         <button
                           type="button"
                           onClick={() => {
