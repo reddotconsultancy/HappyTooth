@@ -67,7 +67,7 @@ export default function ClinicCard({
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
           </div>
-          <div className="flex-grow grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-1 sm:gap-4 items-start">
+          <div className="flex-grow grid grid-cols-1 sm:grid-cols-[100px_1fr] gap-1 sm:gap-4 items-start">
             <span className="block text-accent-teal text-[9px] font-bold uppercase tracking-[0.2em] sm:h-8 sm:flex sm:items-center">
               Address
             </span>
@@ -84,7 +84,7 @@ export default function ClinicCard({
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
           </div>
-          <div className="flex-grow grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-1 sm:gap-4 items-start">
+          <div className="flex-grow grid grid-cols-1 sm:grid-cols-[100px_1fr] gap-1 sm:gap-4 items-start">
             <span className="block text-accent-teal text-[9px] font-bold uppercase tracking-[0.2em] sm:h-8 sm:flex sm:items-center">
               Phone
             </span>
@@ -104,7 +104,7 @@ export default function ClinicCard({
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <div className="flex-grow grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-1 sm:gap-4 items-start">
+          <div className="flex-grow grid grid-cols-1 sm:grid-cols-[100px_1fr] gap-1 sm:gap-4 items-start">
             <span className="block text-accent-teal text-[9px] font-bold uppercase tracking-[0.2em] sm:h-8 sm:flex sm:items-center">
               Working Hours
             </span>
@@ -123,7 +123,7 @@ export default function ClinicCard({
               <circle cx="16" cy="16" r="1" />
             </svg>
           </div>
-          <div className="flex-grow grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-1 sm:gap-4 items-start">
+          <div className="flex-grow grid grid-cols-1 sm:grid-cols-[100px_1fr] gap-1 sm:gap-4 items-start">
             <span className="block text-accent-teal text-[9px] font-bold uppercase tracking-[0.2em] sm:h-8 sm:flex sm:items-center">
               Parking
             </span>
