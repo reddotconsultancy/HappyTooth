@@ -118,8 +118,8 @@ export default function AppointmentForm() {
             placeholder=""
             className={`w-full text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 ${
               focusedField === "name" 
-                ? "border-primary-teal ring-2 ring-primary-teal/15 bg-white" 
-                : "border-gray-200 bg-gray-50/50 hover:bg-gray-50 focus:bg-white"
+                ? "border-accent-teal ring-2 ring-accent-teal/20 bg-[#FAF8F5]" 
+                : "border-gray-200 bg-[#FAF8F5] hover:bg-[#F5F1EA]"
             }`}
           />
         </div>
@@ -148,8 +148,8 @@ export default function AppointmentForm() {
               placeholder=""
               className={`w-full text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 ${
                 focusedField === "phone" 
-                  ? "border-primary-teal ring-2 ring-primary-teal/15 bg-white" 
-                  : "border-gray-200 bg-gray-50/50 hover:bg-gray-50 focus:bg-white"
+                  ? "border-accent-teal ring-2 ring-accent-teal/20 bg-[#FAF8F5]" 
+                  : "border-gray-200 bg-[#FAF8F5] hover:bg-[#F5F1EA]"
               }`}
             />
           </div>
@@ -176,8 +176,8 @@ export default function AppointmentForm() {
               placeholder=""
               className={`w-full text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 ${
                 focusedField === "email" 
-                  ? "border-primary-teal ring-2 ring-primary-teal/15 bg-white" 
-                  : "border-gray-200 bg-gray-50/50 hover:bg-gray-50 focus:bg-white"
+                  ? "border-accent-teal ring-2 ring-accent-teal/20 bg-[#FAF8F5]" 
+                  : "border-gray-200 bg-[#FAF8F5] hover:bg-[#F5F1EA]"
               }`}
             />
           </div>
@@ -194,7 +194,7 @@ export default function AppointmentForm() {
             Preferred Date *
           </label>
           <input
-            type="date"
+            type={focusedField === "date" || formData.date ? "date" : "text"}
             id="date"
             name="date"
             required
@@ -202,10 +202,11 @@ export default function AppointmentForm() {
             onChange={handleChange}
             onFocus={() => setFocusedField("date")}
             onBlur={() => setFocusedField(null)}
+            placeholder="Preferred Date"
             className={`w-full text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 ${
               focusedField === "date" 
-                ? "border-primary-teal ring-2 ring-primary-teal/15 bg-white" 
-                : "border-gray-200 bg-gray-50/50 hover:bg-gray-50 focus:bg-white"
+                ? "border-accent-teal ring-2 ring-accent-teal/20 bg-[#FAF8F5]" 
+                : "border-gray-200 bg-[#FAF8F5] hover:bg-[#F5F1EA]"
             }`}
           />
         </div>
@@ -306,8 +307,8 @@ export default function AppointmentForm() {
             placeholder="Describe your dental concern or any specific requirements..."
             className={`w-full text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 resize-none ${
               focusedField === "message" 
-                ? "border-primary-teal ring-2 ring-primary-teal/15 bg-white" 
-                : "border-gray-200 bg-gray-50/50 hover:bg-gray-50 focus:bg-white"
+                ? "border-accent-teal ring-2 ring-accent-teal/20 bg-[#FAF8F5]" 
+                : "border-gray-200 bg-[#FAF8F5] hover:bg-[#F5F1EA]"
             }`}
           ></textarea>
         </div>

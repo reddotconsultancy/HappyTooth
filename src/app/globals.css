@@ -104,6 +104,36 @@
     border-color: #DFD7C8 !important;
   }
 
+  /* Prevent browser autofill from styling inputs blue */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #FAF8F5 inset !important;
+    -webkit-text-fill-color: #101E2E !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  /* Hide browser native date picker calendar icon and suppress blue date chrome */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+  input[type="date"]::-webkit-inner-spin-button,
+  input[type="date"]::-webkit-clear-button {
+    display: none;
+  }
+  input[type="date"] {
+    color-scheme: light;
+  }
+
   footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
     color: #ffffff !important;
   }
