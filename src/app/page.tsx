@@ -151,7 +151,7 @@ export default function Home() {
               <div className="bg-white p-4 sm:p-5 rounded-[2rem] shadow-xl border border-gray-100 max-w-2xl mx-auto lg:mx-0 relative z-[55] mt-6">
                 <form onSubmit={handleQuickBook} className="flex flex-col md:flex-row gap-3">
                   {/* Service Custom Dropdown */}
-                  <div className="flex-grow relative">
+                  <div className={`flex-grow relative ${isServiceDropdownOpen ? "z-20" : "z-10"}`}>
                     <button
                       type="button"
                       onClick={() => {
@@ -209,7 +209,7 @@ export default function Home() {
                   </div>
 
                   {/* Location Custom Dropdown */}
-                  <div className="flex-grow relative">
+                  <div className={`flex-grow relative ${isLocationDropdownOpen ? "z-20" : "z-0"}`}>
                     <button
                       type="button"
                       onClick={() => {
