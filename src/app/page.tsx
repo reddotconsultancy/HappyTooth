@@ -521,7 +521,7 @@ export default function Home() {
        </span>
       </ScrollReveal>
       <ScrollReveal animation="fade-up" delay={0.5}>
-       <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
+       <h2 className="text-3xl sm:text-4xl font-bold text-navy-blue leading-tight">
         Things we do that <br />
         <span className="text-accent-teal">most clinics do not.</span>
        </h2>
@@ -545,10 +545,10 @@ export default function Home() {
          <span className="text-3xl font-black text-primary-teal/15 group-hover:text-primary-teal transition-colors relative z-10">
           {item.num}
          </span>
-         <h3 className="text-base md:text-lg font-black text-navy-blue leading-snug">
+         <h3 className="text-base md:text-lg font-bold text-navy-blue leading-snug">
           {item.title}
          </h3>
-         <p className="text-sm md:text-base text-soft-gray leading-relaxed text-justify ">
+         <p className="text-sm md:text-base text-soft-gray leading-relaxed text-left">
           {item.desc}
          </p>
         </div>
@@ -583,7 +583,7 @@ export default function Home() {
        <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-primary-teal/10 py-1.5 px-4 rounded-full inline-block">
         Trivandrum Specialist Care
        </span>
-       <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
+       <h2 className="text-3xl sm:text-4xl font-bold text-navy-blue leading-tight">
         Why travel to the city for <br />
         <span className="text-accent-teal">specialist treatments?</span>
        </h2>
@@ -841,17 +841,17 @@ export default function Home() {
      <span className="text-[10px] font-black text-accent-teal tracking-widest uppercase bg-white/10 py-1.5 px-4 rounded-full inline-block">
       Get Started
      </span>
-     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white">
+     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white">
       Come in once. <br />
       See what proper dental care feels like.
      </h2>
-     <p className="text-gray-300 text-xs sm:text-sm md:text-base max-w-2xl mx-auto leading-relaxed text-justify ">
+     <p className="text-gray-300 text-xs sm:text-sm md:text-base max-w-2xl mx-auto leading-relaxed text-center">
       A consultation is the best place to start, especially if it has been a while since you had a proper check-up, or if you have been putting off treatment because you were not sure where to go. We will examine your teeth, explain what we find, and give you a clear plan. No commitment required at that stage.
      </p>
      <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
       <Link
        href="/contact"
-       className="w-full sm:w-auto bg-primary-teal hover:bg-white hover:text-navy-blue text-white font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-md text-center"
+       className="w-full sm:w-auto bg-primary-teal border border-primary-teal hover:bg-transparent hover:border-white hover:text-white text-white font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-md text-center"
       >
        Book a Consultation
       </Link>
