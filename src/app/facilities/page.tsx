@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
  title: "Modern Dental Infrastructure & Clean Clinic Facilities",
@@ -81,13 +82,14 @@ export default function Facilities() {
      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
       {/* Gallery grids */}
-      <div className="lg:col-span-5 grid grid-cols-2 gap-4">
+      <ScrollReveal animation="fade-right" className="lg:col-span-5 grid grid-cols-2 gap-4">
        <div className="relative h-44 rounded-2xl overflow-hidden shadow-md border border-gray-50 bg-white p-2">
         <div className="relative w-full h-full rounded-xl overflow-hidden">
          <Image
           src="/images/happytooth-varkala4.jpg"
           alt="HappyTooth Smile Studio Waiting Lobby"
           fill
+          sizes="(max-width: 768px) 50vw, 200px"
           className="object-cover"
          />
         </div>
@@ -98,6 +100,7 @@ export default function Facilities() {
           src="/images/happytooth-varkala12-1.jpg"
           alt="Dental Cabin Chair Treatment Room"
           fill
+          sizes="(max-width: 768px) 50vw, 200px"
           className="object-cover"
          />
         </div>
@@ -108,14 +111,15 @@ export default function Facilities() {
           src="/images/happytooth-varkala1.jpg"
           alt="HappyTooth Clinic Exterior Setup"
           fill
+          sizes="(max-width: 768px) 100vw, 400px"
           className="object-cover"
          />
         </div>
        </div>
-      </div>
+       </ScrollReveal>
 
       {/* Intro text details */}
-      <div className="lg:col-span-7 space-y-6">
+      <ScrollReveal animation="fade-left" className="lg:col-span-7 space-y-6">
        <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-primary-teal/10 py-1.5 px-4 rounded-full inline-block">
         HAPPYTOOTH SMILE STUDIO · MURUKKUMPUZHA
        </span>
@@ -135,10 +139,10 @@ export default function Facilities() {
          The facilities listed here are at our Murukkumpuzha clinic. Our Kallambalam clinic, which has been serving patients since 2021, covers the core clinical services. Smile Studio is where everything comes together.
         </p>
        </div>
+       </ScrollReveal>
       </div>
 
      </div>
-    </div>
    </section>
 
    {/* 2. Diagnostic Equipment Section */}
@@ -149,7 +153,7 @@ export default function Facilities() {
       
       {/* Tech Descriptions */}
       <div className="lg:col-span-7 space-y-6">
-       <div className="space-y-2">
+       <ScrollReveal animation="fade-right" className="space-y-2">
         <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-white py-1 px-3 rounded-full border border-gray-200/50 inline-block">
          DIAGNOSTIC EQUIPMENT
         </span>
@@ -159,37 +163,40 @@ export default function Facilities() {
         <p className="text-xs md:text-sm text-soft-gray font-semibold leading-relaxed">
          {`The more clearly a dentist can see what's happening, in the mouth, under the gum, inside a tooth, the better the treatment decision that follows.`}
         </p>
-       </div>
+       </ScrollReveal>
 
        {/* Collapsible list of tech details */}
        <div className="space-y-4">
         {diagnosticGear.map((dg, idx) => (
-         <div key={idx} className="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm space-y-2">
-          <h4 className="font-extrabold text-navy-blue text-sm md:text-base flex items-center gap-2">
-           <span className="w-1.5 h-4 bg-primary-teal rounded-full"></span>
-           {dg.title}
-          </h4>
-          <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify ">
-           {dg.desc}
-          </p>
-         </div>
+         <ScrollReveal key={idx} animation="fade-up" delay={idx + 1}>
+          <div className="bg-white p-5 rounded-2xl border border-gray-150 shadow-sm space-y-2 hover-lift">
+           <h4 className="font-extrabold text-navy-blue text-sm md:text-base flex items-center gap-2">
+            <span className="w-1.5 h-4 bg-primary-teal rounded-full"></span>
+            {dg.title}
+           </h4>
+           <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify ">
+            {dg.desc}
+           </p>
+          </div>
+         </ScrollReveal>
         ))}
        </div>
       </div>
 
       {/* Side Image */}
-      <div className="lg:col-span-5 relative">
-       <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-100 bg-white p-3">
-        <div className="relative h-96 rounded-2xl overflow-hidden">
+      <ScrollReveal animation="fade-left" className="lg:col-span-5 relative">
+       <div className="rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-150 bg-white p-3 hover-lift">
+        <div className="relative h-96 rounded-[1.8rem] overflow-hidden img-zoom">
          <Image
           src="/images/happytooth-varkala3.jpg"
           alt="HappyTooth X-Ray and Diagnostic equipment room"
           fill
-          className="object-cover"
+          sizes="(max-width: 1024px) 100vw, 480px"
+          className="object-cover transition-transform duration-700 ease-out"
          />
         </div>
        </div>
-      </div>
+      </ScrollReveal>
 
      </div>
     </div>
@@ -201,22 +208,23 @@ export default function Facilities() {
      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
       {/* Side Image */}
-      <div className="lg:col-span-5 relative lg:order-2">
-       <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-100 bg-white p-3">
-        <div className="relative h-96 rounded-2xl overflow-hidden">
+      <ScrollReveal animation="fade-right" className="lg:col-span-5 relative lg:order-2">
+       <div className="rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-150 bg-white p-3 hover-lift">
+        <div className="relative h-96 rounded-[1.8rem] overflow-hidden img-zoom">
          <Image
           src="/images/happytooth-varkala12-1.jpg"
           alt="Latest Electronic Dental Chair Setup"
           fill
-          className="object-cover"
+          sizes="(max-width: 1024px) 100vw, 480px"
+          className="object-cover transition-transform duration-700 ease-out"
          />
         </div>
        </div>
-      </div>
+      </ScrollReveal>
 
       {/* Treatment descriptions */}
       <div className="lg:col-span-7 space-y-6 lg:order-1">
-       <div className="space-y-2">
+       <ScrollReveal animation="fade-left" className="space-y-2">
         <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-primary-teal/10 py-1 px-3 rounded-full inline-block">
          TREATMENT EQUIPMENT
         </span>
@@ -226,19 +234,21 @@ export default function Facilities() {
         <p className="text-xs md:text-sm text-soft-gray font-semibold leading-relaxed">
          The equipment used during treatment directly affects how the procedure feels and how long it takes.
         </p>
-       </div>
+       </ScrollReveal>
 
        <div className="space-y-4">
         {treatmentGear.map((tg, idx) => (
-         <div key={idx} className="bg-bg-light-blue/20 p-5 rounded-2xl border border-gray-50/60 space-y-2">
-          <h4 className="font-extrabold text-navy-blue text-sm md:text-base flex items-center gap-2">
-           <span className="w-1.5 h-4 bg-primary-teal rounded-full"></span>
-           {tg.title}
-          </h4>
-          <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify ">
-           {tg.desc}
-          </p>
-         </div>
+         <ScrollReveal key={idx} animation="fade-up" delay={idx + 1}>
+          <div className="bg-bg-light-blue/25 p-5 rounded-2xl border border-gray-150 space-y-2 hover-lift">
+           <h4 className="font-extrabold text-navy-blue text-sm md:text-base flex items-center gap-2">
+            <span className="w-1.5 h-4 bg-primary-teal rounded-full"></span>
+            {tg.title}
+           </h4>
+           <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify ">
+            {tg.desc}
+           </p>
+          </div>
+         </ScrollReveal>
         ))}
        </div>
       </div>
@@ -267,31 +277,37 @@ export default function Facilities() {
      {/* Comfort Grid */}
      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
       {comfortFeatures.map((feat, idx) => (
-       <div 
-        key={idx} 
-        className="bg-white rounded-3xl p-6 md:p-8 border border-gray-100 shadow-sm flex flex-col space-y-4 hover:-translate-y-1.5 transition-transform duration-300"
-       >
-        <div className="w-12 h-12 bg-bg-light-blue rounded-2xl flex items-center justify-center shadow-xs">
-         {feat.icon}
+       <ScrollReveal key={idx} animation="fade-up" delay={idx + 1}>
+        <div 
+         className="bg-white rounded-3xl p-6 md:p-8 border border-gray-150 shadow-sm flex flex-col space-y-4 hover-lift h-full"
+        >
+         <div className="w-12 h-12 bg-bg-light-blue rounded-2xl flex items-center justify-center shadow-xs">
+          {feat.icon}
+         </div>
+         <h3 className="text-base md:text-lg font-black text-navy-blue leading-snug">
+          {feat.title}
+         </h3>
+         <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify ">
+          {feat.desc}
+         </p>
         </div>
-        <h3 className="text-base md:text-lg font-black text-navy-blue leading-snug">
-         {feat.title}
-        </h3>
-        <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify ">
-         {feat.desc}
-        </p>
-       </div>
+       </ScrollReveal>
       ))}
      </div>
 
-     <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-100 bg-white p-3 relative h-64 md:h-80">
-      <Image
-       src="/images/happytooth-varkala4.jpg"
-       alt="Lobby reception and play zone"
-       fill
-       className="object-cover rounded-2xl"
-      />
-     </div>
+      <ScrollReveal animation="scale">
+       <div className="rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-150 bg-white p-3 relative h-64 md:h-80 hover-lift">
+        <div className="relative w-full h-full rounded-[1.8rem] overflow-hidden img-zoom">
+         <Image
+          src="/images/happytooth-varkala4.jpg"
+          alt="Lobby reception and play zone"
+          fill
+          sizes="(max-width: 1024px) 100vw, 960px"
+          className="object-cover transition-transform duration-700 ease-out"
+         />
+        </div>
+       </div>
+      </ScrollReveal>
 
     </div>
    </section>
@@ -302,21 +318,22 @@ export default function Facilities() {
      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
       {/* Autoclave Image */}
-      <div className="lg:col-span-5 relative">
-       <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-100 bg-white p-3">
-        <div className="relative h-96 rounded-2xl overflow-hidden">
+      <ScrollReveal animation="fade-right" className="lg:col-span-5 relative">
+       <div className="rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-150 bg-white p-3 hover-lift">
+        <div className="relative h-96 rounded-[1.8rem] overflow-hidden img-zoom">
          <Image
           src="/images/happytooth-varkala7.jpg"
           alt="Class B Autoclave sterilizer tray"
           fill
-          className="object-cover"
+          sizes="(max-width: 1024px) 100vw, 480px"
+          className="object-cover transition-transform duration-700 ease-out"
          />
         </div>
        </div>
-      </div>
+      </ScrollReveal>
 
       {/* Clean Details */}
-      <div className="lg:col-span-7 space-y-6">
+      <ScrollReveal animation="fade-left" className="lg:col-span-7 space-y-6">
        <div className="space-y-2">
         <span className="text-red-500 font-extrabold text-xs tracking-wider uppercase bg-red-50 py-1.5 px-4 rounded-full inline-block">
          STERILISATION & HYGIENE
@@ -337,11 +354,11 @@ export default function Facilities() {
         <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify ">
          An autoclave sterilises instruments using high-pressure steam, killing all bacteria, viruses, fungal spores, and other microorganisms. Class B is the highest standard of autoclave, it removes air from the chamber in a pre-vacuum cycle before the steam enters, which ensures that even complex instruments with narrow channels and hollow sections are fully sterilised throughout. Not just on the surface. This is the standard used in hospitals and surgical theatres. We apply the same standard here.
         </p>
-        <div className="bg-white py-3.5 px-5 rounded-2xl border border-gray-100 text-xs font-bold text-navy-blue text-justify ">
+        <div className="bg-white py-3.5 px-5 rounded-2xl border border-gray-150 text-xs font-bold text-navy-blue text-justify ">
          Every instrument that enters your mouth has completed a full Class B sterilisation cycle. No exceptions. Disposable items, needles, gloves, suction tips, are used once and discarded.
         </div>
        </div>
-      </div>
+      </ScrollReveal>
 
      </div>
     </div>
@@ -362,102 +379,106 @@ export default function Facilities() {
 
      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {/* Murukkumpuzha */}
-      <div className="bg-white/5 border border-white/10 rounded-[2rem] p-8 backdrop-blur-md space-y-6">
-       <span className="text-[10px] font-black text-accent-teal tracking-widest uppercase bg-white/10 py-1 px-3 rounded-full inline-block">
-        Murukkumpuzha Studio
-       </span>
-       <h3 className="text-lg font-black text-white">HappyTooth Smile Studio</h3>
-       <div className="space-y-4 text-xs text-gray-200">
-        <div className="flex items-start gap-3">
-         <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-         </svg>
-         <div>
-          <span className="block font-bold text-white">Address:</span>
-          <span className="block text-xs text-gray-300 mt-1">Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram - 695302</span>
+      <ScrollReveal animation="fade-right" className="flex">
+       <div className="bg-white/5 border border-white/10 rounded-[2rem] p-8 backdrop-blur-md space-y-6 hover-lift w-full">
+        <span className="text-[10px] font-black text-accent-teal tracking-widest uppercase bg-white/10 py-1 px-3 rounded-full inline-block">
+         Murukkumpuzha Studio
+        </span>
+        <h3 className="text-lg font-black text-white">HappyTooth Smile Studio</h3>
+        <div className="space-y-4 text-xs text-gray-200">
+         <div className="flex items-start gap-3">
+          <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+           <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+           <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          <div>
+           <span className="block font-bold text-white">Address:</span>
+           <span className="block text-xs text-gray-300 mt-1">Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram - 695302</span>
+          </div>
          </div>
-        </div>
-        <div className="flex items-start gap-3">
-         <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-         </svg>
-         <div>
-          <span className="block font-bold text-white">Phone:</span>
-          <a href="tel:+917356100602" className="block text-xs text-gray-300 hover:text-accent-teal transition mt-1">+91 73561 00602</a>
+         <div className="flex items-start gap-3">
+          <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+           <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <div>
+           <span className="block font-bold text-white">Phone:</span>
+           <a href="tel:+917356100602" className="block text-xs text-gray-300 hover:text-accent-teal transition mt-1">+91 73561 00602</a>
+          </div>
          </div>
-        </div>
-        <div className="flex items-start gap-3">
-         <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-         </svg>
-         <div>
-          <span className="block font-bold text-white">Hours:</span>
-          <span className="block text-xs text-gray-300 mt-1">All 7 days including Sunday · 9:30 AM - 6:30 PM</span>
+         <div className="flex items-start gap-3">
+          <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+           <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <div>
+           <span className="block font-bold text-white">Hours:</span>
+           <span className="block text-xs text-gray-300 mt-1">All 7 days including Sunday · 9:30 AM - 6:30 PM</span>
+          </div>
          </div>
-        </div>
-        <div className="flex items-start gap-3">
-         <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M19 16h-1c0-1.1-.9-2-2-2s-2 .9-2 2H10c0-1.1-.9-2-2-2s-2 .9-2 2H5c-1.1 0-2-.9-2-2V9c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v5c0 1.1-.9 2-2 2zM12 3v4" />
-          <circle cx="8" cy="16" r="1" />
-          <circle cx="16" cy="16" r="1" />
-         </svg>
-         <div>
-          <span className="block font-bold text-white">Parking:</span>
-          <span className="block text-xs text-gray-300 mt-1">Ample space available, fits 6+ cars comfortably</span>
+         <div className="flex items-start gap-3">
+          <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+           <path strokeLinecap="round" strokeLinejoin="round" d="M19 16h-1c0-1.1-.9-2-2-2s-2 .9-2 2H10c0-1.1-.9-2-2-2s-2 .9-2 2H5c-1.1 0-2-.9-2-2V9c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v5c0 1.1-.9 2-2 2zM12 3v4" />
+           <circle cx="8" cy="16" r="1" />
+           <circle cx="16" cy="16" r="1" />
+          </svg>
+          <div>
+           <span className="block font-bold text-white">Parking:</span>
+           <span className="block text-xs text-gray-300 mt-1">Ample space available, fits 6+ cars comfortably</span>
+          </div>
          </div>
         </div>
        </div>
-      </div>
+      </ScrollReveal>
 
       {/* Kallambalam */}
-      <div className="bg-white/5 border border-white/10 rounded-[2rem] p-8 backdrop-blur-md space-y-6">
-       <span className="text-[10px] font-black text-accent-teal tracking-widest uppercase bg-white/10 py-1 px-3 rounded-full inline-block">
-        Kallambalam Clinic
-       </span>
-       <h3 className="text-lg font-black text-white">HappyTooth Dental Care & Root Canal Centre</h3>
-       <div className="space-y-4 text-xs text-gray-200">
-        <div className="flex items-start gap-3">
-         <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-         </svg>
-         <div>
-          <span className="block font-bold text-white">Address:</span>
-          <span className="block text-xs text-gray-300 mt-1">Mavinmoodu, Kallambalam - Varkala Road, Kallambalam, Thiruvananthapuram - 695605</span>
+      <ScrollReveal animation="fade-left" className="flex">
+       <div className="bg-white/5 border border-white/10 rounded-[2rem] p-8 backdrop-blur-md space-y-6 hover-lift w-full">
+        <span className="text-[10px] font-black text-accent-teal tracking-widest uppercase bg-white/10 py-1 px-3 rounded-full inline-block">
+         Kallambalam Clinic
+        </span>
+        <h3 className="text-lg font-black text-white">HappyTooth Dental Care & Root Canal Centre</h3>
+        <div className="space-y-4 text-xs text-gray-200">
+         <div className="flex items-start gap-3">
+          <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+           <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+           <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          <div>
+           <span className="block font-bold text-white">Address:</span>
+           <span className="block text-xs text-gray-300 mt-1">Mavinmoodu, Kallambalam - Varkala Road, Kallambalam, Thiruvananthapuram - 695605</span>
+          </div>
          </div>
-        </div>
-        <div className="flex items-start gap-3">
-         <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-         </svg>
-         <div>
-          <span className="block font-bold text-white">Phone:</span>
-          <a href="tel:+918714470808" className="block text-xs text-gray-300 hover:text-accent-teal transition mt-1">+91 87144 70808</a>
+         <div className="flex items-start gap-3">
+          <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+           <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <div>
+           <span className="block font-bold text-white">Phone:</span>
+           <a href="tel:+918714470808" className="block text-xs text-gray-300 hover:text-accent-teal transition mt-1">+91 87144 70808</a>
+          </div>
          </div>
-        </div>
-        <div className="flex items-start gap-3">
-         <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-         </svg>
-         <div>
-          <span className="block font-bold text-white">Hours:</span>
-          <span className="block text-xs text-gray-300 mt-1">Monday to Saturday · 9:30 AM - 6:30 PM (Closed on Sundays)</span>
+         <div className="flex items-start gap-3">
+          <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+           <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <div>
+           <span className="block font-bold text-white">Hours:</span>
+           <span className="block text-xs text-gray-300 mt-1">Monday to Saturday · 9:30 AM - 6:30 PM (Closed on Sundays)</span>
+          </div>
          </div>
-        </div>
-        <div className="flex items-start gap-3">
-         <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M19 16h-1c0-1.1-.9-2-2-2s-2 .9-2 2H10c0-1.1-.9-2-2-2s-2 .9-2 2H5c-1.1 0-2-.9-2-2V9c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v5c0 1.1-.9 2-2 2zM12 3v4" />
-          <circle cx="8" cy="16" r="1" />
-          <circle cx="16" cy="16" r="1" />
-         </svg>
-         <div>
-          <span className="block font-bold text-white">Parking:</span>
-          <span className="block text-xs text-gray-300 mt-1">Parking available</span>
+         <div className="flex items-start gap-3">
+          <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+           <path strokeLinecap="round" strokeLinejoin="round" d="M19 16h-1c0-1.1-.9-2-2-2s-2 .9-2 2H10c0-1.1-.9-2-2-2s-2 .9-2 2H5c-1.1 0-2-.9-2-2V9c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v5c0 1.1-.9 2-2 2zM12 3v4" />
+           <circle cx="8" cy="16" r="1" />
+           <circle cx="16" cy="16" r="1" />
+          </svg>
+          <div>
+           <span className="block font-bold text-white">Parking:</span>
+           <span className="block text-xs text-gray-300 mt-1">Parking available</span>
+          </div>
          </div>
         </div>
        </div>
-      </div>
+      </ScrollReveal>
      </div>
 
      <div className="text-center pt-10">

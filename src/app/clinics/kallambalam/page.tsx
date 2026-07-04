@@ -1,6 +1,7 @@
 import React from "react";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 import ClinicCard from "@/components/ClinicCard";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
  title: "Best Dentist in Kallambalam | HappyTooth Dental Care & Root Canal Centre",
@@ -53,23 +54,25 @@ export default function KallambalamClinic() {
 
    <section className="py-20 bg-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-     <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-      <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-primary-teal/10 py-1.5 px-4 rounded-full inline-block">
-       Our Clinics
-      </span>
-      <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue">
-       Kallambalam Location Details
-      </h2>
-      <p className="text-soft-gray text-xs md:text-sm leading-relaxed">
-       Find directions, timings, and direct contact options for our established Kallambalam clinic below.
-      </p>
-     </div>
+     <ScrollReveal animation="fade-up">
+      <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+       <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-primary-teal/10 py-1.5 px-4 rounded-full inline-block">
+        Our Clinics
+       </span>
+       <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue">
+        Kallambalam Location Details
+       </h2>
+       <p className="text-soft-gray text-xs md:text-sm leading-relaxed">
+        Find directions, timings, and direct contact options for our established Kallambalam clinic below.
+       </p>
+      </div>
+     </ScrollReveal>
 
      {clinics
       .filter((c) => c.id === "kallambalam")
       .map((clinic, idx) => {
        return (
-        <div key={idx} className="max-w-3xl mx-auto">
+        <ScrollReveal key={idx} animation="scale" className="max-w-3xl mx-auto">
          <ClinicCard
           name={clinic.name}
           branch={clinic.branch}
@@ -83,7 +86,7 @@ export default function KallambalamClinic() {
           parking={clinic.parking}
           mapUrl={clinic.mapUrl}
          />
-        </div>
+        </ScrollReveal>
        );
       })}
     </div>

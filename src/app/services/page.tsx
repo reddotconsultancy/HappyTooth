@@ -1,11 +1,9 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
-
-export const metadata = {
- title: "Specialist Dental Treatments & Services | Root Canal, Aligners & Implants",
- description: "Professional dental services in Thiruvananthapuram. Specializing in painless Root Canal Treatment (RCT) by MDS Endodontist, Invisalign clear aligners, dental implants, pediatric care, and smile design.",
-};
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Services() {
  const serviceCards = [
@@ -91,7 +89,7 @@ export default function Services() {
    serviceNumber: "04",
    title: "Teeth Whitening",
    subtitle: "Cosmetic | In-Clinic Professional Treatment",
-   desc: "Tooth colour naturally changes over time. Tea, coffee, red wine, certain spices, and decades of everyday use leave behind staining that regular brushing simply cannot remove. The result is teeth that look dull or yellow, not because of poor hygiene, but because of surface and subsurface discolouration that requires a clinical-grade whitening agent to address.",
+   desc: "Tooth colour naturally changes over time. Tea, coffee, red wine, certain spices, and everyday use leave behind staining that regular brushing simply cannot remove. The result is teeth that look dull or yellow, not because of poor hygiene, but because of surface and subsurface discolouration that requires a clinical-grade whitening agent to address.",
    methodDetail: "Professional in-clinic whitening delivers noticeably brighter teeth in a single appointment, a result that over-the-counter whitening strips and trays cannot match. Before treatment, we assess your enamel condition and gum health to confirm that whitening is appropriate for your case. Sensitivity, existing restorations, and the type of staining all factor into how we approach your treatment. The whitening agent is applied carefully to the tooth surfaces with gum protection in place, and activated over a controlled period. Results are calibrated to your starting shade to ensure natural brightness.",
    whoNeedsTitle: "Best candidates:",
    whoNeedsItems: [
@@ -371,22 +369,28 @@ export default function Services() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
          
          {/* Left Column: Image (Alternates position on desktop) */}
-         <div className={`lg:col-span-5 relative ${isEven ? "" : "lg:order-2"}`}>
-          <div className="rounded-[2rem] overflow-hidden shadow-xl border border-gray-100 bg-white p-3">
-           <div className="relative h-72 md:h-96 rounded-2xl overflow-hidden bg-gray-50">
+         <ScrollReveal 
+          animation={isEven ? "fade-right" : "fade-left"} 
+          className={`lg:col-span-5 relative ${isEven ? "" : "lg:order-2"}`}
+         >
+          <div className="rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-150 bg-white p-3 hover-lift">
+           <div className="relative h-72 md:h-96 rounded-[1.8rem] overflow-hidden bg-gray-50 img-zoom">
             <Image
              src={svc.image}
              alt={`${svc.title} treatment procedure`}
              fill
-             className="object-cover transform hover:scale-[1.01] transition-transform duration-500"
+             sizes="(max-width: 1024px) 100vw, 480px"
+             className="object-cover transition-transform duration-700 ease-out"
             />
            </div>
           </div>
-
-         </div>
+         </ScrollReveal>
 
          {/* Right Column: Copy details */}
-         <div className={`lg:col-span-7 space-y-6 ${isEven ? "" : "lg:order-1"}`}>
+         <ScrollReveal 
+          animation={isEven ? "fade-left" : "fade-right"} 
+          className={`lg:col-span-7 space-y-6 ${isEven ? "" : "lg:order-1"}`}
+         >
           <div className="space-y-2">
            <span className="text-primary-teal font-extrabold text-[10px] md:text-xs tracking-wider uppercase bg-primary-teal/10 py-1 px-3.5 rounded-full inline-block">
             {svc.subtitle.split(" | ")[0].trim()}
@@ -405,7 +409,7 @@ export default function Services() {
           </div>
 
           {/* Checkmarks / Detail Blocks row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-gray-100">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-gray-150">
            <div>
             <h4 className="font-extrabold text-navy-blue mb-3 text-xs md:text-sm uppercase tracking-wider">
              {svc.whoNeedsTitle}
@@ -421,7 +425,7 @@ export default function Services() {
            </div>
 
            {/* Expectation highlight box */}
-           <div className="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm flex flex-col justify-between">
+           <div className="bg-[#FAF7F2] p-5 rounded-2xl border border-gray-150 shadow-sm flex flex-col justify-between hover-lift">
             <div className="space-y-2">
              <h4 className="font-extrabold text-navy-blue text-xs md:text-sm uppercase tracking-wider">
               {svc.expectTitle}
@@ -430,7 +434,7 @@ export default function Services() {
               {svc.expectDesc}
              </p>
             </div>
-            <div className="mt-4 pt-4 border-t border-gray-100 flex flex-col gap-2">
+            <div className="mt-4 pt-4 border-t border-gray-150 flex flex-col gap-2">
              <div>
               <span className="uppercase text-[9px] font-black tracking-wider px-2 py-0.5 bg-primary-teal/15 text-primary-teal rounded-full inline-block">
                Clinical Insight
@@ -442,8 +446,7 @@ export default function Services() {
             </div>
            </div>
           </div>
-
-         </div>
+         </ScrollReveal>
 
         </div>
        </div>

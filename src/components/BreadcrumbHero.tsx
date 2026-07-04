@@ -14,9 +14,15 @@ export default function BreadcrumbHero({
  bgImage = "/images/happytooth-varkala11.jpg",
 }: BreadcrumbHeroProps) {
  return (
-  <section className="relative bg-gradient-to-r from-bg-light-blue via-white to-bg-light-blue/30 py-16 md:py-20 overflow-hidden border-b border-gray-100">
+  <section 
+   className="relative py-16 md:py-20 overflow-hidden border-b border-gray-100 parallax-bg"
+   style={{ backgroundImage: `url(${bgImage})` }}
+  >
+   {/* Glassmorphism Overlay for Readability */}
+   <div className="absolute inset-0 bg-[#F0EAE1]/85 backdrop-blur-sm z-0"></div>
+
    {/* Abstract background glowing spot */}
-   <div className="absolute right-[20%] top-[-20%] w-96 h-96 bg-primary-teal/5 rounded-full blur-3xl pointer-events-none"></div>
+   <div className="absolute right-[20%] top-[-20%] w-96 h-96 bg-primary-teal/5 rounded-full z-0 pointer-events-none"></div>
 
    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -26,10 +32,10 @@ export default function BreadcrumbHero({
        HappyTooth Clinic
       </span>
       {/* Dark navy color explicitly styled via inline-style or text-navy-blue to override global CSS overrides */}
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-navy-blue leading-tight animate-fade-in-up">
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-navy-blue leading-tight" style={{ animation: 'fade-in-up 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards' }}>
        {title}
       </h1>
-      <nav className="flex items-center space-x-2 text-xs md:text-sm text-soft-gray animate-fade-in pt-1">
+      <nav className="flex items-center space-x-2 text-xs md:text-sm text-soft-gray pt-1" style={{ animation: 'fade-in 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards', opacity: 0 }}>
        <Link href="/" className="hover:text-primary-teal transition-colors font-bold text-navy-blue">
         Home
        </Link>
@@ -39,7 +45,7 @@ export default function BreadcrumbHero({
      </div>
 
      {/* Right Column: Visual Topic Image */}
-     <div className="relative flex justify-center md:justify-end animate-fade-in">
+     <div className="relative flex justify-center md:justify-end" style={{ animation: 'fade-in-up 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s forwards', opacity: 0 }}>
       <div className="relative w-full max-w-sm h-48 md:h-56 rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-white p-2">
        <div className="relative w-full h-full rounded-xl overflow-hidden">
         <Image
@@ -47,7 +53,8 @@ export default function BreadcrumbHero({
          alt={title}
          fill
          priority
-         className="object-cover object-center transform hover:scale-[1.02] transition-transform duration-500"
+         sizes="(max-width: 768px) 100vw, 384px"
+         className="object-cover object-center transform hover:scale-[1.04] transition-transform duration-700 ease-out"
         />
        </div>
       </div>

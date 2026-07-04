@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
  title: "5 Signs You Need a Root Canal | Dentist Advice & Warning Symptoms",
@@ -25,14 +26,19 @@ export default function BlogPost() {
       {/* Post Content (Left Column) */}
       <div className="lg:col-span-8 space-y-8">
        {/* Featured Image */}
-       <div className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-md">
-        <Image
-         src="/images/indian_toothache_blog.png"
-         alt="Root Canal treatment diagnosis illustration"
-         fill
-         className="object-cover"
-        />
-       </div>
+       <ScrollReveal animation="fade-up">
+        <div className="relative h-72 sm:h-96 w-full rounded-[2rem] overflow-hidden shadow-xl border border-gray-150 p-2 bg-white hover-lift">
+         <div className="relative w-full h-full rounded-2xl overflow-hidden img-zoom">
+          <Image
+           src="/images/indian_toothache_blog.png"
+           alt="Root Canal treatment diagnosis illustration"
+           fill
+           sizes="(max-width: 1024px) 100vw, 760px"
+           className="object-cover transition-transform duration-700 ease-out"
+          />
+         </div>
+        </div>
+       </ScrollReveal>
 
        {/* Author & Date metadata bar */}
        <div className="flex flex-wrap items-center gap-6 text-xs text-soft-gray font-semibold pb-4 border-b border-gray-100">
@@ -111,7 +117,7 @@ export default function BlogPost() {
          </p>
         </div>
 
-        <div className="bg-bg-light-blue/50 rounded-2xl p-6 border border-gray-100">
+        <div className="bg-bg-light-blue/50 rounded-2xl p-6 border border-gray-150">
          <h3 className="text-xl font-bold text-navy-blue mb-2">Why You Shouldn’t Delay Treatment</h3>
          <p>Delaying a root canal can lead to:</p>
          <ul className="list-disc pl-6 space-y-1 mt-2 text-sm">
@@ -156,46 +162,52 @@ export default function BlogPost() {
       {/* Sidebar Column */}
       <aside className="lg:col-span-4 space-y-8">
        {/* Back to Blog */}
-       <div className="bg-bg-light-blue/40 border border-gray-100 rounded-2xl p-6">
-        <Link
-         href="/blog"
-         className="text-sm font-bold text-primary-teal hover:text-navy-blue flex items-center gap-2"
-        >
-         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-         </svg>
-         Back to Blog
-        </Link>
-       </div>
+       <ScrollReveal animation="fade-left">
+        <div className="bg-bg-light-blue/40 border border-gray-150 rounded-2xl p-6">
+         <Link
+          href="/blog"
+          className="text-sm font-bold text-primary-teal hover:text-navy-blue flex items-center gap-2"
+         >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Back to Blog
+         </Link>
+        </div>
+       </ScrollReveal>
 
        {/* Recent posts */}
-       <div className="bg-bg-light-blue/40 border border-gray-100 rounded-2xl p-6">
-        <h3 className="text-lg font-bold text-navy-blue mb-4">Recent Posts</h3>
-        <ul className="space-y-3">
-         <li>
-          <span className="text-xs text-soft-gray block">12 Apr 2026</span>
-          <span className="text-sm font-semibold text-navy-blue block leading-snug">
-           5 Signs You Might Need a Root Canal (And Why You Shouldn’t Ignore Them)
-          </span>
-         </li>
-        </ul>
-       </div>
+       <ScrollReveal animation="fade-left" delay={1}>
+        <div className="bg-bg-light-blue/40 border border-gray-150 rounded-2xl p-6">
+         <h3 className="text-lg font-bold text-navy-blue mb-4">Recent Posts</h3>
+         <ul className="space-y-3">
+          <li>
+           <span className="text-xs text-soft-gray block">12 Apr 2026</span>
+           <span className="text-sm font-semibold text-navy-blue block leading-snug">
+            5 Signs You Might Need a Root Canal (And Why You Shouldn’t Ignore Them)
+           </span>
+          </li>
+         </ul>
+        </div>
+       </ScrollReveal>
 
        {/* Categories */}
-       <div className="bg-bg-light-blue/40 border border-gray-100 rounded-2xl p-6">
-        <h3 className="text-lg font-bold text-navy-blue mb-4">Categories</h3>
-        <ul className="space-y-2">
-         <li>
-          <Link
-           href="/blog"
-           className="text-sm text-navy-blue hover:text-primary-teal font-medium flex justify-between"
-          >
-           <span>Uncategorized</span>
-           <span className="text-soft-gray">(1)</span>
-          </Link>
-         </li>
-        </ul>
-       </div>
+       <ScrollReveal animation="fade-left" delay={2}>
+        <div className="bg-bg-light-blue/40 border border-gray-150 rounded-2xl p-6">
+         <h3 className="text-lg font-bold text-navy-blue mb-4">Categories</h3>
+         <ul className="space-y-2">
+          <li>
+           <Link
+            href="/blog"
+            className="text-sm text-navy-blue hover:text-primary-teal font-medium flex justify-between"
+           >
+            <span>Uncategorized</span>
+            <span className="text-soft-gray">(1)</span>
+           </Link>
+          </li>
+         </ul>
+        </div>
+       </ScrollReveal>
       </aside>
      </div>
     </div>

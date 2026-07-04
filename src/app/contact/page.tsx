@@ -2,6 +2,7 @@ import React from "react";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 import AppointmentForm from "@/components/AppointmentForm";
 import ClinicCard from "@/components/ClinicCard";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
  title: "Contact HappyTooth Clinics | Book a Dentist Appointment",
@@ -51,17 +52,19 @@ export default function Contact() {
    <section className="py-20 bg-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-     <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-      <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-primary-teal/10 py-1.5 px-4 rounded-full inline-block">
-       Our Locations
-      </span>
-      <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue">
-       Two Clinics in Thiruvananthapuram
-      </h2>
-      <p className="text-soft-gray text-sm md:text-base leading-relaxed text-justify max-w-2xl mx-auto">
-       We operate two fully equipped dental offices headed by lead specialist Dr. Thushara Sudhakaran. Find the specific hours, phone lines, and locations for each branch below.
-      </p>
-     </div>
+      <ScrollReveal animation="fade-up">
+      <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+       <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-primary-teal/10 py-1.5 px-4 rounded-full inline-block">
+        Our Locations
+       </span>
+       <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue">
+        Two Clinics in Thiruvananthapuram
+       </h2>
+       <p className="text-soft-gray text-sm md:text-base leading-relaxed text-justify max-w-2xl mx-auto">
+        We operate two fully equipped dental offices headed by lead specialist Dr. Thushara Sudhakaran. Find the specific hours, phone lines, and locations for each branch below.
+       </p>
+      </div>
+      </ScrollReveal>
 
      {/* Clinics cards side-by-side */}
      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
@@ -83,10 +86,12 @@ export default function Contact() {
       ))}
      </div>
 
-     {/* Appointment Form — full width, centred */}
-     <div className="max-w-4xl mx-auto">
-      <AppointmentForm />
-     </div>
+      {/* Appointment Form — full width, centred */}
+      <ScrollReveal animation="scale">
+      <div className="max-w-4xl mx-auto">
+       <AppointmentForm />
+      </div>
+      </ScrollReveal>
 
     </div>
    </section>

@@ -1,71 +1,277 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F0EAE1;           /* Warm Editorial Linen Background */
-  --foreground: #101E2E;           /* Midnight Slate Ink Text */
+  --background: #F0EAE1;
+  /* Warm Editorial Linen Background */
+  --foreground: #101E2E;
+  /* Midnight Slate Ink Text */
 }
 
 @theme {
-  --color-bg-main: #F0EAE1;        /* Warm Editorial Linen Background */
-  --color-primary-teal: #101E2E;   /* Deep Midnight Slate Ink */
-  --color-accent-teal: #AC9266;    /* Muted Platinum Bronze */
-  --color-navy-blue: #101E2E;      /* Deep Midnight Slate Ink */
-  --color-gold: #C0A87F;           /* Traditional Luxury Gold */
-  --color-bg-light-blue: #E8E0D4;  /* Slightly darker warm linen for alternate sections */
-  --color-dark-text: #101E2E;      /* Midnight Slate text */
-  --color-soft-gray: #6B6150;      /* Muted Warm Brownish-Slate Gray */
-  --color-border-gray: #DFD7C8;    /* Warm Stone Border */
+  --color-bg-main: #F0EAE1;
+  /* Warm Editorial Linen Background */
+  --color-primary-teal: #101E2E;
+  /* Deep Midnight Slate Ink */
+  --color-accent-teal: #AC9266;
+  /* Muted Platinum Bronze */
+  --color-navy-blue: #101E2E;
+  /* Deep Midnight Slate Ink */
+  --color-gold: #C0A87F;
+  /* Traditional Luxury Gold */
+  --color-bg-light-blue: #E8E0D4;
+  /* Slightly darker warm linen for alternate sections */
+  --color-dark-text: #101E2E;
+  /* Midnight Slate text */
+  --color-soft-gray: #6B6150;
+  /* Muted Warm Brownish-Slate Gray */
+  --color-border-gray: #DFD7C8;
+  /* Warm Stone Border */
 
   --font-poppins: var(--font-poppins);
   --font-rubik: var(--font-rubik);
 
-  --animate-fade-in: fade-in 1s ease-out forwards;
-  --animate-fade-in-up: fade-in-up 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-  --animate-slide-up: slide-up 0.8s ease-out forwards;
+  --animate-fade-in: fade-in 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  --animate-fade-in-up: fade-in-up 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  --animate-slide-up: slide-up 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 
   @keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
+
   @keyframes fade-in-up {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(24px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
     }
   }
+
   @keyframes slide-up {
     from {
       transform: translateY(100%);
     }
+
     to {
       transform: translateY(0);
     }
   }
+
   --animate-marquee: marquee 45s linear infinite;
 
   @keyframes marquee {
     from {
       transform: translateX(0);
     }
+
     to {
       transform: translateX(-50%);
     }
   }
 }
 
+/* ================================================================
+   SCROLL-REVEAL ANIMATION SYSTEM
+   Uses IntersectionObserver via the ScrollReveal component.
+   Elements start hidden, get .revealed class when in viewport.
+   ================================================================ */
+
+/* Base hidden state for scroll-revealed elements */
+.reveal-fade-up {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+.reveal-fade-up.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-fade-in {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity;
+}
+
+.reveal-fade-in.revealed {
+  opacity: 1;
+}
+
+.reveal-fade-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+.reveal-fade-left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-fade-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+.reveal-fade-right.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+.reveal-scale.revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.reveal-blur {
+  opacity: 0;
+  filter: blur(8px);
+  transform: translateY(16px);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    filter 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, filter, transform;
+}
+
+.reveal-blur.revealed {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+/* Staggered delay classes for children of grid/flex containers */
+.reveal-delay-1 {
+  transition-delay: 0.08s !important;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.16s !important;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.24s !important;
+}
+
+.reveal-delay-4 {
+  transition-delay: 0.32s !important;
+}
+
+.reveal-delay-5 {
+  transition-delay: 0.40s !important;
+}
+
+.reveal-delay-6 {
+  transition-delay: 0.48s !important;
+}
+
+.reveal-delay-7 {
+  transition-delay: 0.56s !important;
+}
+
+.reveal-delay-8 {
+  transition-delay: 0.64s !important;
+}
+
+/* ================================================================
+   ENHANCED HOVER & MICRO-INTERACTION UTILITIES
+   ================================================================ */
+
+/* Premium Glassmorphism Panel */
+.glass-panel {
+  background: rgba(248, 245, 238, 0.65) !important;
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid rgba(223, 215, 200, 0.5) !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3), 0 8px 32px rgba(16, 30, 46, 0.04);
+}
+
+.glass-panel-dark {
+  background: rgba(16, 30, 46, 0.8) !important;
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05), 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Parallax Background Utility */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  transform: translateZ(0); /* Hardware acceleration hint */
+}
+
+/* Smooth lift effect for cards */
+.hover-lift {
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(16, 30, 46, 0.08);
+}
+
+/* Gentle glow on hover */
+.hover-glow {
+  transition: box-shadow 0.4s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(172, 146, 102, 0.15);
+}
+
+/* Smooth image zoom on hover */
+.img-zoom {
+  overflow: hidden;
+}
+
+.img-zoom img,
+.img-zoom>div {
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.img-zoom:hover img,
+.img-zoom:hover>div {
+  transform: scale(1.04);
+}
+
+/* ================================================================
+   BASE STYLES (existing)
+   ================================================================ */
+
 @layer base {
   html {
     scroll-behavior: smooth;
   }
 
-
-
   body {
-    background: var(--background); /* Warm Linen Background */
+    background: var(--background);
     color: var(--foreground);
     min-height: 100vh;
   }
@@ -84,21 +290,29 @@
     background-color: #E8E0D4 !important;
   }
 
-
-
   /* Headings: default to brand dark slate, but allow text-white or utility classes to override on dark backgrounds */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-weight: 700;
     color: #101E2E;
   }
 
   /* Borders */
-  .border-gray-100, .border-gray-200, .border-gray-100\/80, .border-gray-100\/50 {
+  .border-gray-100,
+  .border-gray-200,
+  .border-gray-100\/80,
+  .border-gray-100\/50 {
     border-color: #DFD7C8 !important;
   }
 
   /* Inputs, selects, textareas */
-  input, select, textarea {
+  input,
+  select,
+  textarea {
     background-color: #FAF8F5 !important;
     color: #101E2E !important;
     border-color: #DFD7C8 !important;
@@ -106,7 +320,7 @@
 
   /* Prevent browser autofill from styling inputs blue */
   input:-webkit-autofill,
-  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
   textarea:-webkit-autofill,
   textarea:-webkit-autofill:hover,
@@ -126,20 +340,28 @@
     height: 0;
     position: absolute;
   }
+
   input[type="date"]::-webkit-inner-spin-button,
   input[type="date"]::-webkit-clear-button {
     display: none;
   }
+
   input[type="date"] {
     color-scheme: light;
   }
 
-  footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+  footer h1,
+  footer h2,
+  footer h3,
+  footer h4,
+  footer h5,
+  footer h6 {
     color: #ffffff !important;
   }
 
   /* Hide all AI-like glowing backdrop blur halos */
-  .blur-3xl, [class*="blur-3xl"] {
+  .blur-3xl,
+  [class*="blur-3xl"] {
     display: none !important;
   }
 
@@ -163,13 +385,16 @@
 header {
   height: 80px !important;
 }
+
 .header-spacer {
   height: 80px !important;
 }
+
 @media (min-width: 1024px) {
   header {
     height: 128px !important;
   }
+
   .header-spacer {
     height: 128px !important;
   }
@@ -181,15 +406,46 @@ header {
   top: 80px !important;
   z-index: 20 !important;
 }
+
 .services-section {
-  scroll-margin-top: 152px !important; /* 80px header + 72px sub-nav = 152px */
+  scroll-margin-top: 152px !important;
+  /* 80px header + 72px sub-nav = 152px */
 }
+
 @media (min-width: 1024px) {
   .services-subnav {
     top: 128px !important;
   }
+
   .services-section {
-    scroll-margin-top: 200px !important; /* 128px header + 72px sub-nav = 200px */
+    scroll-margin-top: 200px !important;
+    /* 128px header + 72px sub-nav = 200px */
   }
 }
 
+/* ================================================================
+   REDUCED MOTION — respect accessibility preferences
+   ================================================================ */
+@media (prefers-reduced-motion: reduce) {
+
+  .reveal-fade-up,
+  .reveal-fade-in,
+  .reveal-fade-left,
+  .reveal-fade-right,
+  .reveal-scale,
+  .reveal-blur {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+
+  .hover-lift:hover {
+    transform: none;
+  }
+
+  .img-zoom:hover img,
+  .img-zoom:hover>div {
+    transform: none;
+  }
+}

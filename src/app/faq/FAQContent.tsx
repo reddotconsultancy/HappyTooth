@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
+import ScrollReveal from "@/components/ScrollReveal";
 
 interface FAQItem {
  question: string;
@@ -279,34 +280,36 @@ export default function FAQContent() {
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
      
      {/* Search bar Widget */}
-     <div className="max-w-2xl mx-auto mb-12">
-      <div className="relative shadow-md rounded-2xl border border-gray-100 overflow-hidden bg-white flex items-center p-1.5 focus-within:ring-2 focus-within:ring-primary-teal focus-within:ring-offset-2 transition-all duration-300">
-       <span className="pl-4 text-soft-gray">
-        <svg className="w-4 h-4 text-soft-gray" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-         <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-        </svg>
-       </span>
-       <input
-        type="text"
-        placeholder="Search questions or keywords..."
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-        className="w-full text-xs sm:text-sm font-semibold py-3 px-3 outline-none text-navy-blue"
-       />
-       {searchQuery && (
-        <button
-         onClick={() => setSearchQuery("")}
-         className="pr-4 text-xs font-bold text-soft-gray hover:text-navy-blue"
-        >
-         Clear
-        </button>
-       )}
+     <ScrollReveal animation="fade-up">
+      <div className="max-w-2xl mx-auto mb-12">
+       <div className="relative shadow-md rounded-2xl border border-gray-100 overflow-hidden bg-white flex items-center p-1.5 focus-within:ring-2 focus-within:ring-primary-teal focus-within:ring-offset-2 transition-all duration-300">
+        <span className="pl-4 text-soft-gray">
+         <svg className="w-4 h-4 text-soft-gray" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+         </svg>
+        </span>
+        <input
+         type="text"
+         placeholder="Search questions or keywords..."
+         value={searchQuery}
+         onChange={(e) => setSearchQuery(e.target.value)}
+         className="w-full text-xs sm:text-sm font-semibold py-3 px-3 outline-none text-navy-blue"
+        />
+        {searchQuery && (
+         <button
+          onClick={() => setSearchQuery("")}
+          className="pr-4 text-xs font-bold text-soft-gray hover:text-navy-blue"
+         >
+          Clear
+         </button>
+        )}
+       </div>
       </div>
-     </div>
+     </ScrollReveal>
 
      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
       {/* Left sidebar tabs */}
-      <div className="lg:col-span-4 space-y-2">
+      <ScrollReveal animation="fade-right" className="lg:col-span-4 space-y-2">
        <span className="block text-xs font-black text-soft-gray uppercase tracking-widest pl-4 mb-3">
         Categories
        </span>
@@ -328,10 +331,10 @@ export default function FAQContent() {
          </button>
         ))}
        </div>
-      </div>
+      </ScrollReveal>
 
       {/* Right accordion list */}
-      <div className="lg:col-span-8 space-y-4">
+      <ScrollReveal animation="fade-left" className="lg:col-span-8 space-y-4">
        <span className="block text-xs font-black text-soft-gray uppercase tracking-widest pl-2 mb-3">
         Questions ({filteredFaqs.length})
        </span>
@@ -382,7 +385,7 @@ export default function FAQContent() {
          <span className="block text-xs text-soft-gray mt-1">Try selecting another category or typing different terms.</span>
         </div>
        )}
-      </div>
+      </ScrollReveal>
      </div>
 
     </div>

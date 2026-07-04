@@ -20,7 +20,7 @@ export default function AppointmentForm() {
   setFormData((prev) => ({ ...prev, [name]: value }));
  };
 
- const handleSubmit = (e: React.FormEvent) => {
+ const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
   if (!formData.location) {
    setIsDropdownOpen(true);
@@ -28,18 +28,36 @@ export default function AppointmentForm() {
   }
   setStatus("submitting");
   
-  // Simulate API call
-  setTimeout(() => {
-   setStatus("success");
-   setFormData({
-    name: "",
-    phone: "",
-    email: "",
-    date: "",
-    location: "",
-    message: "",
+  try {
+   const res = await fetch("/api/contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+     name: formData.name,
+     email: formData.email,
+     phone: formData.phone,
+     message: `Preferred Date: ${formData.date}\nClinic: ${formData.location}\n\n${formData.message}`,
+    }),
    });
-  }, 1200);
+
+   if (res.ok) {
+    setStatus("success");
+    setFormData({
+     name: "",
+     phone: "",
+     email: "",
+     date: "",
+     location: "",
+     message: "",
+    });
+   } else {
+    setStatus("error");
+    alert("Something went wrong. Please try again.");
+   }
+  } catch (error) {
+   setStatus("error");
+   alert("Failed to submit request. Please check your connection.");
+  }
  };
 
  return (

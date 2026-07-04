@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
  title: "Meet Dr. Thushara Sudhakaran | Clinical Director & Endodontist",
@@ -122,7 +123,7 @@ export default function About() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       {/* Image Side */}
-      <div className="lg:col-span-5 relative">
+      <ScrollReveal animation="fade-right" className="lg:col-span-5 relative">
        <div className="absolute -top-6 -left-6 w-12 h-12 border-t-4 border-l-4 border-primary-teal rounded-tl-2xl"></div>
        <div className="absolute -bottom-6 -right-6 w-12 h-12 border-b-4 border-r-4 border-primary-teal rounded-br-2xl"></div>
        <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
@@ -131,13 +132,13 @@ export default function About() {
          alt="HappyTooth Dental Clinic Specialist Team Portrait"
          width={600}
          height={600}
-         className="rounded-2xl w-full h-auto object-cover transform hover:scale-[1.01] transition-transform duration-500"
+         className="rounded-2xl w-full h-auto object-cover transform hover:scale-[1.03] transition-transform duration-700 ease-out"
         />
        </div>
-      </div>
+      </ScrollReveal>
 
       {/* Description Content */}
-      <div className="lg:col-span-7 space-y-6">
+      <ScrollReveal animation="fade-up" className="lg:col-span-7 space-y-6">
        <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-primary-teal/10 py-1.5 px-4 rounded-full inline-block">
         Our Philosophy
        </span>
@@ -167,7 +168,7 @@ export default function About() {
          </p>
         </div>
        </div>
-      </div>
+      </ScrollReveal>
      </div>
     </div>
    </section>
@@ -179,7 +180,7 @@ export default function About() {
      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
       
       {/* Left side: stats card */}
-      <div className="lg:col-span-4 space-y-8 bg-white border border-gray-100 p-8 rounded-[2rem] shadow-xl">
+      <ScrollReveal animation="fade-right" className="lg:col-span-4 space-y-8 bg-white border border-gray-100 p-8 rounded-[2rem] shadow-xl">
        <h3 className="text-2xl font-extrabold text-navy-blue">Our Team</h3>
        <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify ">
         Our team brings together specialist doctors across both locations, at HappyTooth Smile Studio in Murukkumpuzha and at our Kallambalam clinic. Specialist services are available across all major dental specialisations, so whatever your dental concern, the right expertise is accessible to you.
@@ -187,9 +188,7 @@ export default function About() {
        <p className="text-xs md:text-sm text-soft-gray leading-relaxed border-t border-gray-100 pt-4 text-justify ">
         Every doctor on our team brings dedicated years of training and clinical experience in their own field. You are never seen by someone working outside their area of expertise.
        </p>
-
-
-      </div>
+      </ScrollReveal>
 
       {/* Right side: 8 specializations list */}
       <div className="lg:col-span-8 space-y-6">
@@ -198,17 +197,18 @@ export default function About() {
        </h3>
        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {specialisations.map((sp, idx) => (
-         <div 
-          key={idx} 
-          className="bg-white p-5 rounded-2xl border border-gray-50 shadow-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-md flex flex-col gap-2"
-         >
-          <h4 className="font-extrabold text-primary-teal text-sm md:text-base">
-           {sp.title}
-          </h4>
-          <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify ">
-           {sp.desc}
-          </p>
-         </div>
+         <ScrollReveal key={idx} animation="fade-up" delay={idx < 8 ? idx : 7}>
+          <div 
+           className="bg-white p-5 rounded-2xl border border-gray-50 shadow-sm transition-all duration-500 ease-out hover:scale-[1.03] hover:shadow-lg flex flex-col gap-2 h-full"
+          >
+           <h4 className="font-extrabold text-primary-teal text-sm md:text-base">
+            {sp.title}
+           </h4>
+           <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify ">
+            {sp.desc}
+           </p>
+          </div>
+         </ScrollReveal>
         ))}
        </div>
       </div>
@@ -229,6 +229,7 @@ export default function About() {
           src="/images/dr_thushara.jpg"
           alt="Dr. Thushara Sudhakaran Clinical Director Specialist Endodontist"
           fill
+          sizes="(max-width: 1024px) 100vw, 480px"
           className="object-cover object-top"
          />
         </div>
@@ -365,6 +366,7 @@ export default function About() {
        src="/images/indian_family_smile.png"
        alt="Happy Indian family smiling with healthy teeth"
        fill
+       sizes="(max-width: 1200px) 100vw, 1200px"
        className="object-cover rounded-2xl"
       />
      </div>

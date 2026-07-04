@@ -220,6 +220,7 @@ export default function RootLayout({
   <html
    lang="en"
    className={`${rubik.variable} ${poppins.variable} h-full antialiased`}
+   data-scroll-behavior="smooth"
   >
    <body className="min-h-full flex flex-col font-poppins text-dark-text bg-white">
     {/* Structured JSON-LD Data */}

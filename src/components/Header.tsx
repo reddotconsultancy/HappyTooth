@@ -42,10 +42,10 @@ export default function Header() {
  return (
   <>
    <header
-    className={`fixed top-0 left-0 right-0 z-[9999] h-20 lg:h-32 transition-all duration-300 ${
+    className={`fixed top-0 left-0 right-0 z-[9999] h-20 lg:h-32 transition-all duration-500 ease-out ${
      isScrolled
-      ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-primary-teal/10"
-      : "bg-white/90 backdrop-blur-md border-b border-gray-100"
+      ? "bg-white/95 backdrop-blur-lg shadow-[0_4px_30px_rgba(16,30,46,0.06)] border-b border-primary-teal/10"
+      : "bg-white/90 backdrop-blur-md border-b border-gray-100/50"
     }`}
    >
     {/* Top Info Bar displaying phone numbers of both centers */}
@@ -91,7 +91,7 @@ export default function Header() {
       {/* Logo & Tagline */}
       <div className="flex-shrink-0 flex items-center gap-4">
        <Link href="/" className="group flex items-center gap-2">
-        <div className="relative overflow-hidden transition-transform duration-300 group-hover:scale-[1.02]">
+        <div className="relative overflow-hidden transition-transform duration-500 ease-out group-hover:scale-[1.03]">
          <Image
           src="/images/happytooth-logo-1.png"
           alt="HappyTooth Logo"
@@ -123,12 +123,12 @@ export default function Header() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
              </svg>
             </button>
-            <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-100 rounded-2xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <div className="absolute left-0 mt-2 w-52 glass-panel rounded-2xl shadow-2xl py-2 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-out z-50">
              {link.dropdown.map((sub) => (
               <Link
                key={sub.name}
                href={sub.path}
-               className="block px-4 py-2.5 text-xs font-bold text-navy-blue hover:bg-bg-light-blue hover:text-primary-teal transition-colors"
+               className="block px-4 py-2.5 text-xs font-bold text-navy-blue hover:bg-primary-teal hover:text-white transition-colors rounded-xl mx-2"
               >
                {sub.name}
               </Link>
@@ -164,7 +164,7 @@ export default function Header() {
        <div>
         <Link
          href="/contact"
-         className="bg-navy-blue hover:bg-accent-teal text-white font-bold text-sm py-3.5 px-7 rounded-full transition-all duration-300 shadow-sm hover:shadow-md flex items-center gap-2 transform hover:-translate-y-0.5 active:scale-95"
+         className="bg-navy-blue hover:bg-accent-teal text-white font-bold text-sm py-3.5 px-7 rounded-full transition-all duration-400 ease-out shadow-sm hover:shadow-lg hover:shadow-accent-teal/20 flex items-center gap-2 transform hover:-translate-y-1 active:scale-95"
         >
          <span>Make Appointment</span>
          <svg
@@ -235,7 +235,7 @@ export default function Header() {
 
     {/* Drawer content */}
     <div
-     className={`absolute top-0 right-0 max-w-xs w-full h-full bg-white shadow-2xl flex flex-col p-6 transition-transform duration-300 transform ${
+     className={`absolute top-0 right-0 max-w-xs w-full h-full glass-panel shadow-2xl flex flex-col p-6 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] transform ${
       isOpen ? "translate-x-0" : "translate-x-full"
      }`}
     >

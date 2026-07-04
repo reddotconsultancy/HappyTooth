@@ -30,7 +30,7 @@ export default function ClinicCard({
  const isClosed = status.toLowerCase().includes("closed");
 
  return (
-  <div className="bg-[#FAF7F2] rounded-[2.5rem] border border-border-gray border-t-4 border-t-accent-teal shadow-[0_8px_30px_rgb(0,0,0,0.02)] overflow-hidden flex flex-col justify-between hover:shadow-[0_20px_50px_rgba(172,146,102,0.18)] hover:border-accent-teal/40 hover:-translate-y-1.5 transition-all duration-500 ease-out text-left">
+  <div className="bg-[#FAF7F2] rounded-[2.5rem] border border-border-gray border-t-4 border-t-accent-teal shadow-[0_8px_30px_rgb(0,0,0,0.02)] overflow-hidden flex flex-col justify-between hover:shadow-[0_24px_60px_rgba(172,146,102,0.18)] hover:border-accent-teal/40 hover:-translate-y-2 transition-all duration-600 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] text-left">
    {/* Card Header */}
    <div className="p-8 md:p-10 border-b border-border-gray/30 bg-[#FDFBF7]/40 space-y-6">
     <div className="flex flex-wrap items-center justify-between gap-3">

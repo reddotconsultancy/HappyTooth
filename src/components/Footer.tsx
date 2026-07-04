@@ -31,7 +31,9 @@ export default function Footer() {
  ];
 
  return (
-  <footer className="bg-navy-blue text-white pt-16 pb-8 font-poppins border-t border-accent-teal/30">
+  <footer className="bg-navy-blue text-white pt-16 pb-8 font-poppins border-t border-accent-teal/30 relative overflow-hidden">
+   {/* Subtle decorative glow */}
+   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[1px] bg-gradient-to-r from-transparent via-accent-teal/40 to-transparent"></div>
    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
      {/* Brand/About Section */}
