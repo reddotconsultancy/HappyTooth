@@ -210,7 +210,7 @@ export default function Home() {
           </button>
 
           {isServiceDropdownOpen && (
-           <div className="absolute left-0 right-0 mt-2 bg-white rounded-2xl border border-gray-150 shadow-2xl py-2 z-[60] animate-fade-in">
+           <div className="absolute left-0 right-0 mt-2 bg-white rounded-2xl border border-gray-150 shadow-2xl pt-2 pb-4 z-[60] max-h-56 overflow-y-auto overscroll-contain animate-fade-in">
             <button
              type="button"
              onClick={() => {
