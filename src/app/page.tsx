@@ -186,7 +186,7 @@ export default function Home() {
        {/* Interactive Feature: Quick Treatment selector widget */}
        <div className="glass-panel p-4 sm:p-5 rounded-[2rem] shadow-xl max-w-2xl mx-auto lg:mx-0 relative z-[55] mt-6 hover-lift">
         <form onSubmit={handleQuickBook} className="flex flex-col gap-3">
-         <div className="flex flex-col md:flex-row gap-3">
+         <div className={`flex flex-col md:flex-row gap-3 relative ${isServiceDropdownOpen || isLocationDropdownOpen ? "z-20" : "z-10"}`}>
           {/* Service Custom Dropdown */}
           <div className={`flex-grow relative ${isServiceDropdownOpen ? "z-20" : "z-10"}`}>
           <button
@@ -307,7 +307,7 @@ export default function Home() {
          </div>
          </div>
          
-         <div className="flex flex-col md:flex-row gap-3 z-10">
+         <div className="flex flex-col md:flex-row gap-3 relative z-0">
           <input 
            type="text" 
            placeholder="Your Name" 
