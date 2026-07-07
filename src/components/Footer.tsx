@@ -13,7 +13,7 @@ export default function Footer() {
   { name: "International Patients", path: "/international" },
   { name: "Blog", path: "/blog" },
   { name: "FAQ", path: "/faq" },
-  { name: "Contact Us", path: "/contact" },
+  { name: "Book an Appointment", path: "/contact" },
  ];
 
  const serviceLinks = [

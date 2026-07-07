@@ -36,7 +36,6 @@ export default function Header() {
    ],
   },
   { name: "International Patients", path: "/international" },
-  { name: "Contact Us", path: "/contact" },
  ];
 
  return (

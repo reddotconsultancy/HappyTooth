@@ -5,7 +5,7 @@ import ClinicCard from "@/components/ClinicCard";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
- title: "Contact HappyTooth Clinics | Book a Dentist Appointment",
+ title: "Book an Appointment | HappyTooth Clinics",
  description: "Book a dental consultation or root canal appointment at HappyTooth. Find addresses, maps, phone numbers, WhatsApp links, and timings for Murukkumpuzha & Kallambalam.",
 };
 
@@ -46,7 +46,7 @@ export default function Contact() {
  return (
   <div>
    {/* Breadcrumb Header */}
-   <BreadcrumbHero title="Contact & Locations" currentPage="Contact" bgImage="/images/happytooth-varkala10.jpg" />
+   <BreadcrumbHero title="Book an Appointment" currentPage="Book Appointment" bgImage="/images/happytooth-varkala10.jpg" />
 
    {/* Clinic Cards */}
    <section className="py-20 bg-white">
