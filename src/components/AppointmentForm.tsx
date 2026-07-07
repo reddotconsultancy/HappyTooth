@@ -55,6 +55,7 @@ export default function AppointmentForm() {
     alert("Something went wrong. Please try again.");
    }
   } catch (error) {
+   console.error("Appointment Form Error:", error);
    setStatus("error");
    alert("Failed to submit request. Please check your connection.");
   }
