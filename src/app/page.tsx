@@ -144,7 +144,7 @@ export default function Home() {
         </span>
        </ScrollReveal>
        <ScrollReveal animation="fade-up" delay={1}>
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-navy-blue leading-tight">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-navy-blue leading-tight">
          Your Teeth <br />
          Deserve Better <br />
          <span className="text-accent-teal">Than Just Fine.</span>
@@ -588,14 +588,14 @@ export default function Home() {
         <span className="text-accent-teal">specialist treatments?</span>
        </h2>
 
-       <div className="space-y-4 text-soft-gray leading-relaxed text-sm md:text-base">
-        <p className="font-bold text-navy-blue text-justify ">
+       <div className="space-y-4 text-soft-gray leading-relaxed text-sm md:text-base text-left">
+        <p className="font-bold text-navy-blue text-left">
          We operate clinics in Murukkumpuzha and Kallambalam because both neighbourhoods deserve proper specialist care.
         </p>
-        <p className="text-justify ">
+        <p className="text-left">
          Most people in Kazhakoottam, Attingal, Pothencode, Kallambalam, and the surrounding areas have been making a long, tiring trip to the city every single time they need anything beyond a basic filling. That should not be the case.
         </p>
-        <p className="border-l-4 border-primary-teal pl-4 py-1.5 bg-bg-light-blue/40 rounded-r-xl font-medium text-navy-blue text-justify ">
+        <p className="border-l-4 border-primary-teal pl-4 py-1.5 bg-bg-light-blue/40 rounded-r-xl font-medium text-navy-blue text-left">
          HappyTooth brings specialist-level dental care, root canal, smile design, implants, and orthodontics, directly to your own backyard.
         </p>
        </div>
