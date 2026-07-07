@@ -9,10 +9,6 @@ import ScrollReveal from "@/components/ScrollReveal";
 export default function Home() {
  const [selectedService, setSelectedService] = useState("");
  const [selectedLocation, setSelectedLocation] = useState("");
- const [patientName, setPatientName] = useState("");
- const [patientPhone, setPatientPhone] = useState("");
- const [isSubmitting, setIsSubmitting] = useState(false);
- const [showQuickBookAlert, setShowQuickBookAlert] = useState(false);
  const [isServiceDropdownOpen, setIsServiceDropdownOpen] = useState(false);
  const [isLocationDropdownOpen, setIsLocationDropdownOpen] = useState(false);
 
@@ -61,7 +57,7 @@ export default function Home() {
  ];
 
 
- const handleQuickBook = async (e: React.FormEvent) => {
+ const handleQuickBook = (e: React.FormEvent) => {
   e.preventDefault();
   if (!selectedService) {
    setIsServiceDropdownOpen(true);
@@ -71,46 +67,12 @@ export default function Home() {
    setIsLocationDropdownOpen(true);
    return;
   }
-  if (!patientName || !patientPhone) {
-   alert("Please enter your name and phone number to book an appointment.");
-   return;
-  }
 
-  setIsSubmitting(true);
-  try {
-   const res = await fetch("/api/book", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-     service: selectedService,
-     location: selectedLocation,
-     name: patientName,
-     phone: patientPhone,
-    }),
-   });
-
-   if (res.ok) {
-    setShowQuickBookAlert(true);
-    setPatientName("");
-    setPatientPhone("");
-    
-    // Optional: Still open WhatsApp as a secondary immediate contact
-    const waNumber = selectedLocation.includes("Kallambalam") ? "918714470808" : "917356100602";
-    const textMsg = `Hello HappyTooth! I just submitted an appointment request for ${selectedService} at ${selectedLocation}. My name is ${patientName}.`;
-    const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(textMsg)}`;
-    
-    setTimeout(() => {
-     window.open(waLink, "_blank");
-    }, 1500);
-
-    setTimeout(() => setShowQuickBookAlert(false), 6000);
-   } else {
-    alert("Something went wrong submitting your request. Please try again or contact us directly.");
-   }
-  } catch (error) {
-   alert("Failed to submit request. Please check your connection.");
-  }
-  setIsSubmitting(false);
+  const waNumber = selectedLocation.includes("Kallambalam") ? "918714470808" : "917356100602";
+  const textMsg = `Hello HappyTooth! I would like to book an appointment for ${selectedService} at your ${selectedLocation}.`;
+  const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(textMsg)}`;
+  
+  window.open(waLink, "_blank");
  };
 
  return (
@@ -121,18 +83,7 @@ export default function Home() {
     <div className="absolute top-10 right-[15%] w-[32rem] h-[32rem] bg-primary-teal/10 rounded-full blur-3xl animate-pulse"></div>
     <div className="absolute bottom-5 left-5 w-96 h-96 bg-accent-teal/5 rounded-full blur-3xl"></div>
 
-    {/* Quick booking Toast alert overlay */}
-    {showQuickBookAlert && (
-     <div className="fixed top-24 lg:top-36 right-5 bg-white border-l-4 border-primary-teal text-navy-blue py-5 px-6 rounded-2xl shadow-2xl z-[10000] animate-fade-in-up max-w-sm sm:max-w-md flex items-start gap-4 whitespace-normal">
-      <span className="w-8 h-8 rounded-full bg-primary-teal/10 flex items-center justify-center text-primary-teal text-sm font-bold shrink-0 mt-0.5">✓</span>
-      <div>
-       <p className="text-sm sm:text-base font-black text-navy-blue">Appointment Request Sent!</p>
-       <p className="text-xs sm:text-sm text-soft-gray mt-1.5 leading-relaxed">
-        Your request for <strong className="text-navy-blue">{selectedService}</strong> at <strong className="text-navy-blue">{selectedLocation}</strong> has been sent to our desk. We are also opening WhatsApp to connect you instantly.
-       </p>
-      </div>
-     </div>
-    )}
+
 
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -305,32 +256,13 @@ export default function Home() {
            </div>
           )}
          </div>
-         </div>
-         
-         <div className="flex flex-col md:flex-row gap-3 relative z-0">
-          <input 
-           type="text" 
-           placeholder="Your Name" 
-           value={patientName}
-           onChange={(e) => setPatientName(e.target.value)}
-           className="flex-grow text-xs font-normal py-3.5 px-4 bg-white border border-gray-200 focus:border-primary-teal rounded-xl outline-none text-navy-blue transition"
-           required
-          />
-          <input 
-           type="tel" 
-           placeholder="Phone Number" 
-           value={patientPhone}
-           onChange={(e) => setPatientPhone(e.target.value)}
-           className="flex-grow text-xs font-normal py-3.5 px-4 bg-white border border-gray-200 focus:border-primary-teal rounded-xl outline-none text-navy-blue transition"
-           required
-          />
-          <button
-           type="submit"
-           disabled={isSubmitting}
-           className="bg-primary-teal hover:bg-accent-teal disabled:opacity-70 text-white text-xs font-bold py-3.5 px-6 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md shrink-0 transform hover:-translate-y-0.5 active:scale-95"
-          >
-           {isSubmitting ? "Sending..." : "Book Now"}
-          </button>
+
+         <button
+          type="submit"
+          className="bg-primary-teal hover:bg-accent-teal text-white text-xs font-bold py-3.5 px-6 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md shrink-0 transform hover:-translate-y-0.5 active:scale-95 text-center"
+         >
+          Book Now
+         </button>
          </div>
         </form>
        </div>
