@@ -361,13 +361,13 @@ export default function About() {
      </div>
 
      {/* Accent Image Callout */}
-     <div className="mt-16 rounded-3xl overflow-hidden shadow-xl border border-gray-100 bg-white p-3 relative h-[24rem] md:h-[36rem]">
+     <div className="max-w-xl mx-auto mt-16 rounded-3xl overflow-hidden shadow-xl border border-gray-100 bg-white p-3 relative aspect-square">
       <Image
        src="/images/indian_family_smile.png"
        alt="Happy Indian family smiling with healthy teeth"
        fill
-       sizes="(max-width: 1200px) 100vw, 1200px"
-       className="object-contain rounded-2xl bg-bg-light-blue/10"
+       sizes="(max-width: 768px) 100vw, 600px"
+       className="object-cover rounded-2xl"
       />
      </div>
 
