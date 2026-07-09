@@ -45,8 +45,8 @@ const clinicSchema = {
    },
    "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 8.6186,
-    "longitude": 76.8407
+    "latitude": 8.6136824,
+    "longitude": 76.8352005
    },
    "openingHoursSpecification": [
     {
