@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 
 export default function AppointmentForm() {
+ const today = new Date().toISOString().split("T")[0];
  const [formData, setFormData] = useState({
   name: "",
   phone: "",
@@ -75,7 +76,7 @@ export default function AppointmentForm() {
    <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary-teal via-accent-teal to-gold"></div>
 
    {status === "success" && (
-    <div className="absolute inset-0 bg-white/98 z-10 flex flex-col items-center justify-center text-center p-6 animate-fade-in">
+    <div className="absolute inset-0 bg-white/98 z-[100] flex flex-col items-center justify-center text-center p-6 animate-fade-in">
      <div className="w-20 h-20 bg-primary-teal/10 rounded-full flex items-center justify-center text-primary-teal mb-6 animate-bounce">
       <svg
        xmlns="http://www.w3.org/2000/svg"
@@ -213,13 +214,28 @@ export default function AppointmentForm() {
       Preferred Date *
      </label>
      <input
-      type={focusedField === "date" || formData.date ? "date" : "text"}
+      type="date"
       id="date"
       name="date"
       required
+      min={today}
       value={formData.date}
       onChange={handleChange}
-      onFocus={() => setFocusedField("date")}
+      onFocus={(e) => {
+       setFocusedField("date");
+       if (typeof e.target.showPicker === "function") {
+        try {
+         e.target.showPicker();
+        } catch (err) {}
+       }
+      }}
+      onClick={(e) => {
+       if (typeof e.currentTarget.showPicker === "function") {
+        try {
+         e.currentTarget.showPicker();
+        } catch (err) {}
+       }
+      }}
       onBlur={() => setFocusedField(null)}
       placeholder="Preferred Date"
       className={`w-full text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 ${
