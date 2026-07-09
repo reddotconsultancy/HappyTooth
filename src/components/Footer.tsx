@@ -17,17 +17,17 @@ export default function Footer() {
  ];
 
  const serviceLinks = [
-  { name: "Root Canal Treatment", path: "/services/root-canal" },
-  { name: "Cosmetic Dentistry", path: "/services/smile-designing" },
-  { name: "Orthodontics", path: "/services/aligners-braces" },
-  { name: "Preventive Dentistry", path: "/services/scaling-polishing" },
-  { name: "Restorative Dentistry", path: "/services/crowns-bridges" },
-  { name: "Pediatric Dentistry", path: "/services/paediatric-dentistry" },
-  { name: "Dental Implants", path: "/services/dental-implants" },
-  { name: "Teeth Whitening", path: "/services/teeth-whitening" },
-  { name: "Dental Veneers", path: "/services/dental-veneers" },
-  { name: "Gum Care", path: "/services/gum-care" },
-  { name: "Emergency Care", path: "/services/emergency-care" },
+  { name: "Root Canal Treatment", path: "/services#ENDODONTICS" },
+  { name: "Cosmetic Dentistry", path: "/services#COSMETIC" },
+  { name: "Orthodontics", path: "/services#Orthodontics" },
+  { name: "Preventive Dentistry", path: "/services#Preventive" },
+  { name: "Restorative Dentistry", path: "/services#Restorative" },
+  { name: "Pediatric Dentistry", path: "/services#Pediatric" },
+  { name: "Dental Implants", path: "/services#DentalImplants" },
+  { name: "Teeth Whitening", path: "/services#TeethWhitening" },
+  { name: "Dental Veneers", path: "/services#DentalVeneers" },
+  { name: "Gum Care", path: "/services#GumCare" },
+  { name: "Emergency Care", path: "/services#EmergencyCare" },
  ];
 
  return (
