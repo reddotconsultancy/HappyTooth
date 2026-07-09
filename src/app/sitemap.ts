@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { getAllSlugs } from "@/lib/services-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
- const baseUrl = "https://www.happytoothdental.in";
+ const baseUrl = "https://happytoothdental.in";
 
  const staticPages: Array<{ path: string; priority: number; changeFrequency: "weekly" | "monthly" }> = [
   { path: "", priority: 1.0, changeFrequency: "weekly" },

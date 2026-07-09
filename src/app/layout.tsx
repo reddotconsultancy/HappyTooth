@@ -19,7 +19,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
- metadataBase: new URL("https://www.happytoothdental.in"),
+ metadataBase: new URL("https://happytoothdental.in"),
  title: {
   default: "HappyTooth Dental Clinics | Murukkumpuzha & Kallambalam",
   template: "%s | HappyTooth Dental Clinics",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   "cosmetic dentistry Kerala",
   "hygienic dental clinic Trivandrum"
  ],
- authors: [{ name: "Dr. Thushara Sudhakaran", url: "https://www.happytoothdental.in" }],
+ authors: [{ name: "Dr. Thushara Sudhakaran", url: "https://happytoothdental.in" }],
  creator: "HappyTooth Clinics",
  publisher: "HappyTooth Clinics",
  formatDetection: {
@@ -103,15 +103,15 @@ export default function RootLayout({
   "@graph": [
    {
     "@type": "Organization",
-    "@id": "https://www.happytoothdental.in/#organization",
+    "@id": "https://happytoothdental.in/#organization",
     "name": "HappyTooth Dental Clinics",
-    "url": "https://www.happytoothdental.in",
+    "url": "https://happytoothdental.in",
     "logo": {
      "@type": "ImageObject",
-     "url": "https://www.happytoothdental.in/images/happytooth-logo-1.png",
+     "url": "https://happytoothdental.in/images/happytooth-logo-1.png",
      "caption": "HappyTooth Dental Clinics Logo"
     },
-    "image": "https://www.happytoothdental.in/images/happytooth-varkala12-1.jpg",
+    "image": "https://happytoothdental.in/images/happytooth-varkala12-1.jpg",
     "description": "Premium specialist dental clinics in Murukkumpuzha and Kallambalam, Thiruvananthapuram, Kerala.",
     "telephone": "+91 73561 00602",
     "email": "smile@happytoothdental.in",
@@ -123,12 +123,12 @@ export default function RootLayout({
    },
    {
     "@type": "Dentist",
-    "@id": "https://www.happytoothdental.in/#clinic-kallambalam",
+    "@id": "https://happytoothdental.in/#clinic-kallambalam",
     "name": "HappyTooth Dental Care & Root Canal Centre (Kallambalam)",
     "parentOrganization": {
-     "@id": "https://www.happytoothdental.in/#organization"
+     "@id": "https://happytoothdental.in/#organization"
     },
-    "image": "https://www.happytoothdental.in/images/happytooth-varkala10.jpg",
+    "image": "https://happytoothdental.in/images/happytooth-varkala10.jpg",
     "telephone": "+91 87144 70808",
     "priceRange": "$$",
     "address": {
@@ -168,12 +168,12 @@ export default function RootLayout({
    },
    {
     "@type": "Dentist",
-    "@id": "https://www.happytoothdental.in/#clinic-murukkumpuzha",
+    "@id": "https://happytoothdental.in/#clinic-murukkumpuzha",
     "name": "HappyTooth Smile Studio (Murukkumpuzha)",
     "parentOrganization": {
-     "@id": "https://www.happytoothdental.in/#organization"
+     "@id": "https://happytoothdental.in/#organization"
     },
-    "image": "https://www.happytoothdental.in/images/happytooth-varkala12-1.jpg",
+    "image": "https://happytoothdental.in/images/happytooth-varkala12-1.jpg",
     "telephone": "+91 73561 00602",
     "priceRange": "$$",
     "address": {

@@ -16,6 +16,6 @@ export default function robots(): MetadataRoute.Robots {
    { userAgent: "Applebot", allow: "/" },
    { userAgent: "Applebot-Extended", allow: "/" },
   ],
-  sitemap: "https://www.happytoothdental.in/sitemap.xml",
+  sitemap: "https://happytoothdental.in/sitemap.xml",
  }
 }

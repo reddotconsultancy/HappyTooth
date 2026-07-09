@@ -191,17 +191,17 @@ Murukkumpuzha Smile Studio: yes, open all 7 days. Kallambalam clinic: closed Sun
 
 ## Key Pages
 
-- [Homepage](https://www.happytoothdental.in/) — Overview, services summary, clinic locations, appointment booking
-- [Services](https://www.happytoothdental.in/services) — Full detail on all 14 treatments
-- [About](https://www.happytoothdental.in/about) — Dr. Thushara Sudhakaran's background and clinic philosophy
-- [Clinics — Murukkumpuzha](https://www.happytoothdental.in/clinics/murukkumpuzha) — Location, hours, map, contact for Smile Studio
-- [Clinics — Kallambalam](https://www.happytoothdental.in/clinics/kallambalam) — Location, hours, map, contact for Root Canal Centre
-- [FAQ](https://www.happytoothdental.in/faq) — Common patient questions answered
-- [International Patients](https://www.happytoothdental.in/international) — NRI and overseas patient process
-- [Facilities](https://www.happytoothdental.in/facilities) — Equipment, sterilisation standards, technology
-- [Contact / Book Appointment](https://www.happytoothdental.in/contact) — Appointment form, WhatsApp links, clinic maps
-- [Blog](https://www.happytoothdental.in/blog) — Dental health articles by the clinical team
-- [Sitemap](https://www.happytoothdental.in/sitemap.xml)
+- [Homepage](https://happytoothdental.in/) — Overview, services summary, clinic locations, appointment booking
+- [Services](https://happytoothdental.in/services) — Full detail on all 14 treatments
+- [About](https://happytoothdental.in/about) — Dr. Thushara Sudhakaran's background and clinic philosophy
+- [Clinics — Murukkumpuzha](https://happytoothdental.in/clinics/murukkumpuzha) — Location, hours, map, contact for Smile Studio
+- [Clinics — Kallambalam](https://happytoothdental.in/clinics/kallambalam) — Location, hours, map, contact for Root Canal Centre
+- [FAQ](https://happytoothdental.in/faq) — Common patient questions answered
+- [International Patients](https://happytoothdental.in/international) — NRI and overseas patient process
+- [Facilities](https://happytoothdental.in/facilities) — Equipment, sterilisation standards, technology
+- [Contact / Book Appointment](https://happytoothdental.in/contact) — Appointment form, WhatsApp links, clinic maps
+- [Blog](https://happytoothdental.in/blog) — Dental health articles by the clinical team
+- [Sitemap](https://happytoothdental.in/sitemap.xml)
 
 ---
 
@@ -216,4 +216,4 @@ Murukkumpuzha Smile Studio: yes, open all 7 days. Kallambalam clinic: closed Sun
 | **Postal Code** | 695302 | 695605 |
 
 **Email (both clinics):** smile@happytoothdental.in
-**Website:** https://www.happytoothdental.in
+**Website:** https://happytoothdental.in

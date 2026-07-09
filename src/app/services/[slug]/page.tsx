@@ -72,7 +72,7 @@ export default async function ServicePage({
   performer: {
    "@type": "Dentist",
    name: "HappyTooth Dental Clinics",
-   url: "https://www.happytoothdental.in",
+   url: "https://happytoothdental.in",
    address: [
     {
      "@type": "PostalAddress",

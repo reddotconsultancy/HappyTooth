@@ -27,12 +27,12 @@ const clinicSchema = {
  "@graph": [
   {
    "@type": "Dentist",
-   "@id": "https://www.happytoothdental.in/#clinic-kallambalam",
+   "@id": "https://happytoothdental.in/#clinic-kallambalam",
    "name": "HappyTooth Dental Care & Root Canal Centre (Kallambalam)",
    "parentOrganization": {
-    "@id": "https://www.happytoothdental.in/#organization"
+    "@id": "https://happytoothdental.in/#organization"
    },
-   "image": "https://www.happytoothdental.in/images/happytooth-varkala10.jpg",
+   "image": "https://happytoothdental.in/images/happytooth-varkala10.jpg",
    "telephone": "+91 87144 70808",
    "priceRange": "$$",
    "address": {
@@ -73,7 +73,7 @@ const clinicSchema = {
   },
   {
    "@type": "Physician",
-   "@id": "https://www.happytoothdental.in/#dr-thushara-sudhakaran",
+   "@id": "https://happytoothdental.in/#dr-thushara-sudhakaran",
    "name": "Dr. Thushara Sudhakaran",
    "medicalSpecialty": "Endodontics",
    "jobTitle": "Clinical Director & Root Canal Specialist",
@@ -89,11 +89,11 @@ const clinicSchema = {
    "worksFor": [
     {
      "@type": "Dentist",
-     "@id": "https://www.happytoothdental.in/#clinic-murukkumpuzha"
+     "@id": "https://happytoothdental.in/#clinic-murukkumpuzha"
     },
     {
      "@type": "Dentist",
-     "@id": "https://www.happytoothdental.in/#clinic-kallambalam"
+     "@id": "https://happytoothdental.in/#clinic-kallambalam"
     }
    ]
   }
