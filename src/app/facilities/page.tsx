@@ -7,6 +7,20 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata = {
  title: "Modern Dental Infrastructure & Clean Clinic Facilities",
  description: "Explore the advanced clinical facilities, modern treatment technology, and hospital-grade sterilization standards at HappyTooth clinics in Murukkumpuzha and Kallambalam.",
+ alternates: { canonical: "/facilities" },
+ openGraph: {
+  title: "Modern Dental Infrastructure & Clean Clinic Facilities \u2014 HappyTooth",
+  description: "Advanced clinical facilities, modern treatment technology, and hospital-grade sterilization at HappyTooth \u2014 Murukkumpuzha & Kallambalam.",
+  url: "/facilities",
+  images: [
+   {
+    url: "/images/empty-professional-dentistry-stomatology-hospital-2026-01-08-02-12-42-utc.webp",
+    width: 1200,
+    height: 630,
+    alt: "Modern dental clinic facilities at HappyTooth, Thiruvananthapuram",
+   },
+  ],
+ },
 };
 
 export default function Facilities() {
@@ -444,7 +458,7 @@ export default function Facilities() {
           </svg>
           <div>
            <span className="block font-bold text-white">Address:</span>
-           <span className="block text-xs text-gray-300 mt-1">Mavinmoodu, Kallambalam - Varkala Road, Kallambalam, Thiruvananthapuram - 695605</span>
+           <span className="block text-xs text-gray-300 mt-1">Alinmoodu, Kallambalam - Varkala Road, Kallambalam, Thiruvananthapuram - 695605</span>
           </div>
          </div>
          <div className="flex items-start gap-3">

@@ -4,8 +4,100 @@ import ClinicCard from "@/components/ClinicCard";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
- title: "Best Dentist in Kallambalam | HappyTooth Dental Care & Root Canal Centre",
+ title: "Best Dentist in Kallambalam",
  description: "Visit HappyTooth Dental Care in Kallambalam, Thiruvananthapuram. Specializing in advanced root canals, family dental care, and emergency treatments serving since 2021.",
+ alternates: { canonical: "/clinics/kallambalam" },
+ openGraph: {
+  title: "Best Dentist in Kallambalam | HappyTooth Dental Care & Root Canal Centre",
+  description: "HappyTooth Dental Care & Root Canal Centre in Kallambalam, Thiruvananthapuram — advanced root canals, family dental care, and emergency treatments since 2021.",
+  url: "/clinics/kallambalam",
+  images: [
+   {
+    url: "/images/happytooth-varkala10.jpg",
+    width: 1200,
+    height: 630,
+    alt: "HappyTooth Dental Care, Kallambalam — Root Canal Centre Thiruvananthapuram",
+   },
+  ],
+ },
+};
+
+const clinicSchema = {
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dentist",
+   "@id": "https://www.happytoothdental.in/#clinic-kallambalam",
+   "name": "HappyTooth Dental Care & Root Canal Centre (Kallambalam)",
+   "parentOrganization": {
+    "@id": "https://www.happytoothdental.in/#organization"
+   },
+   "image": "https://www.happytoothdental.in/images/happytooth-varkala10.jpg",
+   "telephone": "+91 87144 70808",
+   "priceRange": "$$",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Alinmoodu, Kallambalam–Varkala Road, Kallambalam",
+    "addressLocality": "Alinmoodu, Kallambalam",
+    "addressRegion": "Kerala",
+    "postalCode": "695605",
+    "addressCountry": "IN"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 8.7610,
+    "longitude": 76.7946
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+     ],
+     "opens": "09:30",
+     "closes": "18:30"
+    }
+   ],
+   "medicalSpecialty": [
+    "Endodontics"
+   ],
+   "sameAs": [
+    "TODO_JUSTDIAL_PROFILE_LINK",
+    "TODO_QUICKERALA_PROFILE_LINK"
+   ]
+  },
+  {
+   "@type": "Physician",
+   "@id": "https://www.happytoothdental.in/#dr-thushara-sudhakaran",
+   "name": "Dr. Thushara Sudhakaran",
+   "medicalSpecialty": "Endodontics",
+   "jobTitle": "Clinical Director & Root Canal Specialist",
+   "credentials": "BDS, MDS Endodontics",
+   "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "A B Shetty Memorial Institute of Dental Sciences"
+   },
+   "memberOf": {
+    "@type": "MedicalOrganization",
+    "name": "Kerala Dental Council"
+   },
+   "worksFor": [
+    {
+     "@type": "Dentist",
+     "@id": "https://www.happytoothdental.in/#clinic-murukkumpuzha"
+    },
+    {
+     "@type": "Dentist",
+     "@id": "https://www.happytoothdental.in/#clinic-kallambalam"
+    }
+   ]
+  }
+ ]
 };
 
 export default function KallambalamClinic() {
@@ -32,7 +124,7 @@ export default function KallambalamClinic() {
    branch: "Kallambalam, Thiruvananthapuram",
    badge: "Established Clinic · Serving since 2021",
    status: "Closed on Sundays",
-   address: "Mavinmoodu, Kallambalam–Varkala Road, Kallambalam, Thiruvananthapuram – 695605",
+   address: "Alinmoodu, Kallambalam–Varkala Road, Kallambalam, Thiruvananthapuram – 695605",
    phone: "+91 87144 70808",
    telLink: "tel:+918714470808",
    waLink: "https://wa.me/918714470808",
@@ -46,11 +138,16 @@ export default function KallambalamClinic() {
 
  return (
   <div>
+   <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicSchema) }}
+   />
    <BreadcrumbHero
     title="Kallambalam Clinic"
     currentPage="Kallambalam"
     bgImage="/images/happytooth-varkala10.jpg"
    />
+
 
    <section className="py-20 bg-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -4,8 +4,104 @@ import ClinicCard from "@/components/ClinicCard";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
- title: "Best Dental Clinic in Murukkumpuzha | HappyTooth Smile Studio",
+ title: "Best Dental Clinic in Murukkumpuzha",
  description: "Book an appointment at HappyTooth Smile Studio in Murukkumpuzha, Thiruvananthapuram. Our brand new flagship clinic specializing in cosmetic dentistry, dental implants, aligners, and root canals.",
+ alternates: { canonical: "/clinics/murukkumpuzha" },
+ openGraph: {
+  title: "Best Dental Clinic in Murukkumpuzha | HappyTooth Smile Studio",
+  description: "HappyTooth Smile Studio in Murukkumpuzha, Thiruvananthapuram — cosmetic dentistry, dental implants, aligners, and root canals. Open 7 days.",
+  url: "/clinics/murukkumpuzha",
+  images: [
+   {
+    url: "/images/happytooth-varkala12-1.jpg",
+    width: 1200,
+    height: 630,
+    alt: "HappyTooth Smile Studio, Murukkumpuzha — Flagship dental clinic Thiruvananthapuram",
+   },
+  ],
+ },
+};
+
+const clinicSchema = {
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dentist",
+   "@id": "https://www.happytoothdental.in/#clinic-murukkumpuzha",
+   "name": "HappyTooth Smile Studio (Murukkumpuzha)",
+   "parentOrganization": {
+    "@id": "https://www.happytoothdental.in/#organization"
+   },
+   "image": "https://www.happytoothdental.in/images/happytooth-varkala12-1.jpg",
+   "telephone": "+91 73561 00602",
+   "priceRange": "$$",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ground Floor, Mangalasseri Tower, Murukkumpuzha",
+    "addressLocality": "Thiruvananthapuram",
+    "addressRegion": "Kerala",
+    "postalCode": "695302",
+    "addressCountry": "IN"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 8.6186,
+    "longitude": 76.8407
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+     ],
+     "opens": "09:30",
+     "closes": "18:30"
+    }
+   ],
+   "medicalSpecialty": [
+    "Endodontics",
+    "Orthodontics",
+    "CosmeticDentistry",
+    "Implantology"
+   ],
+   "sameAs": [
+    "TODO_JUSTDIAL_PROFILE_LINK",
+    "TODO_QUICKERALA_PROFILE_LINK"
+   ]
+  },
+  {
+   "@type": "Physician",
+   "@id": "https://www.happytoothdental.in/#dr-thushara-sudhakaran",
+   "name": "Dr. Thushara Sudhakaran",
+   "medicalSpecialty": "Endodontics",
+   "jobTitle": "Clinical Director & Root Canal Specialist",
+   "credentials": "BDS, MDS Endodontics",
+   "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "A B Shetty Memorial Institute of Dental Sciences"
+   },
+   "memberOf": {
+    "@type": "MedicalOrganization",
+    "name": "Kerala Dental Council"
+   },
+   "worksFor": [
+    {
+     "@type": "Dentist",
+     "@id": "https://www.happytoothdental.in/#clinic-murukkumpuzha"
+    },
+    {
+     "@type": "Dentist",
+     "@id": "https://www.happytoothdental.in/#clinic-kallambalam"
+    }
+   ]
+  }
+ ]
 };
 
 export default function MurukkumpuzhaClinic() {
@@ -32,7 +128,7 @@ export default function MurukkumpuzhaClinic() {
    branch: "Kallambalam, Thiruvananthapuram",
    badge: "Established Clinic · Serving since 2021",
    status: "Closed on Sundays",
-   address: "Mavinmoodu, Kallambalam–Varkala Road, Kallambalam, Thiruvananthapuram – 695605",
+   address: "Alinmoodu, Kallambalam–Varkala Road, Kallambalam, Thiruvananthapuram – 695605",
    phone: "+91 87144 70808",
    telLink: "tel:+918714470808",
    waLink: "https://wa.me/918714470808",
@@ -46,11 +142,16 @@ export default function MurukkumpuzhaClinic() {
 
  return (
   <div>
+   <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicSchema) }}
+   />
    <BreadcrumbHero
     title="Murukkumpuzha Studio"
     currentPage="Murukkumpuzha"
     bgImage="/images/happytooth-varkala12-1.jpg"
    />
+
 
    <section className="py-20 bg-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

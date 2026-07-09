@@ -6,6 +6,20 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata = {
  title: "Dental Tourism in Kerala | Specialized Care for NRI & International Patients",
  description: "High-quality specialized dental care and root canal treatments in Kerala, India for NRIs, international tourists, and Maldivian patients. Book pre-travel consultations.",
+ alternates: { canonical: "/international" },
+ openGraph: {
+  title: "Dental Tourism Kerala | NRI & International Dental Care \u2014 HappyTooth",
+  description: "Specialist dental treatments in Kerala for NRI & international patients. Pre-travel consultations, root canals, implants, aligners. Book your visit at HappyTooth.",
+  url: "/international",
+  images: [
+   {
+    url: "/images/happytooth-varkala12-1.jpg",
+    width: 1200,
+    height: 630,
+    alt: "HappyTooth Dental Clinics \u2014 International patients & dental tourism Kerala",
+   },
+  ],
+ },
 };
 
 export default function InternationalPatients() {

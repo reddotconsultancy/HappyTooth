@@ -5,3 +5,16 @@
 - [x] Refactor the Murukkumpuzha branch page (`src/app/clinics/murukkumpuzha/page.tsx`) to use the new `ClinicCard` component
 - [x] Run automated tests and build checks to ensure compile health
 - [x] Verify styling details and responsiveness
+- [x] Create task list
+- [x] 1. Update Organization schema in src/app/layout.tsx
+- [x] 2. Add Dentist + Physician schemas to src/app/clinics/murukkumpuzha/page.tsx
+- [x] 3. Add Dentist + Physician schemas to src/app/clinics/kallambalam/page.tsx (with addressLocality placeholder)
+- [x] 4. Audit & update Footer.tsx service links to dedicated slug pages
+- [x] 5. Title Template Audit:
+  - [x] src/app/contact/page.tsx
+  - [x] src/app/clinics/murukkumpuzha/page.tsx
+  - [x] src/app/clinics/kallambalam/page.tsx
+  - [x] src/app/blog/page.tsx
+  - [x] src/app/faq/page.tsx
+- [x] 6. Add 301 redirects in next.config.ts
+- [x] Run production build and verify responsiveness

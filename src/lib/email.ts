@@ -11,14 +11,18 @@ export const sendEmail = async ({ to, subject, html }: SendEmailParams) => {
  const isMock = !process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS;
 
  if (isMock) {
-  console.log("==========================================");
-  console.log("MOCK EMAIL SENT (Add SMTP credentials to .env to send real emails)");
+  if (process.env.NODE_ENV === "production") {
+   // In production with no SMTP config, fail loudly rather than silently losing submissions
+   throw new Error("SMTP credentials not configured. Set SMTP_HOST, SMTP_USER, and SMTP_PASS in Vercel Environment Variables.");
+  }
+  // In development, log to console (safe to ignore)
+  console.log("==========================================" );
+  console.log("MOCK EMAIL (DEVELOPMENT ONLY — configure SMTP for production)");
   console.log(`TO: ${to}`);
   console.log(`SUBJECT: ${subject}`);
-  console.log("CONTENT:");
-  console.log(html);
+  console.log("CONTENT:", html);
   console.log("==========================================");
-  return { success: true, message: "Mock email sent successfully." };
+  return { success: true, message: "Mock email logged to console." };
  }
 
  try {

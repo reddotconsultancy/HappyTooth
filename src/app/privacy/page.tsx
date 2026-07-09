@@ -4,6 +4,7 @@ import BreadcrumbHero from "@/components/BreadcrumbHero";
 export const metadata = {
  title: "Privacy Policy",
  description: "Privacy and data protection policy for HappyTooth Smile Studio patients and website visitors, in compliance with DPDPA 2023.",
+ alternates: { canonical: "/privacy" },
 };
 
 export default function Privacy() {

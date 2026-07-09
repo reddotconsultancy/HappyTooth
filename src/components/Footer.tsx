@@ -17,17 +17,17 @@ export default function Footer() {
  ];
 
  const serviceLinks = [
-  { name: "Root Canal Treatment", path: "/services#ENDODONTICS" },
-  { name: "Cosmetic Dentistry", path: "/services#COSMETIC" },
-  { name: "Orthodontics", path: "/services#Orthodontics" },
-  { name: "Preventive Dentistry", path: "/services#Preventive" },
-  { name: "Restorative Dentistry", path: "/services#Restorative" },
-  { name: "Pediatric Dentistry", path: "/services#Pediatric" },
-  { name: "Dental Implants", path: "/services#DentalImplants" },
-  { name: "Teeth Whitening", path: "/services#TeethWhitening" },
-  { name: "Dental Veneers", path: "/services#DentalVeneers" },
-  { name: "Gum Care", path: "/services#GumCare" },
-  { name: "Emergency Care", path: "/services#EmergencyCare" },
+  { name: "Root Canal Treatment", path: "/services/root-canal" },
+  { name: "Cosmetic Dentistry", path: "/services/smile-designing" },
+  { name: "Orthodontics", path: "/services/aligners-braces" },
+  { name: "Preventive Dentistry", path: "/services/scaling-polishing" },
+  { name: "Restorative Dentistry", path: "/services/crowns-bridges" },
+  { name: "Pediatric Dentistry", path: "/services/paediatric-dentistry" },
+  { name: "Dental Implants", path: "/services/dental-implants" },
+  { name: "Teeth Whitening", path: "/services/teeth-whitening" },
+  { name: "Dental Veneers", path: "/services/dental-veneers" },
+  { name: "Gum Care", path: "/services/gum-care" },
+  { name: "Emergency Care", path: "/services/emergency-care" },
  ];
 
  return (
@@ -170,7 +170,7 @@ export default function Footer() {
          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
-        <span>Mavinmoodu, Kallambalam - Varkala Road, Kallambalam, Thiruvananthapuram - 695605</span>
+        <span>Alinmoodu, Kallambalam - Varkala Road, Kallambalam, Thiruvananthapuram - 695605</span>
        </li>
        <li className="flex items-start gap-2.5">
         <svg className="h-4 w-4 text-accent-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -19,7 +19,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
- metadataBase: new URL("https://happytoothdental.in"),
+ metadataBase: new URL("https://www.happytoothdental.in"),
  title: {
   default: "HappyTooth Dental Clinics | Murukkumpuzha & Kallambalam",
   template: "%s | HappyTooth Dental Clinics",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   "cosmetic dentistry Kerala",
   "hygienic dental clinic Trivandrum"
  ],
- authors: [{ name: "Dr. Thushara Sudhakaran", url: "https://happytoothdental.in" }],
+ authors: [{ name: "Dr. Thushara Sudhakaran", url: "https://www.happytoothdental.in" }],
  creator: "HappyTooth Clinics",
  publisher: "HappyTooth Clinics",
  formatDetection: {
@@ -54,15 +54,15 @@ export const metadata: Metadata = {
  },
  openGraph: {
   title: "HappyTooth Dental Clinics | Murukkumpuzha & Kallambalam",
-  description: "Experience modern, patient-friendly specialized dental care at HappyTooth. Featuring clinic locations in Murukkumpuzha and Kallambalam, Thiruvananthapuram. Led by specialist Endodontist Dr. Thushara Sudhakaran (BDS, MDS).",
-  url: "https://happytoothdental.in",
+  description: "Expert dental care in Murukkumpuzha & Kallambalam, Thiruvananthapuram. Specialist Endodontist Dr. Thushara Sudhakaran (BDS, MDS) — Root Canals, Implants, Aligners & Cosmetic Dentistry.",
+  url: "/",
   siteName: "HappyTooth Dental Clinics",
   images: [
    {
-    url: "/images/happytooth-logo-1.png",
-    width: 800,
-    height: 600,
-    alt: "HappyTooth Dental Clinics Logo",
+    url: "/images/happytooth-varkala12-1.jpg",
+    width: 1200,
+    height: 630,
+    alt: "HappyTooth Dental Clinics — Modern dental care in Thiruvananthapuram",
    },
   ],
   locale: "en_IN",
@@ -71,8 +71,8 @@ export const metadata: Metadata = {
  twitter: {
   card: "summary_large_image",
   title: "HappyTooth Dental Clinics | Murukkumpuzha & Kallambalam",
-  description: "Experience modern, patient-friendly specialized dental care at HappyTooth. Featuring clinic locations in Murukkumpuzha and Kallambalam, Thiruvananthapuram. Led by specialist Endodontist Dr. Thushara Sudhakaran (BDS, MDS).",
-  images: ["/images/happytooth-logo-1.png"],
+  description: "Expert dental care in Thiruvananthapuram. Root Canals, Implants, Aligners & Cosmetic Dentistry by specialist Dr. Thushara Sudhakaran.",
+  images: ["/images/happytooth-varkala12-1.jpg"],
  },
  robots: {
   index: true,
@@ -102,33 +102,38 @@ export default function RootLayout({
   "@context": "https://schema.org",
   "@graph": [
    {
-    "@type": "MedicalOrganization",
-    "@id": "https://happytoothdental.in/#organization",
+    "@type": "Organization",
+    "@id": "https://www.happytoothdental.in/#organization",
     "name": "HappyTooth Dental Clinics",
-    "url": "https://happytoothdental.in",
+    "url": "https://www.happytoothdental.in",
     "logo": {
      "@type": "ImageObject",
-     "url": "https://happytoothdental.in/images/happytooth-logo-1.png",
+     "url": "https://www.happytoothdental.in/images/happytooth-logo-1.png",
      "caption": "HappyTooth Dental Clinics Logo"
     },
-    "image": "https://happytoothdental.in/images/happytooth-varkala12-1.jpg",
+    "image": "https://www.happytoothdental.in/images/happytooth-varkala12-1.jpg",
     "description": "Premium specialist dental clinics in Murukkumpuzha and Kallambalam, Thiruvananthapuram, Kerala.",
     "telephone": "+91 73561 00602",
-    "email": "smile@happytoothdental.in"
+    "email": "smile@happytoothdental.in",
+    "foundingDate": "2021",
+    "sameAs": [
+     "https://www.facebook.com/HappyToothDentalCare.21?mibextid=wwXIfr&rdid=Nw9MQinokZ0zBFrJ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17XNV4oarF%2F%3Fmibextid%3DwwXIfr",
+     "https://www.instagram.com/happytooth_dentalcare?igsh=cThmeGZ2ZmJycHhm&utm_source=qr"
+    ]
    },
    {
     "@type": "Dentist",
-    "@id": "https://happytoothdental.in/#clinic-kallambalam",
+    "@id": "https://www.happytoothdental.in/#clinic-kallambalam",
     "name": "HappyTooth Dental Care & Root Canal Centre (Kallambalam)",
     "parentOrganization": {
-     "@id": "https://happytoothdental.in/#organization"
+     "@id": "https://www.happytoothdental.in/#organization"
     },
-    "image": "https://happytoothdental.in/images/happytooth-varkala10.jpg",
+    "image": "https://www.happytoothdental.in/images/happytooth-varkala10.jpg",
     "telephone": "+91 87144 70808",
     "priceRange": "$$",
     "address": {
      "@type": "PostalAddress",
-     "streetAddress": "Mavinmoodu, Kallambalam–Varkala Road, Kallambalam",
+     "streetAddress": "Alinmoodu, Kallambalam–Varkala Road, Kallambalam",
      "addressLocality": "Thiruvananthapuram",
      "addressRegion": "Kerala",
      "postalCode": "695605",
@@ -163,12 +168,12 @@ export default function RootLayout({
    },
    {
     "@type": "Dentist",
-    "@id": "https://happytoothdental.in/#clinic-murukkumpuzha",
+    "@id": "https://www.happytoothdental.in/#clinic-murukkumpuzha",
     "name": "HappyTooth Smile Studio (Murukkumpuzha)",
     "parentOrganization": {
-     "@id": "https://happytoothdental.in/#organization"
+     "@id": "https://www.happytoothdental.in/#organization"
     },
-    "image": "https://happytoothdental.in/images/happytooth-varkala12-1.jpg",
+    "image": "https://www.happytoothdental.in/images/happytooth-varkala12-1.jpg",
     "telephone": "+91 73561 00602",
     "priceRange": "$$",
     "address": {

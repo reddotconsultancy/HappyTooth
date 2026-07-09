@@ -4,6 +4,7 @@ import BreadcrumbHero from "@/components/BreadcrumbHero";
 export const metadata = {
  title: "Terms & Conditions",
  description: "Terms and conditions for HappyTooth Dental Care & Root Canal Centre website use.",
+ alternates: { canonical: "/terms" },
 };
 
 export default function Terms() {

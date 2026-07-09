@@ -191,7 +191,7 @@ export default function Header() {
         type="button"
         className="inline-flex items-center justify-center p-2 rounded-xl text-navy-blue hover:text-primary-teal hover:bg-bg-light-blue transition-all"
         aria-controls="mobile-menu"
-        aria-expanded="false"
+        aria-expanded={isOpen}
        >
         <span className="sr-only">Open main menu</span>
         <div className="w-6 h-6 flex flex-col justify-center gap-1.5 relative">

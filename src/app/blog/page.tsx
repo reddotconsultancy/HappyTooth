@@ -5,8 +5,23 @@ import BreadcrumbHero from "@/components/BreadcrumbHero";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
- title: "Blog",
- description: "Read our latest dental care insights and tips from the experts at HappyTooth Dental Care.",
+ title: "Dental Health Blog | Tips, Guides & Expert Advice",
+ description: "Read dental care insights, root canal guides, and expert tips from the specialists at HappyTooth Dental Clinics, Thiruvananthapuram.",
+ alternates: { canonical: "/blog" },
+
+ openGraph: {
+  title: "Dental Health Blog | Expert Tips from HappyTooth Clinics",
+  description: "Dental care insights, root canal guides, and expert tips from HappyTooth specialists in Thiruvananthapuram.",
+  url: "/blog",
+  images: [
+   {
+    url: "/images/happytooth-varkala12-1.jpg",
+    width: 1200,
+    height: 630,
+    alt: "HappyTooth Dental Health Blog",
+   },
+  ],
+ },
 };
 
 export default function Blog() {

@@ -7,6 +7,21 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata = {
  title: "5 Signs You Need a Root Canal | Dentist Advice & Warning Symptoms",
  description: "Learn the 5 critical symptoms that indicate you need root canal treatment (RCT). Understand why delaying clinical treatment leads to tooth loss and severe dental pain.",
+ alternates: { canonical: "/5-signs-you-might-need-a-root-canal-and-why-you-shouldnt-ignore-them" },
+ openGraph: {
+  title: "5 Signs You Need a Root Canal \u2014 Warning Symptoms Explained",
+  description: "5 critical symptoms that mean you need root canal treatment. Delaying risks tooth loss and severe pain \u2014 read the expert guide from HappyTooth.",
+  url: "/5-signs-you-might-need-a-root-canal-and-why-you-shouldnt-ignore-them",
+  type: "article",
+  images: [
+   {
+    url: "/images/indian_toothache_blog.png",
+    width: 1200,
+    height: 630,
+    alt: "5 signs you need a root canal \u2014 dental pain warning signs",
+   },
+  ],
+ },
 };
 
 export default function BlogPost() {

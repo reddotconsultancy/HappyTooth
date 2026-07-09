@@ -6,6 +6,20 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata = {
  title: "Meet Dr. Thushara Sudhakaran | Clinical Director & Endodontist",
  description: "Meet Dr. Thushara Sudhakaran (BDS, MDS), root canal specialist and Clinical Director at HappyTooth. Learn about our dental care philosophy and clinic team serving Thiruvananthapuram.",
+ alternates: { canonical: "/about" },
+ openGraph: {
+  title: "Meet Dr. Thushara Sudhakaran | Clinical Director & Endodontist",
+  description: "Meet Dr. Thushara Sudhakaran (BDS, MDS), root canal specialist and Clinical Director at HappyTooth. Learn about our dental care philosophy and clinic team serving Thiruvananthapuram.",
+  url: "/about",
+  images: [
+   {
+    url: "/images/happytooth-varkala12-1.jpg",
+    width: 1200,
+    height: 630,
+    alt: "Dr. Thushara Sudhakaran \u2014 Clinical Director, HappyTooth Dental Clinics",
+   },
+  ],
+ },
 };
 
 export default function About() {

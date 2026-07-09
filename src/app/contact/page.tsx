@@ -5,8 +5,23 @@ import ClinicCard from "@/components/ClinicCard";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
- title: "Book an Appointment | HappyTooth Clinics",
+ title: "Book an Appointment",
  description: "Book a dental consultation or root canal appointment at HappyTooth. Find addresses, maps, phone numbers, WhatsApp links, and timings for Murukkumpuzha & Kallambalam.",
+ alternates: { canonical: "/contact" },
+
+ openGraph: {
+  title: "Book a Dental Appointment | HappyTooth Clinics",
+  description: "Book a consultation at HappyTooth. Find addresses, maps, phone numbers, and timings for Murukkumpuzha & Kallambalam clinics.",
+  url: "/contact",
+  images: [
+   {
+    url: "/images/happytooth-varkala12-1.jpg",
+    width: 1200,
+    height: 630,
+    alt: "HappyTooth Dental Clinics \u2014 Book an appointment",
+   },
+  ],
+ },
 };
 
 export default function Contact() {
@@ -31,7 +46,7 @@ export default function Contact() {
    branch: "Kallambalam, Thiruvananthapuram",
    badge: "Established Clinic · Serving since 2021",
    status: "Closed on Sundays",
-   address: "Mavinmoodu, Kallambalam–Varkala Road, Kallambalam, Thiruvananthapuram – 695605",
+   address: "Alinmoodu, Kallambalam–Varkala Road, Kallambalam, Thiruvananthapuram – 695605",
    phone: "+91 87144 70808",
    telLink: "tel:+918714470808",
    waLink: "https://wa.me/918714470808",
