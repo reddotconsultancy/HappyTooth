@@ -298,7 +298,7 @@ export default function Facilities() {
          <div className="w-12 h-12 bg-bg-light-blue rounded-2xl flex items-center justify-center shadow-xs">
           {feat.icon}
          </div>
-         <h3 className="text-base md:text-lg font-black text-navy-blue leading-snug">
+         <h3 className="text-base md:text-lg font-bold text-navy-blue leading-snug">
           {feat.title}
          </h3>
          <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify ">
@@ -387,7 +387,7 @@ export default function Facilities() {
       <span className="text-accent-teal font-extrabold text-xs tracking-wider uppercase bg-white/10 py-1.5 px-4 rounded-full inline-block">
        Our Clinics
       </span>
-      <h2 className="text-2xl sm:text-3xl font-black">Clinic Address & Contact Info</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold">Clinic Address & Contact Info</h2>
       <p className="text-sm sm:text-base font-semibold text-accent-teal mt-2">Open for consultations and appointment bookings.</p>
      </div>
 
@@ -398,7 +398,7 @@ export default function Facilities() {
         <span className="text-[10px] font-black text-accent-teal tracking-widest uppercase bg-white/10 py-1 px-3 rounded-full inline-block">
          Murukkumpuzha Studio
         </span>
-        <h3 className="text-lg font-black text-white">HappyTooth Smile Studio</h3>
+        <h3 className="text-lg font-bold text-white">HappyTooth Smile Studio</h3>
         <div className="space-y-4 text-xs text-gray-200">
          <div className="flex items-start gap-3">
           <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -449,7 +449,7 @@ export default function Facilities() {
         <span className="text-[10px] font-black text-accent-teal tracking-widest uppercase bg-white/10 py-1 px-3 rounded-full inline-block">
          Kallambalam Clinic
         </span>
-        <h3 className="text-lg font-black text-white">HappyTooth Dental Care & Root Canal Centre</h3>
+        <h3 className="text-lg font-bold text-white">HappyTooth Dental Care & Root Canal Centre</h3>
         <div className="space-y-4 text-xs text-gray-200">
          <div className="flex items-start gap-3">
           <svg className="w-5 h-5 text-accent-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">

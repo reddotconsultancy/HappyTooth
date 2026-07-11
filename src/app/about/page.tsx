@@ -363,7 +363,7 @@ export default function About() {
          <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-xs">
           {exp.icon}
          </div>
-         <h3 className="text-lg font-black text-navy-blue leading-snug">
+         <h3 className="text-lg font-bold text-navy-blue leading-snug">
           {exp.title}
          </h3>
          <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify ">

@@ -537,10 +537,10 @@ export default function Home() {
 
 
    {/* 6. PATIENT TESTIMONIALS (GOOGLE REVIEWS) */}
-   <section className="py-20 bg-bg-light-blue/20 border-t border-gray-100">
+   <section className="py-12 bg-bg-light-blue/20 border-t border-gray-100">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
      <ScrollReveal animation="fade-up">
-      <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+      <div className="text-center max-w-3xl mx-auto mb-10 space-y-4">
        <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-primary-teal/10 py-1.5 px-4 rounded-full inline-block">
         Patient Stories
        </span>
@@ -553,12 +553,8 @@ export default function Home() {
       </div>
      </ScrollReveal>
 
-     <div className="w-full overflow-hidden relative py-4">
-      {/* Subtle gradient overlays to fade edges */}
-      <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-bg-main to-transparent z-10 pointer-events-none"></div>
-      <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-bg-main to-transparent z-10 pointer-events-none"></div>
-
-      <div className="flex animate-marquee whitespace-nowrap w-max">
+      <div className="w-full overflow-hidden relative py-4 marquee-mask">
+       <div className="flex animate-marquee whitespace-nowrap w-max">
        {/* Set 1 */}
        <div className="flex items-stretch gap-6 pr-6">
         <div className="glass-panel p-6 md:p-8 rounded-[2rem] shadow-sm flex flex-col justify-between w-[290px] sm:w-[420px] shrink-0 whitespace-normal hover:shadow-xl transition-all duration-300">

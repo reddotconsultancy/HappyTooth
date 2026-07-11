@@ -27,7 +27,7 @@ export default function Privacy() {
      
      {/* Header Card */}
      <div className="bg-bg-light-blue/40 border border-gray-100 p-8 rounded-3xl space-y-4">
-      <h2 className="text-xl md:text-2xl font-black text-navy-blue">HappyTooth Smile Studio</h2>
+      <h2 className="text-xl md:text-2xl font-bold text-navy-blue">HappyTooth Smile Studio</h2>
       <span className="block text-xs font-bold text-soft-gray uppercase tracking-widest">
        Effective: July 2026 · Version 1.0 · Murukkumpuzha, Thiruvananthapuram, Kerala
       </span>
@@ -41,7 +41,7 @@ export default function Privacy() {
       
       {/* Section 1 */}
       <div className="space-y-3">
-       <h3 className="text-base md:text-lg font-black text-navy-blue flex items-center gap-2">
+       <h3 className="text-base md:text-lg font-bold text-navy-blue flex items-center gap-2">
         <span className="w-1.5 h-5 bg-primary-teal rounded-full"></span>
         1. Who We Are
        </h3>
@@ -52,7 +52,7 @@ export default function Privacy() {
 
       {/* Section 2 */}
       <div className="space-y-3">
-       <h3 className="text-base md:text-lg font-black text-navy-blue flex items-center gap-2">
+       <h3 className="text-base md:text-lg font-bold text-navy-blue flex items-center gap-2">
         <span className="w-1.5 h-5 bg-primary-teal rounded-full"></span>
         2. What We Collect
        </h3>
@@ -71,7 +71,7 @@ export default function Privacy() {
 
       {/* Section 3 */}
       <div className="space-y-3">
-       <h3 className="text-base md:text-lg font-black text-navy-blue flex items-center gap-2">
+       <h3 className="text-base md:text-lg font-bold text-navy-blue flex items-center gap-2">
         <span className="w-1.5 h-5 bg-primary-teal rounded-full"></span>
         3. Why We Collect It
        </h3>
@@ -90,7 +90,7 @@ export default function Privacy() {
 
       {/* Section 4 */}
       <div className="space-y-3">
-       <h3 className="text-base md:text-lg font-black text-navy-blue flex items-center gap-2">
+       <h3 className="text-base md:text-lg font-bold text-navy-blue flex items-center gap-2">
         <span className="w-1.5 h-5 bg-primary-teal rounded-full"></span>
         4. How We Store and Protect Your Data
        </h3>
@@ -104,7 +104,7 @@ export default function Privacy() {
 
       {/* Section 5 */}
       <div className="space-y-3">
-       <h3 className="text-base md:text-lg font-black text-navy-blue flex items-center gap-2">
+       <h3 className="text-base md:text-lg font-bold text-navy-blue flex items-center gap-2">
         <span className="w-1.5 h-5 bg-primary-teal rounded-full"></span>
         5. Who We Share Your Information With
        </h3>
@@ -123,13 +123,13 @@ export default function Privacy() {
 
       {/* Section 6 - Table */}
       <div className="space-y-4">
-       <h3 className="text-base md:text-lg font-black text-navy-blue flex items-center gap-2">
+       <h3 className="text-base md:text-lg font-bold text-navy-blue flex items-center gap-2">
         <span className="w-1.5 h-5 bg-primary-teal rounded-full"></span>
         6. How Long We Keep Your Records
        </h3>
        <div className="overflow-x-auto rounded-2xl border border-gray-100 shadow-sm">
         <table className="min-w-full divide-y divide-gray-150 text-left">
-         <thead className="bg-bg-light-blue/50 text-navy-blue text-xs font-black uppercase">
+         <thead className="bg-bg-light-blue/50 text-navy-blue text-xs font-bold uppercase">
           <tr>
            <th className="px-6 py-4">Record Type</th>
            <th className="px-6 py-4">Retention Period</th>
@@ -149,7 +149,7 @@ export default function Privacy() {
 
       {/* Section 7 */}
       <div className="space-y-3">
-       <h3 className="text-base md:text-lg font-black text-navy-blue flex items-center gap-2">
+       <h3 className="text-base md:text-lg font-bold text-navy-blue flex items-center gap-2">
         <span className="w-1.5 h-5 bg-primary-teal rounded-full"></span>
         7. Your Rights
        </h3>
@@ -168,7 +168,7 @@ export default function Privacy() {
 
       {/* Section 8 */}
       <div className="space-y-3">
-       <h3 className="text-base md:text-lg font-black text-navy-blue flex items-center gap-2">
+       <h3 className="text-base md:text-lg font-bold text-navy-blue flex items-center gap-2">
         <span className="w-1.5 h-5 bg-primary-teal rounded-full"></span>
         8. Minor Patients
        </h3>
@@ -179,7 +179,7 @@ export default function Privacy() {
 
       {/* Section 9 */}
       <div className="space-y-4">
-       <h3 className="text-base md:text-lg font-black text-navy-blue flex items-center gap-2">
+       <h3 className="text-base md:text-lg font-bold text-navy-blue flex items-center gap-2">
         <span className="w-1.5 h-5 bg-primary-teal rounded-full"></span>
         9. Contact Us
        </h3>
@@ -195,7 +195,7 @@ export default function Privacy() {
          <span className="block"><strong>Kallambalam:</strong> +91 87144 70808</span>
         </div>
        </div>
-       <div className="text-center text-xs font-black text-primary-teal pt-2">
+       <div className="text-center text-xs font-bold text-primary-teal pt-2">
         “Saving Teeth. Designing Smiles.”
        </div>
       </div>

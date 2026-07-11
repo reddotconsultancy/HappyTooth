@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   title: "HappyTooth Dental Clinics | Murukkumpuzha & Kallambalam",
   description: "Expert dental care in Murukkumpuzha & Kallambalam, Thiruvananthapuram. Specialist Endodontist Dr. Thushara Sudhakaran (BDS, MDS) — Root Canals, Implants, Aligners & Cosmetic Dentistry.",
   url: "/",
-  siteName: "HappyTooth Dental Clinics",
+  siteName: "HappyTooth Smile Studio",
   images: [
    {
     url: "/images/happytooth-varkala12-1.jpg",
@@ -85,11 +85,19 @@ export const metadata: Metadata = {
    "max-snippet": -1,
   },
  },
- icons: {
-  icon: "/favicon.ico",
-  shortcut: "/favicon.ico",
-  apple: "/images/happytooth-favicon-1-300x300.png",
- },
+  icons: {
+   icon: [
+    { url: "/favicon.ico" },
+    { url: "/images/happytooth-favicon-48x48.png", sizes: "48x48", type: "image/png" },
+    { url: "/images/happytooth-favicon-96x96.png", sizes: "96x96", type: "image/png" },
+    { url: "/images/happytooth-favicon-144x144.png", sizes: "144x144", type: "image/png" },
+    { url: "/images/happytooth-favicon-192x192.png", sizes: "192x192", type: "image/png" },
+   ],
+   shortcut: "/favicon.ico",
+   apple: [
+    { url: "/images/happytooth-favicon-180x180.png", sizes: "180x180", type: "image/png" },
+   ],
+  },
 };
 
 export default function RootLayout({
@@ -101,6 +109,16 @@ export default function RootLayout({
  const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+   {
+    "@type": "WebSite",
+    "@id": "https://happytoothdental.in/#website",
+    "name": "HappyTooth Smile Studio",
+    "alternateName": ["Happy Tooth Smile Studio", "HappyTooth", "HappyTooth Dental Clinics"],
+    "url": "https://happytoothdental.in",
+    "publisher": {
+     "@id": "https://happytoothdental.in/#organization"
+    }
+   },
    {
     "@type": "Organization",
     "@id": "https://happytoothdental.in/#organization",

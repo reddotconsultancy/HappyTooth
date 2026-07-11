@@ -107,7 +107,7 @@ export default function AppointmentForm() {
    )}
 
    <div className="mb-6">
-    <h3 className="text-2xl md:text-3xl font-black text-navy-blue">
+    <h3 className="text-2xl md:text-3xl font-bold text-navy-blue">
      Book an Appointment
     </h3>
     <p className="text-sm text-soft-gray mt-1.5">

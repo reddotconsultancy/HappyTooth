@@ -185,10 +185,10 @@ export default function InternationalPatients() {
       {steps.map((st, idx) => (
        <ScrollReveal key={idx} animation="fade-up" delay={idx + 1}>
         <div className="bg-white p-6 md:p-8 rounded-3xl border border-gray-150 shadow-sm space-y-3 hover-lift h-full">
-         <span className="inline-block text-xs font-black text-primary-teal bg-primary-teal/10 px-3.5 py-1 rounded-full">
+         <span className="inline-block text-xs font-bold text-primary-teal bg-primary-teal/10 px-3.5 py-1 rounded-full">
           {st.step}
          </span>
-         <h3 className="text-lg font-black text-navy-blue">{st.title}</h3>
+         <h3 className="text-lg font-bold text-navy-blue">{st.title}</h3>
          <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify ">{st.desc}</p>
         </div>
        </ScrollReveal>
@@ -258,7 +258,7 @@ export default function InternationalPatients() {
    {/* 5. GET IN TOUCH CTA */}
    <section className="py-20 bg-white border-t border-gray-100">
     <ScrollReveal animation="scale" className="max-w-4xl mx-auto px-4 text-center space-y-6">
-     <h2 className="text-2xl sm:text-3xl font-black text-navy-blue">
+     <h2 className="text-2xl sm:text-3xl font-bold text-navy-blue">
       {`Start with a message. We'll take it from there.`}
      </h2>
      <p className="text-xs md:text-sm text-soft-gray leading-relaxed max-w-xl mx-auto text-justify ">
