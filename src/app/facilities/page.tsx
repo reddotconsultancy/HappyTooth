@@ -202,7 +202,7 @@ export default function Facilities() {
        <div className="rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-150 bg-white p-3 hover-lift">
         <div className="relative h-80 sm:h-96 rounded-[1.8rem] overflow-hidden img-zoom">
          <Image
-          src="/images/happytooth-varkala3.jpg"
+          src="/images/happytooth-varkala3-facilities.jpg"
           alt="HappyTooth X-Ray and Diagnostic equipment room"
           fill
           sizes="(max-width: 1024px) 100vw, 480px"

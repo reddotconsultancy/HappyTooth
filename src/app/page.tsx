@@ -423,7 +423,7 @@ export default function Home() {
       <ScrollReveal animation="scale" className="lg:col-span-5 relative h-96 min-h-[350px] rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-2">
        <div className="relative w-full h-full rounded-[1.8rem] overflow-hidden">
         <Image
-         src="/images/happytooth-varkala12-1.jpg"
+         src="/images/happytooth-varkala12-2.jpg"
          alt="HappyTooth Smile Studio Specialist Clinic Treatment Room"
          fill
          sizes="(max-width: 1024px) 100vw, 480px"
