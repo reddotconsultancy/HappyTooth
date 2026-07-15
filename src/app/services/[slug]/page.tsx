@@ -161,7 +161,7 @@ export default async function ServicePage({
      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
 
       {/* Left: Image */}
-      <div className="lg:col-span-5">
+      <div className="lg:col-span-5 w-full max-w-md mx-auto lg:max-w-none">
        <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-3 sticky top-36">
         <div className="relative h-72 md:h-96 lg:h-[28rem] rounded-[2rem] overflow-hidden bg-gray-50">
          <Image

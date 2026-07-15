@@ -137,7 +137,7 @@ export default function About() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       {/* Image Side */}
-      <ScrollReveal animation="fade-right" className="lg:col-span-5 relative">
+      <ScrollReveal animation="fade-right" className="lg:col-span-5 relative w-full max-w-md mx-auto lg:max-w-none">
        <div className="absolute -top-6 -left-6 w-12 h-12 border-t-4 border-l-4 border-primary-teal rounded-tl-2xl"></div>
        <div className="absolute -bottom-6 -right-6 w-12 h-12 border-b-4 border-r-4 border-primary-teal rounded-br-2xl"></div>
        <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
@@ -236,9 +236,9 @@ export default function About() {
      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
       {/* Left image of Dr. Thushara */}
-      <div className="lg:col-span-5 relative">
+      <div className="lg:col-span-5 relative w-full max-w-md mx-auto lg:max-w-none">
        <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
-        <div className="relative h-[32rem] rounded-[2rem] overflow-hidden">
+        <div className="relative h-[24rem] sm:h-[28rem] lg:h-[32rem] rounded-[2rem] overflow-hidden">
          <Image
           src="/images/dr_thushara.jpg"
           alt="Dr. Thushara Sudhakaran Clinical Director Specialist Endodontist"

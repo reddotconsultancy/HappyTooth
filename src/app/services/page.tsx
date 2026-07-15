@@ -91,7 +91,7 @@ export default function Services() {
          {/* Left Column: Image (Alternates position on desktop) */}
          <ScrollReveal 
           animation={isEven ? "fade-right" : "fade-left"} 
-          className={`lg:col-span-5 relative ${isEven ? "" : "lg:order-2"}`}
+          className={`lg:col-span-5 relative w-full max-w-md mx-auto lg:max-w-none ${isEven ? "" : "lg:order-2"}`}
          >
           <div className="rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-150 bg-white p-3 hover-lift">
            <div className="relative h-72 md:h-96 rounded-[1.8rem] overflow-hidden bg-gray-50 img-zoom">

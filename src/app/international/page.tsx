@@ -150,9 +150,9 @@ export default function InternationalPatients() {
       </ScrollReveal>
 
       {/* Accent image */}
-      <ScrollReveal animation="fade-left" className="lg:col-span-5 relative">
+      <ScrollReveal animation="fade-left" className="lg:col-span-5 relative w-full max-w-md mx-auto lg:max-w-none">
        <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-150 bg-white p-3 hover-lift">
-        <div className="relative h-96 rounded-[1.8rem] overflow-hidden img-zoom">
+        <div className="relative h-80 sm:h-96 rounded-[1.8rem] overflow-hidden img-zoom">
          <Image
           src="/images/indian_smile_design.png"
           alt="International Patient Dental Care Kerala"
