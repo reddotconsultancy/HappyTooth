@@ -49,9 +49,6 @@ export const metadata: Metadata = {
   address: true,
   telephone: true,
  },
- alternates: {
-  canonical: "/",
- },
  openGraph: {
   title: "HappyTooth Dental Clinics | Murukkumpuzha & Kallambalam",
   description: "Expert dental care in Murukkumpuzha & Kallambalam, Thiruvananthapuram. Specialist Endodontist Dr. Thushara Sudhakaran (BDS, MDS) — Root Canals, Implants, Aligners & Cosmetic Dentistry.",
