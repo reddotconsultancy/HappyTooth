@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   url: "/services",
   images: [
    {
-    url: "/images/happytooth-varkala12-1.jpg",
+    url: "/images/happytooth-varkala12-1.webp",
     width: 1200,
     height: 630,
     alt: "HappyTooth Dental Services \u2014 Root Canal, Implants, Aligners",

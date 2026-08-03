@@ -87,7 +87,7 @@ export default function Facilities() {
    <BreadcrumbHero
     title="Our Facilities"
     currentPage="Facilities"
-    bgImage="/images/teeth_whitening_smile.png"
+    bgImage="/images/teeth_whitening_smile.webp"
    />
 
    {/* 1. Introduction section */}
@@ -100,7 +100,7 @@ export default function Facilities() {
        <div className="relative h-44 rounded-2xl overflow-hidden shadow-md border border-gray-50 bg-white p-2">
         <div className="relative w-full h-full rounded-xl overflow-hidden">
          <Image
-          src="/images/happytooth-varkala4.jpg"
+          src="/images/happytooth-varkala4.webp"
           alt="HappyTooth Smile Studio Waiting Lobby"
           fill
           sizes="(max-width: 768px) 50vw, 200px"
@@ -111,7 +111,7 @@ export default function Facilities() {
        <div className="relative h-44 rounded-2xl overflow-hidden shadow-md border border-gray-50 bg-white p-2">
         <div className="relative w-full h-full rounded-xl overflow-hidden">
          <Image
-          src="/images/happytooth-varkala12-1.jpg"
+          src="/images/happytooth-varkala12-1.webp"
           alt="Dental Cabin Chair Treatment Room"
           fill
           sizes="(max-width: 768px) 50vw, 200px"
@@ -122,7 +122,7 @@ export default function Facilities() {
        <div className="relative h-44 rounded-2xl overflow-hidden shadow-md border border-gray-50 bg-white p-2 col-span-2">
         <div className="relative w-full h-full rounded-xl overflow-hidden">
          <Image
-          src="/images/happytooth-varkala1.jpg"
+          src="/images/happytooth-varkala1.webp"
           alt="HappyTooth Clinic Exterior Setup"
           fill
           sizes="(max-width: 768px) 100vw, 400px"
@@ -202,7 +202,7 @@ export default function Facilities() {
        <div className="rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-150 bg-white p-3 hover-lift">
         <div className="relative h-80 sm:h-96 rounded-[1.8rem] overflow-hidden img-zoom">
          <Image
-          src="/images/happytooth-varkala3-facilities.jpg"
+          src="/images/happytooth-varkala3-facilities.webp"
           alt="HappyTooth X-Ray and Diagnostic equipment room"
           fill
           sizes="(max-width: 1024px) 100vw, 480px"
@@ -226,7 +226,7 @@ export default function Facilities() {
        <div className="rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-150 bg-white p-3 hover-lift">
         <div className="relative h-80 sm:h-96 rounded-[1.8rem] overflow-hidden img-zoom">
          <Image
-          src="/images/happytooth-varkala12-1.jpg"
+          src="/images/happytooth-varkala12-1.webp"
           alt="Latest Electronic Dental Chair Setup"
           fill
           sizes="(max-width: 1024px) 100vw, 480px"
@@ -313,7 +313,7 @@ export default function Facilities() {
         <div className="max-w-md mx-auto rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-150 bg-white p-3 relative aspect-[2/3] hover-lift">
          <div className="relative w-full h-full rounded-[1.8rem] overflow-hidden img-zoom">
           <Image
-           src="/images/happytooth-varkala4.jpg"
+           src="/images/happytooth-varkala4.webp"
            alt="Lobby reception and play zone"
            fill
            sizes="(max-width: 768px) 100vw, 450px"
@@ -336,7 +336,7 @@ export default function Facilities() {
        <div className="rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-150 bg-white p-3 hover-lift">
         <div className="relative h-80 sm:h-96 rounded-[1.8rem] overflow-hidden img-zoom">
          <Image
-          src="/images/happytooth-varkala7.jpg"
+          src="/images/happytooth-varkala7.webp"
           alt="Class B Autoclave sterilizer tray"
           fill
           sizes="(max-width: 1024px) 100vw, 480px"
@@ -396,7 +396,7 @@ export default function Facilities() {
       <ScrollReveal animation="fade-right" className="flex">
        <div className="bg-white/5 border border-white/10 rounded-[2rem] p-8 backdrop-blur-md space-y-6 hover-lift w-full">
         <span className="text-[10px] font-black text-accent-teal tracking-widest uppercase bg-white/10 py-1 px-3 rounded-full inline-block">
-         Murukkumpuzha Studio
+         Murukkumpuzha Smile Studio
         </span>
         <h3 className="text-lg font-bold text-white">HappyTooth Smile Studio</h3>
         <div className="space-y-4 text-xs text-gray-200">

@@ -13,7 +13,7 @@ export const metadata = {
   url: "/clinics/kallambalam",
   images: [
    {
-    url: "/images/happytooth-varkala10.jpg",
+    url: "/images/happytooth-varkala10.webp",
     width: 1200,
     height: 630,
     alt: "HappyTooth Dental Care, Kallambalam — Root Canal Centre Thiruvananthapuram",
@@ -32,7 +32,7 @@ const clinicSchema = {
    "parentOrganization": {
     "@id": "https://happytoothdental.in/#organization"
    },
-   "image": "https://happytoothdental.in/images/happytooth-varkala10.jpg",
+   "image": "https://happytoothdental.in/images/happytooth-varkala10.webp",
    "telephone": "+91 87144 70808",
    "priceRange": "$$",
    "address": {
@@ -145,7 +145,7 @@ export default function KallambalamClinic() {
    <BreadcrumbHero
     title="Kallambalam Clinic"
     currentPage="Kallambalam"
-    bgImage="/images/happytooth-varkala10.jpg"
+    bgImage="/images/happytooth-varkala10.webp"
    />
 
 
@@ -169,21 +169,37 @@ export default function KallambalamClinic() {
       .filter((c) => c.id === "kallambalam")
       .map((clinic, idx) => {
        return (
-        <ScrollReveal key={idx} animation="scale" className="max-w-3xl mx-auto">
-         <ClinicCard
-          name={clinic.name}
-          branch={clinic.branch}
-          badge={clinic.badge}
-          status={clinic.status}
-          address={clinic.address}
-          phone={clinic.phone}
-          telLink={clinic.telLink}
-          waLink={clinic.waLink}
-          timings={clinic.timings}
-          parking={clinic.parking}
-          mapUrl={clinic.mapUrl}
-         />
-        </ScrollReveal>
+        <div key={idx} className="max-w-3xl mx-auto space-y-8">
+         <ScrollReveal animation="scale">
+          <ClinicCard
+           name={clinic.name}
+           branch={clinic.branch}
+           badge={clinic.badge}
+           status={clinic.status}
+           address={clinic.address}
+           phone={clinic.phone}
+           telLink={clinic.telLink}
+           waLink={clinic.waLink}
+           timings={clinic.timings}
+           parking={clinic.parking}
+           mapUrl={clinic.mapUrl}
+          />
+         </ScrollReveal>
+         <ScrollReveal animation="fade-up">
+          <div className="rounded-3xl overflow-hidden shadow-lg border border-gray-100">
+           <iframe
+            src="https://www.google.com/maps?q=8.7613543,76.7859502&output=embed"
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Kallambalam Clinic Location Map"
+           />
+          </div>
+         </ScrollReveal>
+        </div>
        );
       })}
     </div>

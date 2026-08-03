@@ -32,7 +32,7 @@ export default function Services() {
    <BreadcrumbHero
     title="Our Services"
     currentPage="Services"
-    bgImage="/images/happytooth-varkala5.jpg"
+    bgImage="/images/happytooth-varkala5.webp"
    />
 
    {/* Sticky Top Sub-navigation */}

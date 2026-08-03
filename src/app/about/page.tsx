@@ -13,7 +13,7 @@ export const metadata = {
   url: "/about",
   images: [
    {
-    url: "/images/happytooth-varkala12-1.jpg",
+    url: "/images/happytooth-varkala12-1.webp",
     width: 1200,
     height: 630,
     alt: "Dr. Thushara Sudhakaran \u2014 Clinical Director, HappyTooth Dental Clinics",
@@ -129,7 +129,7 @@ export default function About() {
    <BreadcrumbHero
     title="About Us"
     currentPage="About Us"
-    bgImage="/images/indian_dental_health.png"
+    bgImage="/images/indian_dental_health.webp"
    />
 
    {/* 1. Core Philosophy & Tagline */}
@@ -142,7 +142,7 @@ export default function About() {
        <div className="absolute -bottom-6 -right-6 w-12 h-12 border-b-4 border-r-4 border-primary-teal rounded-br-2xl"></div>
        <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
         <Image
-         src="/images/indian_dentist_team.png"
+         src="/images/indian_dentist_team.webp"
          alt="HappyTooth Dental Clinic Specialist Team Portrait"
          width={600}
          height={600}
@@ -240,7 +240,7 @@ export default function About() {
        <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
         <div className="relative h-[24rem] sm:h-[28rem] lg:h-[32rem] rounded-[2rem] overflow-hidden">
          <Image
-          src="/images/dr_thushara.jpg"
+          src="/images/dr_thushara.webp"
           alt="Dr. Thushara Sudhakaran Clinical Director Specialist Endodontist"
           fill
           sizes="(max-width: 1024px) 100vw, 480px"
@@ -378,7 +378,7 @@ export default function About() {
      <div className="max-w-xl mx-auto mt-16 rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-150 bg-white p-3 relative aspect-square hover-lift">
       <div className="relative w-full h-full rounded-[1.8rem] overflow-hidden">
        <Image
-        src="/images/indian_family_smile.png"
+        src="/images/indian_family_smile.webp"
         alt="Happy Indian family smiling with healthy teeth"
         fill
         sizes="(max-width: 768px) 100vw, 600px"

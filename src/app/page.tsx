@@ -94,7 +94,7 @@ export default function Home() {
         <div className="absolute top-4 left-6 w-[80%] h-[75%] rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-3 z-10 transform hover:scale-[1.01] transition duration-500">
          <div className="relative w-full h-full rounded-2xl overflow-hidden">
           <Image
-           src="/images/indian_rct_procedure.png"
+           src="/images/indian_rct_procedure.webp"
            alt="Indian Dentist performing root canal treatment"
            fill
            sizes="(max-width: 768px) 100vw, 450px"
@@ -108,7 +108,7 @@ export default function Home() {
         <div className="absolute bottom-4 right-4 w-[55%] h-[45%] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white p-2.5 z-20 transform hover:rotate-1 hover:scale-102 transition duration-500">
          <div className="relative w-full h-full rounded-xl overflow-hidden">
           <Image
-           src="/images/dr_thushara.png"
+           src="/images/dr_thushara.webp"
            alt="Doctor Profile Dr. Thushara Sudhakaran"
            fill
            sizes="(max-width: 768px) 50vw, 250px"
@@ -121,7 +121,7 @@ export default function Home() {
         <div className="absolute top-16 left-0 w-[40%] h-[35%] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white p-2 z-20 transform hover:-rotate-1 hover:scale-102 transition duration-500">
          <div className="relative w-full h-full rounded-xl overflow-hidden">
           <Image
-           src="/images/indian_dentist_team.png"
+           src="/images/indian_dentist_team.webp"
            alt="Indian Dentist Specialist Team"
            fill
            sizes="(max-width: 768px) 40vw, 200px"
@@ -277,7 +277,7 @@ export default function Home() {
             </button>
             {[
              "Kallambalam Clinic",
-             "Murukkumpuzha Studio"
+             "Murukkumpuzha Smile Studio"
             ].map((loc) => (
              <button
               key={loc}
@@ -327,7 +327,7 @@ export default function Home() {
        <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
         <div className="relative h-[24rem] sm:h-[28rem] lg:h-[32rem] rounded-[2rem] overflow-hidden">
          <Image
-          src="/images/dr_thushara.jpg"
+          src="/images/dr_thushara.webp"
           alt="Dr. Thushara Sudhakaran BDS MDS Lead Endodontist"
           fill
           sizes="(max-width: 1024px) 100vw, 480px"
@@ -423,7 +423,7 @@ export default function Home() {
       <ScrollReveal animation="scale" className="lg:col-span-5 relative h-96 min-h-[350px] rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-2">
        <div className="relative w-full h-full rounded-[1.8rem] overflow-hidden">
         <Image
-         src="/images/happytooth-varkala12-2.jpg"
+         src="/images/happytooth-varkala12-2.webp"
          alt="HappyTooth Smile Studio Specialist Clinic Treatment Room"
          fill
          sizes="(max-width: 1024px) 100vw, 480px"
@@ -439,7 +439,7 @@ export default function Home() {
    {/* 4. WHY CHOOSE US (6 Core Points from PDF) */}
    <section 
     className="py-20 relative parallax-bg"
-    style={{ backgroundImage: "url('/images/happytooth-varkala11.jpg')" }}
+    style={{ backgroundImage: "url('/images/happytooth-varkala11.webp')" }}
    >
     <div className="absolute inset-0 bg-[#F8F5EE]/90 backdrop-blur-md z-0"></div>
     <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent-teal/5 rounded-full blur-3xl"></div>
@@ -500,7 +500,7 @@ export default function Home() {
        <div className="absolute -bottom-4 -right-4 w-12 h-12 border-b-4 border-r-4 border-primary-teal rounded-br-2xl"></div>
        <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
         <Image
-         src="/images/indian_patient_smile.png"
+         src="/images/indian_patient_smile.webp"
          alt="Healthy Smiles at HappyTooth"
          width={600}
          height={600}

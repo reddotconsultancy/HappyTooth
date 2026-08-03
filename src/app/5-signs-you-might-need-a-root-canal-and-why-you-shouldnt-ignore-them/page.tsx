@@ -15,7 +15,7 @@ export const metadata = {
   type: "article",
   images: [
    {
-    url: "/images/indian_toothache_blog.png",
+    url: "/images/indian_toothache_blog.webp",
     width: 1200,
     height: 630,
     alt: "5 signs you need a root canal \u2014 dental pain warning signs",
@@ -31,7 +31,7 @@ export default function BlogPost() {
    <BreadcrumbHero
     title="5 Signs You Might Need a Root Canal (And Why You Shouldn’t Ignore Them)"
     currentPage="Blog"
-    bgImage="/images/indian_toothache_blog.png"
+    bgImage="/images/indian_toothache_blog.webp"
    />
 
    {/* Main post layout */}
@@ -45,7 +45,7 @@ export default function BlogPost() {
         <div className="relative h-72 sm:h-96 w-full rounded-[2rem] overflow-hidden shadow-xl border border-gray-150 p-2 bg-white hover-lift">
          <div className="relative w-full h-full rounded-2xl overflow-hidden img-zoom">
           <Image
-           src="/images/indian_toothache_blog.png"
+           src="/images/indian_toothache_blog.webp"
            alt="Root Canal treatment diagnosis illustration"
            fill
            sizes="(max-width: 1024px) 100vw, 760px"

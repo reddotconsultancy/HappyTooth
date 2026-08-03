@@ -15,7 +15,7 @@ export const metadata = {
   url: "/blog",
   images: [
    {
-    url: "/images/happytooth-varkala12-1.jpg",
+    url: "/images/happytooth-varkala12-1.webp",
     width: 1200,
     height: 630,
     alt: "HappyTooth Dental Health Blog",
@@ -35,36 +35,39 @@ export default function Blog() {
    category: "Uncategorized",
    excerpt:
     "Tooth pain is something most people try to ignore — hoping it will go away on its own. But sometimes, your tooth is trying to tell you something more serious. A root canal is often misunderstood and feared, but in reality, it is a safe and effective way to save your natural tooth and relieve pain.",
-   image: "/images/indian_toothache_blog.png",
+   image: "/images/indian_toothache_blog.webp",
+   published: true,
   },
   {
    title: "Cosmetic Dentistry: Smile Makeover Options That Change Lives",
-   slug: "5-signs-you-might-need-a-root-canal-and-why-you-shouldnt-ignore-them", // link back or simple loop
+   slug: "cosmetic-dentistry-smile-makeover-options",
    date: "18 Apr",
    year: "2026",
    author: "arungokul@gmail.com",
    category: "Cosmetic Dentistry",
    excerpt:
     "If you have ever felt self-conscious about gaps, discoloration, or chipped edges, cosmetic dentistry is designed around your unique features. Dental veneers and professional whitening can elevate your confidence and keep your bite functional and balanced.",
-   image: "/images/indian_dental_health.png",
+   image: "/images/indian_dental_health.webp",
+   published: false,
   },
   {
    title: "Preventive Dental Tips for Families: Daily Actions for Strong Teeth",
-   slug: "5-signs-you-might-need-a-root-canal-and-why-you-shouldnt-ignore-them",
+   slug: "preventive-dental-tips-for-families",
    date: "25 Apr",
    year: "2026",
    author: "arungokul@gmail.com",
    category: "Preventive Dentistry",
    excerpt:
     "Keeping teeth clean isn’t just about visiting the clinic twice a year — it starts at home. Simple daily actions like fluoride toothpaste usage, standard flossing, and minimizing sugary drinks prevent plaque buildup and keep gums secure.",
-   image: "/images/indian_family_smile.png",
+   image: "/images/indian_family_smile.webp",
+   published: false,
   },
  ];
 
  return (
   <div>
    {/* Breadcrumb Header */}
-   <BreadcrumbHero title="Blog" currentPage="Blog" bgImage="/images/indian_dental_health.png" />
+   <BreadcrumbHero title="Blog" currentPage="Blog" bgImage="/images/indian_dental_health.webp" />
 
    {/* Main content grid */}
    <section className="py-20 bg-white">
@@ -113,7 +116,11 @@ export default function Blog() {
            </div>
 
            <h2 className="text-xl sm:text-2xl font-extrabold text-navy-blue group-hover:text-primary-teal transition-colors">
-            <Link href={`/${post.slug}`}>{post.title}</Link>
+            {post.published ? (
+             <Link href={`/${post.slug}`}>{post.title}</Link>
+            ) : (
+             <span>{post.title}</span>
+            )}
            </h2>
 
            <p className="text-sm text-soft-gray leading-relaxed text-justify ">
@@ -121,12 +128,21 @@ export default function Blog() {
            </p>
 
            <div className="pt-2">
-            <Link
-             href={`/${post.slug}`}
-             className="bg-primary-teal hover:bg-navy-blue text-white font-bold text-xs py-3 px-6 rounded-full transition-all duration-300 shadow-md inline-block"
-            >
-             Read More
-            </Link>
+            {post.published ? (
+             <Link
+              href={`/${post.slug}`}
+              className="bg-primary-teal hover:bg-navy-blue text-white font-bold text-xs py-3 px-6 rounded-full transition-all duration-300 shadow-md inline-block"
+             >
+              Read More
+             </Link>
+            ) : (
+             <span
+              aria-disabled="true"
+              className="bg-primary-teal hover:bg-navy-blue text-white font-bold text-xs py-3 px-6 rounded-full transition-all duration-300 shadow-md inline-block"
+             >
+              Read More
+             </span>
+            )}
            </div>
           </div>
          </article>
@@ -174,12 +190,18 @@ export default function Blog() {
              </div>
             </div>
             <div className="space-y-1">
-             <Link
-              href={`/${post.slug}`}
-              className="text-xs text-navy-blue hover:text-primary-teal font-bold leading-snug block line-clamp-2"
-             >
-              {post.title}
-             </Link>
+             {post.published ? (
+              <Link
+               href={`/${post.slug}`}
+               className="text-xs text-navy-blue hover:text-primary-teal font-bold leading-snug block line-clamp-2"
+              >
+               {post.title}
+              </Link>
+             ) : (
+              <span className="text-xs text-navy-blue hover:text-primary-teal font-bold leading-snug block line-clamp-2">
+               {post.title}
+              </span>
+             )}
              <span className="text-[10px] font-semibold text-soft-gray block">{post.date} 2026</span>
             </div>
            </li>

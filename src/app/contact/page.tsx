@@ -15,7 +15,7 @@ export const metadata = {
   url: "/contact",
   images: [
    {
-    url: "/images/happytooth-varkala12-1.jpg",
+    url: "/images/happytooth-varkala12-1.webp",
     width: 1200,
     height: 630,
     alt: "HappyTooth Dental Clinics \u2014 Book an appointment",
@@ -61,7 +61,7 @@ export default function Contact() {
  return (
   <div>
    {/* Breadcrumb Header */}
-   <BreadcrumbHero title="Book an Appointment" currentPage="Book Appointment" bgImage="/images/happytooth-varkala10.jpg" />
+   <BreadcrumbHero title="Book an Appointment" currentPage="Book Appointment" bgImage="/images/happytooth-varkala10.webp" />
 
    {/* Clinic Cards */}
    <section className="py-20 bg-white">

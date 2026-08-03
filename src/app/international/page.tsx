@@ -13,7 +13,7 @@ export const metadata = {
   url: "/international",
   images: [
    {
-    url: "/images/happytooth-varkala12-1.jpg",
+    url: "/images/happytooth-varkala12-1.webp",
     width: 1200,
     height: 630,
     alt: "HappyTooth Dental Clinics \u2014 International patients & dental tourism Kerala",
@@ -112,7 +112,7 @@ export default function InternationalPatients() {
    <BreadcrumbHero
     title="International Patients"
     currentPage="International Patients"
-    bgImage="/images/teeth_whitening_smile.png"
+    bgImage="/images/teeth_whitening_smile.webp"
    />
 
    {/* 1. Header description */}
@@ -154,7 +154,7 @@ export default function InternationalPatients() {
        <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-150 bg-white p-3 hover-lift">
         <div className="relative h-80 sm:h-96 rounded-[1.8rem] overflow-hidden img-zoom">
          <Image
-          src="/images/indian_smile_design.png"
+          src="/images/indian_smile_design.webp"
           alt="International Patient Dental Care Kerala"
           fill
           sizes="(max-width: 1024px) 100vw, 480px"

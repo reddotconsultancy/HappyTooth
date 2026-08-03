@@ -20,7 +20,7 @@ export const sendEmail = async ({ to, subject, html }: SendEmailParams) => {
   console.log("MOCK EMAIL (DEVELOPMENT ONLY — configure SMTP for production)");
   console.log(`TO: ${to}`);
   console.log(`SUBJECT: ${subject}`);
-  console.log("CONTENT:", html);
+  console.log(`CONTENT: [${html.length} chars omitted — contains submitted personal data]`);
   console.log("==========================================");
   return { success: true, message: "Mock email logged to console." };
  }

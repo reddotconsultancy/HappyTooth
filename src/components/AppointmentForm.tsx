@@ -223,9 +223,9 @@ export default function AppointmentForm() {
       onChange={handleChange}
       onFocus={(e) => {
        setFocusedField("date");
-       if (typeof e.target.showPicker === "function") {
+       if (typeof e.currentTarget.showPicker === "function") {
         try {
-         e.target.showPicker();
+         e.currentTarget.showPicker();
         } catch (err) {}
        }
       }}
@@ -296,7 +296,7 @@ export default function AppointmentForm() {
        </button>
        {[
         "Kallambalam Clinic",
-        "Murukkumpuzha Studio"
+        "Murukkumpuzha Smile Studio"
        ].map((loc) => (
         <button
          key={loc}

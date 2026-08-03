@@ -31,7 +31,7 @@ export default function Header() {
    name: "Clinics",
    path: "#",
    dropdown: [
-    { name: "Murukkumpuzha Studio", path: "/clinics/murukkumpuzha" },
+    { name: "Murukkumpuzha Smile Studio", path: "/clinics/murukkumpuzha" },
     { name: "Kallambalam Clinic", path: "/clinics/kallambalam" },
    ],
   },
@@ -92,7 +92,7 @@ export default function Header() {
        <Link href="/" className="group flex items-center gap-2">
         <div className="relative overflow-hidden transition-transform duration-500 ease-out group-hover:scale-[1.03]">
          <Image
-          src="/images/happytooth-logo-1.png"
+          src="/images/happytooth-logo-1.webp"
           alt="HappyTooth Logo"
           width={280}
           height={80}
@@ -241,7 +241,7 @@ export default function Header() {
      <div className="flex items-center justify-between pb-6 border-b border-gray-100">
       <Link href="/" onClick={() => setIsOpen(false)}>
        <Image
-        src="/images/happytooth-logo-1.png"
+        src="/images/happytooth-logo-1.webp"
         alt="HappyTooth Logo"
         width={160}
         height={46}
@@ -326,7 +326,7 @@ export default function Header() {
         {/* Murukkumpuzha Branch */}
         <div className="bg-bg-light-blue/40 border border-gray-100 rounded-2xl p-4 space-y-3">
          <div className="flex items-center justify-between">
-          <span className="text-xs font-bold text-navy-blue">Murukkumpuzha Studio</span>
+          <span className="text-xs font-bold text-navy-blue">Murukkumpuzha Smile Studio</span>
           <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
          </div>
          <div className="flex gap-2">

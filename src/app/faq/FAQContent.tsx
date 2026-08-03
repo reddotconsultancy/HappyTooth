@@ -13,7 +13,7 @@ interface FAQItem {
 export default function FAQContent() {
  const [activeCategory, setActiveCategory] = useState("all");
  const [searchQuery, setSearchQuery] = useState("");
- const [openIndex, setOpenIndex] = useState<number | null>(null);
+ const [openIndex, setOpenIndex] = useState<string | null>(null);
 
  const categories = [
   { id: "all", name: "All Questions" },
@@ -266,14 +266,14 @@ export default function FAQContent() {
   return categoryMatch && searchMatch;
  });
 
- const toggleAccordion = (idx: number) => {
-  setOpenIndex(openIndex === idx ? null : idx);
+ const toggleAccordion = (id: string) => {
+  setOpenIndex(openIndex === id ? null : id);
  };
 
  return (
   <div className="bg-transparent min-h-screen">
    {/* Breadcrumb Header */}
-   <BreadcrumbHero title="Frequently Asked Questions" currentPage="FAQs" bgImage="/images/happytooth-varkala8.jpg" />
+   <BreadcrumbHero title="Frequently Asked Questions" currentPage="FAQs" bgImage="/images/happytooth-varkala8.webp" />
 
    {/* Main Content Area */}
    <section className="py-16 md:py-24">
@@ -342,15 +342,15 @@ export default function FAQContent() {
        {filteredFaqs.length > 0 ? (
         <div className="space-y-4">
          {filteredFaqs.map((faq, idx) => {
-          const isOpen = openIndex === idx;
+          const isOpen = openIndex === faq.question;
           return (
            <div
-            key={idx}
+            key={faq.question}
             className="bg-white rounded-3xl border border-gray-100 shadow-xs overflow-hidden transition-all duration-500 hover:border-primary-teal/20"
            >
             {/* Question trigger bar */}
             <button
-             onClick={() => toggleAccordion(idx)}
+             onClick={() => toggleAccordion(faq.question)}
              className="w-full text-left p-6 md:p-7 flex items-center justify-between gap-4 font-bold text-navy-blue hover:text-primary-teal transition-colors outline-none"
             >
              <span className="text-sm md:text-base pr-2 leading-snug">

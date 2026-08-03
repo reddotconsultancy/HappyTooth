@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   siteName: "HappyTooth Smile Studio",
   images: [
    {
-    url: "/images/happytooth-varkala12-1.jpg",
+    url: "/images/happytooth-varkala12-1.webp",
     width: 1200,
     height: 630,
     alt: "HappyTooth Dental Clinics — Modern dental care in Thiruvananthapuram",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   card: "summary_large_image",
   title: "HappyTooth Dental Clinics | Murukkumpuzha & Kallambalam",
   description: "Expert dental care in Thiruvananthapuram. Root Canals, Implants, Aligners & Cosmetic Dentistry by specialist Dr. Thushara Sudhakaran.",
-  images: ["/images/happytooth-varkala12-1.jpg"],
+  images: ["/images/happytooth-varkala12-1.webp"],
  },
  robots: {
   index: true,
@@ -123,10 +123,10 @@ export default function RootLayout({
     "url": "https://happytoothdental.in",
     "logo": {
      "@type": "ImageObject",
-     "url": "https://happytoothdental.in/images/happytooth-logo-1.png",
+     "url": "https://happytoothdental.in/images/happytooth-logo-1.webp",
      "caption": "HappyTooth Dental Clinics Logo"
     },
-    "image": "https://happytoothdental.in/images/happytooth-varkala12-1.jpg",
+    "image": "https://happytoothdental.in/images/happytooth-varkala12-1.webp",
     "description": "Premium specialist dental clinics in Murukkumpuzha and Kallambalam, Thiruvananthapuram, Kerala.",
     "telephone": "+91 73561 00602",
     "email": "smile@happytoothdental.in",
@@ -143,7 +143,7 @@ export default function RootLayout({
     "parentOrganization": {
      "@id": "https://happytoothdental.in/#organization"
     },
-    "image": "https://happytoothdental.in/images/happytooth-varkala10.jpg",
+    "image": "https://happytoothdental.in/images/happytooth-varkala10.webp",
     "telephone": "+91 87144 70808",
     "priceRange": "$$",
     "address": {
@@ -188,7 +188,7 @@ export default function RootLayout({
     "parentOrganization": {
      "@id": "https://happytoothdental.in/#organization"
     },
-    "image": "https://happytoothdental.in/images/happytooth-varkala12-1.jpg",
+    "image": "https://happytoothdental.in/images/happytooth-varkala12-1.webp",
     "telephone": "+91 73561 00602",
     "priceRange": "$$",
     "address": {

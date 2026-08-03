@@ -9,7 +9,7 @@ export default function Footer() {
   { name: "Services", path: "/services" },
   { name: "Facilities", path: "/facilities" },
   { name: "Kallambalam Clinic", path: "/clinics/kallambalam" },
-  { name: "Murukkumpuzha Studio", path: "/clinics/murukkumpuzha" },
+  { name: "Murukkumpuzha Smile Studio", path: "/clinics/murukkumpuzha" },
   { name: "International Patients", path: "/international" },
   { name: "Blog", path: "/blog" },
   { name: "FAQ", path: "/faq" },
@@ -40,7 +40,7 @@ export default function Footer() {
      <div className="space-y-4">
       <Link href="/" className="inline-block">
        <Image
-        src="/images/happytooth-logo-white.png"
+        src="/images/happytooth-logo-white.webp"
         alt="HappyTooth White Logo"
         width={180}
         height={50}
@@ -129,7 +129,7 @@ export default function Footer() {
      {/* Murukkumpuzha Clinic Contact */}
      <div>
       <h4 className="text-sm font-extrabold uppercase tracking-wider mb-6 relative pb-2 text-white after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-primary-teal">
-       Murukkumpuzha Studio
+       Murukkumpuzha Smile Studio
       </h4>
       <ul className="space-y-3 text-sm text-gray-300">
        <li className="flex items-start gap-2.5">

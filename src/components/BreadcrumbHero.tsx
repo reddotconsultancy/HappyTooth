@@ -11,7 +11,7 @@ interface BreadcrumbHeroProps {
 export default function BreadcrumbHero({
  title,
  currentPage,
- bgImage = "/images/happytooth-varkala11.jpg",
+ bgImage = "/images/happytooth-varkala11.webp",
 }: BreadcrumbHeroProps) {
  return (
   <section 
