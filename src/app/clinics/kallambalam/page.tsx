@@ -116,7 +116,7 @@ export default function KallambalamClinic() {
    parking: "Ample private parking (fits 6+ cars)",
    dentist: "Dr. Thushara Sudhakaran BDS MDS",
    dentistRole: "Clinical Director & Root Canal Specialist",
-   mapUrl: "https://www.google.com/maps/search/?api=1&query=8.6136824,76.8352005",
+   mapUrl: "https://maps.app.goo.gl/cQFJMx9Nu4Sbyz6B6",
   },
   {
    id: "kallambalam",

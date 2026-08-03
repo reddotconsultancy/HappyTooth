@@ -39,7 +39,7 @@ export default function Contact() {
    parking: "Ample private parking (fits 6+ cars)",
    dentist: "Dr. Thushara Sudhakaran BDS MDS",
    dentistRole: "Clinical Director & Root Canal Specialist",
-   mapUrl: "https://www.google.com/maps/search/?api=1&query=8.6136824,76.8352005",
+   mapUrl: "https://maps.app.goo.gl/cQFJMx9Nu4Sbyz6B6",
   },
   {
    name: "HappyTooth Dental Care & Root Canal Centre",
@@ -158,7 +158,7 @@ export default function Contact() {
        </div>
        <div className="px-5 pb-5">
         <a
-         href="https://www.google.com/maps/search/?api=1&query=8.6136824,76.8352005"
+         href="https://maps.app.goo.gl/cQFJMx9Nu4Sbyz6B6"
          target="_blank"
          rel="noopener noreferrer"
          className="flex items-center justify-center gap-2 bg-navy-blue hover:bg-accent-teal text-white font-bold text-sm py-3 px-6 rounded-xl transition-all duration-300 w-full active:scale-95"

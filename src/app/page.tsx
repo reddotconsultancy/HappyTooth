@@ -739,7 +739,7 @@ export default function Home() {
        waLink="https://wa.me/917356100602"
        timings="9:30 AM to 6:30 PM (All 7 Days)"
        parking="Ample private parking (fits 6+ cars)"
-       mapUrl="https://www.google.com/maps/search/?api=1&query=8.6136824,76.8352005"
+       mapUrl="https://maps.app.goo.gl/cQFJMx9Nu4Sbyz6B6"
       />
 
       <ClinicCard
