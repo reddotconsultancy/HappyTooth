@@ -240,7 +240,7 @@ export default function About() {
        <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
         <div className="relative h-[24rem] sm:h-[28rem] lg:h-[32rem] rounded-[2rem] overflow-hidden">
          <Image
-          src="/images/dr_thushara.webp"
+          src="/images/dr-thushara-portrait.webp"
           alt="Dr. Thushara Sudhakaran Clinical Director Specialist Endodontist"
           fill
           sizes="(max-width: 1024px) 100vw, 480px"
