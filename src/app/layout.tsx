@@ -25,22 +25,6 @@ export const metadata: Metadata = {
   template: "%s | HappyTooth Dental Clinics",
  },
  description: "Experience modern, patient-friendly specialized dental care at HappyTooth. Featuring clinic locations in Murukkumpuzha and Kallambalam, Thiruvananthapuram. Led by specialist Endodontist Dr. Thushara Sudhakaran (BDS, MDS).",
- keywords: [
-  "dentist Thiruvananthapuram",
-  "dental clinic Kallambalam",
-  "dental clinic Murukkumpuzha",
-  "root canal specialist Kerala",
-  "best dental clinic Trivandrum",
-  "Dr. Thushara Sudhakaran",
-  "Endodontist Thiruvananthapuram",
-  "smile designing clinic Varkala",
-  "clear aligners Trivandrum",
-  "dental implants Thiruvananthapuram",
-  "pediatric dentist Kallambalam",
-  "painless root canal treatment",
-  "cosmetic dentistry Kerala",
-  "hygienic dental clinic Trivandrum"
- ],
  authors: [{ name: "Dr. Thushara Sudhakaran", url: "https://happytoothdental.in" }],
  creator: "HappyTooth Clinics",
  publisher: "HappyTooth Clinics",
@@ -53,7 +37,7 @@ export const metadata: Metadata = {
   title: "HappyTooth Dental Clinics | Murukkumpuzha & Kallambalam",
   description: "Expert dental care in Murukkumpuzha & Kallambalam, Thiruvananthapuram. Specialist Endodontist Dr. Thushara Sudhakaran (BDS, MDS) — Root Canals, Implants, Aligners & Cosmetic Dentistry.",
   url: "/",
-  siteName: "HappyTooth Smile Studio",
+  siteName: "HappyTooth Dental Clinics",
   images: [
    {
     url: "/images/happytooth-varkala12-1.webp",
@@ -193,7 +177,7 @@ export default function RootLayout({
     "priceRange": "$$",
     "address": {
      "@type": "PostalAddress",
-     "streetAddress": "Ground Floor, Mangalasseri Tower, Murukkumpuzha",
+     "streetAddress": "Ground Floor, Mangalasseri Tower, Thoppumukku, Murukkumpuzha",
      "addressLocality": "Thiruvananthapuram",
      "addressRegion": "Kerala",
      "postalCode": "695302",

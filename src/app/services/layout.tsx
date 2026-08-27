@@ -17,6 +17,12 @@ export const metadata: Metadata = {
    },
   ],
  },
+ twitter: {
+  card: "summary_large_image",
+  title: "Dental Services & Treatments | Root Canal, Implants & Cosmetic Dentistry",
+  description: "Painless Root Canal, Smile Designing, Clear Aligners, Dental Implants & Paediatric Dentistry at HappyTooth, Thiruvananthapuram.",
+  images: ["/images/happytooth-varkala12-1.webp"],
+ },
 };
 
 export default function ServicesLayout({

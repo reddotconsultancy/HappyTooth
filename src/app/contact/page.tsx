@@ -22,6 +22,12 @@ export const metadata = {
    },
   ],
  },
+ twitter: {
+  card: "summary_large_image",
+  title: "Book a Dental Appointment | HappyTooth Clinics",
+  description: "Book a consultation at HappyTooth. Find addresses, maps, phone numbers, and timings for Murukkumpuzha & Kallambalam clinics.",
+  images: ["/images/happytooth-varkala12-1.webp"],
+ },
 };
 
 export default function Contact() {
@@ -31,7 +37,7 @@ export default function Contact() {
    branch: "Murukkumpuzha, Thiruvananthapuram",
    badge: "Flagship Studio · Open Daily",
    status: "Open All 7 Days",
-   address: "Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram – 695302",
+   address: "Ground Floor, Mangalasseri Tower, Thoppumukku, Murukkumpuzha, Thiruvananthapuram – 695302",
    phone: "+91 73561 00602",
    telLink: "tel:+917356100602",
    waLink: "https://wa.me/917356100602",

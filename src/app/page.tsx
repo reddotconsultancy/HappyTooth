@@ -370,7 +370,7 @@ export default function Home() {
 
        <div className="pt-2">
         <Link
-         href="/about"
+         href="/about#clinical-director"
          className="inline-block bg-navy-blue hover:bg-accent-teal text-white font-bold py-3.5 px-8 rounded-full transition-all duration-300 shadow-sm hover:shadow-md text-xs transform hover:-translate-y-0.5 active:scale-95"
         >
          Meet Dr. Thushara
@@ -628,6 +628,75 @@ export default function Home() {
           </div>
          </div>
         </div>
+        <div className="glass-panel p-6 md:p-8 rounded-[2rem] shadow-sm flex flex-col justify-between w-[290px] sm:w-[420px] shrink-0 whitespace-normal hover:shadow-xl transition-all duration-300">
+         <div className="space-y-4">
+          <div className="flex items-center gap-1 text-amber-500">
+           {[...Array(5)].map((_, i) => (
+            <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+           ))}
+          </div>
+          <p className="text-sm md:text-base text-soft-gray italic leading-relaxed">
+           {`"Highly recommended... Very professional service at reasonable price. The staffs are friendly and supportive... Kudos to the entire team. Special thanks to Dr Febi."`}
+          </p>
+         </div>
+         <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
+          <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
+           VV
+          </div>
+          <div>
+           <span className="block text-xs font-bold text-navy-blue">Veena Vijayan</span>
+           <span className="block text-[10px] text-soft-gray">Murukkumpuzha Patient</span>
+          </div>
+         </div>
+        </div>
+        <div className="glass-panel p-6 md:p-8 rounded-[2rem] shadow-sm flex flex-col justify-between w-[290px] sm:w-[420px] shrink-0 whitespace-normal hover:shadow-xl transition-all duration-300">
+         <div className="space-y-4">
+          <div className="flex items-center gap-1 text-amber-500">
+           {[...Array(5)].map((_, i) => (
+            <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+           ))}
+          </div>
+          <p className="text-sm md:text-base text-soft-gray italic leading-relaxed">
+           {`"I had a wonderful experience at Happy Tooth Smile Studio. The doctors are very professional, friendly, and well-behaved. I went there for smile designing, and I'm extremely happy with the results. The work was excellent, and the entire experience was comfortable and pleasant. Highly recommended!"`}
+          </p>
+         </div>
+         <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
+          <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
+           PT
+          </div>
+          <div>
+           <span className="block text-xs font-bold text-navy-blue">Premjith T</span>
+           <span className="block text-[10px] text-soft-gray">Murukkumpuzha Patient</span>
+          </div>
+         </div>
+        </div>
+        <div className="glass-panel p-6 md:p-8 rounded-[2rem] shadow-sm flex flex-col justify-between w-[290px] sm:w-[420px] shrink-0 whitespace-normal hover:shadow-xl transition-all duration-300">
+         <div className="space-y-4">
+          <div className="flex items-center gap-1 text-amber-500">
+           {[...Array(5)].map((_, i) => (
+            <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+           ))}
+          </div>
+          <p className="text-sm md:text-base text-soft-gray italic leading-relaxed">
+           {`"Professional care & excellent service. Friendly staffs and very welcoming atmosphere."`}
+          </p>
+         </div>
+         <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
+          <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
+           KR
+          </div>
+          <div>
+           <span className="block text-xs font-bold text-navy-blue">Karthu Rajan</span>
+           <span className="block text-[10px] text-soft-gray">Murukkumpuzha Patient</span>
+          </div>
+         </div>
+        </div>
        </div>
 
        {/* Set 2 (Duplicate for loop) */}
@@ -703,6 +772,75 @@ export default function Home() {
           </div>
          </div>
         </div>
+        <div className="glass-panel p-6 md:p-8 rounded-[2rem] shadow-sm flex flex-col justify-between w-[290px] sm:w-[420px] shrink-0 whitespace-normal hover:shadow-xl transition-all duration-300">
+         <div className="space-y-4">
+          <div className="flex items-center gap-1 text-amber-500">
+           {[...Array(5)].map((_, i) => (
+            <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+           ))}
+          </div>
+          <p className="text-sm md:text-base text-soft-gray italic leading-relaxed">
+           {`"Highly recommended... Very professional service at reasonable price. The staffs are friendly and supportive... Kudos to the entire team. Special thanks to Dr Febi."`}
+          </p>
+         </div>
+         <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
+          <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
+           VV
+          </div>
+          <div>
+           <span className="block text-xs font-bold text-navy-blue">Veena Vijayan</span>
+           <span className="block text-[10px] text-soft-gray">Murukkumpuzha Patient</span>
+          </div>
+         </div>
+        </div>
+        <div className="glass-panel p-6 md:p-8 rounded-[2rem] shadow-sm flex flex-col justify-between w-[290px] sm:w-[420px] shrink-0 whitespace-normal hover:shadow-xl transition-all duration-300">
+         <div className="space-y-4">
+          <div className="flex items-center gap-1 text-amber-500">
+           {[...Array(5)].map((_, i) => (
+            <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+           ))}
+          </div>
+          <p className="text-sm md:text-base text-soft-gray italic leading-relaxed">
+           {`"I had a wonderful experience at Happy Tooth Smile Studio. The doctors are very professional, friendly, and well-behaved. I went there for smile designing, and I'm extremely happy with the results. The work was excellent, and the entire experience was comfortable and pleasant. Highly recommended!"`}
+          </p>
+         </div>
+         <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
+          <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
+           PT
+          </div>
+          <div>
+           <span className="block text-xs font-bold text-navy-blue">Premjith T</span>
+           <span className="block text-[10px] text-soft-gray">Murukkumpuzha Patient</span>
+          </div>
+         </div>
+        </div>
+        <div className="glass-panel p-6 md:p-8 rounded-[2rem] shadow-sm flex flex-col justify-between w-[290px] sm:w-[420px] shrink-0 whitespace-normal hover:shadow-xl transition-all duration-300">
+         <div className="space-y-4">
+          <div className="flex items-center gap-1 text-amber-500">
+           {[...Array(5)].map((_, i) => (
+            <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+           ))}
+          </div>
+          <p className="text-sm md:text-base text-soft-gray italic leading-relaxed">
+           {`"Professional care & excellent service. Friendly staffs and very welcoming atmosphere."`}
+          </p>
+         </div>
+         <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
+          <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
+           KR
+          </div>
+          <div>
+           <span className="block text-xs font-bold text-navy-blue">Karthu Rajan</span>
+           <span className="block text-[10px] text-soft-gray">Murukkumpuzha Patient</span>
+          </div>
+         </div>
+        </div>
        </div>
       </div>
      </div>
@@ -733,7 +871,7 @@ export default function Home() {
        branch="Murukkumpuzha, Thiruvananthapuram"
        badge="Flagship Studio · Open Daily"
        status="Open All 7 Days"
-       address="Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram – 695302"
+       address="Ground Floor, Mangalasseri Tower, Thoppumukku, Murukkumpuzha, Thiruvananthapuram – 695302"
        phone="+91 73561 00602"
        telLink="tel:+917356100602"
        waLink="https://wa.me/917356100602"

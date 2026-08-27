@@ -168,7 +168,7 @@ export default function FAQContent() {
      <div className="bg-bg-light-blue/40 border border-gray-100 p-4 rounded-xl">
       <span className="block text-xs font-black text-primary-teal tracking-wide uppercase mb-1">Specialist Studio</span>
       <strong className="block text-navy-blue text-sm">Murukkumpuzha</strong>
-      <p className="text-xs text-soft-gray mt-1">Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram - 695302. Serve Kazhakoottam, Attingal, Pothencode & nearby.</p>
+      <p className="text-xs text-soft-gray mt-1">Ground Floor, Mangalasseri Tower, Thoppumukku, Murukkumpuzha, Thiruvananthapuram - 695302. Serve Kazhakoottam, Attingal, Pothencode & nearby.</p>
       <a href="tel:+917356100602" className="block text-xs font-normal text-navy-blue mt-2 hover:underline">Phone: +91 73561 00602</a>
      </div>
      <div className="bg-bg-light-blue/40 border border-gray-100 p-4 rounded-xl">

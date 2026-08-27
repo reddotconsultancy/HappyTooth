@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 import ScrollReveal from "@/components/ScrollReveal";
+import { blogPosts } from "@/lib/blog-posts";
 
 export const metadata = {
  title: "Dental Health Blog | Tips, Guides & Expert Advice",
@@ -22,47 +23,16 @@ export const metadata = {
    },
   ],
  },
+ twitter: {
+  card: "summary_large_image",
+  title: "Dental Health Blog | Expert Tips from HappyTooth Clinics",
+  description: "Dental care insights, root canal guides, and expert tips from HappyTooth specialists in Thiruvananthapuram.",
+  images: ["/images/happytooth-varkala12-1.webp"],
+ },
 };
 
 export default function Blog() {
- const posts = [
-  {
-   title: "5 Signs You Might Need a Root Canal (And Why You Shouldn’t Ignore Them)",
-   slug: "5-signs-you-might-need-a-root-canal-and-why-you-shouldnt-ignore-them",
-   date: "12 Apr",
-   year: "2026",
-   author: "arungokul@gmail.com",
-   category: "Uncategorized",
-   excerpt:
-    "Tooth pain is something most people try to ignore — hoping it will go away on its own. But sometimes, your tooth is trying to tell you something more serious. A root canal is often misunderstood and feared, but in reality, it is a safe and effective way to save your natural tooth and relieve pain.",
-   image: "/images/indian_toothache_blog.webp",
-   published: true,
-  },
-  {
-   title: "Cosmetic Dentistry: Smile Makeover Options That Change Lives",
-   slug: "cosmetic-dentistry-smile-makeover-options",
-   date: "18 Apr",
-   year: "2026",
-   author: "arungokul@gmail.com",
-   category: "Cosmetic Dentistry",
-   excerpt:
-    "If you have ever felt self-conscious about gaps, discoloration, or chipped edges, cosmetic dentistry is designed around your unique features. Dental veneers and professional whitening can elevate your confidence and keep your bite functional and balanced.",
-   image: "/images/indian_dental_health.webp",
-   published: false,
-  },
-  {
-   title: "Preventive Dental Tips for Families: Daily Actions for Strong Teeth",
-   slug: "preventive-dental-tips-for-families",
-   date: "25 Apr",
-   year: "2026",
-   author: "arungokul@gmail.com",
-   category: "Preventive Dentistry",
-   excerpt:
-    "Keeping teeth clean isn’t just about visiting the clinic twice a year — it starts at home. Simple daily actions like fluoride toothpaste usage, standard flossing, and minimizing sugary drinks prevent plaque buildup and keep gums secure.",
-   image: "/images/indian_family_smile.webp",
-   published: false,
-  },
- ];
+ const posts = blogPosts.filter((p) => p.published);
 
  return (
   <div>
@@ -117,7 +87,7 @@ export default function Blog() {
 
            <h2 className="text-xl sm:text-2xl font-extrabold text-navy-blue group-hover:text-primary-teal transition-colors">
             {post.published ? (
-             <Link href={`/${post.slug}`}>{post.title}</Link>
+             <Link href={`/blog/${post.slug}`}>{post.title}</Link>
             ) : (
              <span>{post.title}</span>
             )}
@@ -130,7 +100,7 @@ export default function Blog() {
            <div className="pt-2">
             {post.published ? (
              <Link
-              href={`/${post.slug}`}
+              href={`/blog/${post.slug}`}
               className="bg-primary-teal hover:bg-navy-blue text-white font-bold text-xs py-3 px-6 rounded-full transition-all duration-300 shadow-md inline-block"
              >
               Read More
@@ -192,7 +162,7 @@ export default function Blog() {
             <div className="space-y-1">
              {post.published ? (
               <Link
-               href={`/${post.slug}`}
+               href={`/blog/${post.slug}`}
                className="text-xs text-navy-blue hover:text-primary-teal font-bold leading-snug block line-clamp-2"
               >
                {post.title}
@@ -216,7 +186,7 @@ export default function Blog() {
          <h3 className="text-base font-extrabold text-navy-blue mb-4">Categories</h3>
          <ul className="space-y-2 text-xs font-bold text-navy-blue">
           <li className="flex justify-between border-b border-gray-200/40 pb-2">
-           <span className="hover:text-primary-teal cursor-pointer">Uncategorized</span>
+           <span className="hover:text-primary-teal cursor-pointer">Endodontics</span>
            <span className="text-soft-gray">(1)</span>
           </li>
           <li className="flex justify-between border-b border-gray-200/40 pb-2">

@@ -20,6 +20,12 @@ export const metadata = {
    },
   ],
  },
+ twitter: {
+  card: "summary_large_image",
+  title: "Meet Dr. Thushara Sudhakaran | Clinical Director & Endodontist",
+  description: "Meet Dr. Thushara Sudhakaran (BDS, MDS), root canal specialist and Clinical Director at HappyTooth. Learn about our dental care philosophy and clinic team serving Thiruvananthapuram.",
+  images: ["/images/happytooth-varkala12-1.webp"],
+ },
 };
 
 export default function About() {
@@ -231,7 +237,7 @@ export default function About() {
    </section>
 
    {/* 3. Clinical Director Profile */}
-   <section className="py-20 bg-white">
+   <section id="clinical-director" className="py-20 bg-white scroll-mt-24">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       

@@ -21,6 +21,12 @@ export const metadata = {
    },
   ],
  },
+ twitter: {
+  card: "summary_large_image",
+  title: "Modern Dental Infrastructure & Clean Clinic Facilities \u2014 HappyTooth",
+  description: "Advanced clinical facilities, modern treatment technology, and hospital-grade sterilization at HappyTooth \u2014 Murukkumpuzha & Kallambalam.",
+  images: ["/images/empty-professional-dentistry-stomatology-hospital-2026-01-08-02-12-42-utc.webp"],
+ },
 };
 
 export default function Facilities() {
@@ -407,7 +413,7 @@ export default function Facilities() {
           </svg>
           <div>
            <span className="block font-bold text-white">Address:</span>
-           <span className="block text-xs text-gray-300 mt-1">Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram - 695302</span>
+           <span className="block text-xs text-gray-300 mt-1">Ground Floor, Mangalasseri Tower, Thoppumukku, Murukkumpuzha, Thiruvananthapuram - 695302</span>
           </div>
          </div>
          <div className="flex items-start gap-3">

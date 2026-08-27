@@ -28,6 +28,11 @@ const nextConfig: NextConfig = {
         destination: "/facilities",
         permanent: true,
       },
+      {
+        source: "/5-signs-you-might-need-a-root-canal-and-why-you-shouldnt-ignore-them",
+        destination: "/blog/5-signs-you-might-need-a-root-canal-and-why-you-shouldnt-ignore-them",
+        permanent: true,
+      },
     ];
   },
 };

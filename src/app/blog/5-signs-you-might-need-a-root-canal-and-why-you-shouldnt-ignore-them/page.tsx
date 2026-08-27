@@ -3,15 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 import ScrollReveal from "@/components/ScrollReveal";
+import { recentPosts } from "@/lib/blog-posts";
 
 export const metadata = {
  title: "5 Signs You Need a Root Canal | Dentist Advice & Warning Symptoms",
  description: "Learn the 5 critical symptoms that indicate you need root canal treatment (RCT). Understand why delaying clinical treatment leads to tooth loss and severe dental pain.",
- alternates: { canonical: "/5-signs-you-might-need-a-root-canal-and-why-you-shouldnt-ignore-them" },
+ alternates: { canonical: "/blog/5-signs-you-might-need-a-root-canal-and-why-you-shouldnt-ignore-them" },
  openGraph: {
   title: "5 Signs You Need a Root Canal \u2014 Warning Symptoms Explained",
   description: "5 critical symptoms that mean you need root canal treatment. Delaying risks tooth loss and severe pain \u2014 read the expert guide from HappyTooth.",
-  url: "/5-signs-you-might-need-a-root-canal-and-why-you-shouldnt-ignore-them",
+  url: "/blog/5-signs-you-might-need-a-root-canal-and-why-you-shouldnt-ignore-them",
   type: "article",
   images: [
    {
@@ -22,7 +23,15 @@ export const metadata = {
    },
   ],
  },
+ twitter: {
+  card: "summary_large_image",
+  title: "5 Signs You Need a Root Canal \u2014 Warning Symptoms Explained",
+  description: "5 critical symptoms that mean you need root canal treatment. Delaying risks tooth loss and severe pain \u2014 read the expert guide from HappyTooth.",
+  images: ["/images/indian_toothache_blog.webp"],
+ },
 };
+
+const CURRENT_SLUG = "5-signs-you-might-need-a-root-canal-and-why-you-shouldnt-ignore-them";
 
 export default function BlogPost() {
  return (
@@ -61,13 +70,13 @@ export default function BlogPost() {
          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
          </svg>
-         <span>By Admin</span>
+         <span>By Dr. Thushara Sudhakaran, BDS, MDS</span>
         </span>
         <span className="flex items-center gap-1.5">
          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
          </svg>
-         <span>November 21, 2025</span>
+         <span>April 12, 2026</span>
         </span>
         <span className="flex items-center gap-1.5">
          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -166,11 +175,6 @@ export default function BlogPost() {
           Your teeth don’t heal on their own when there’s an infection inside. The sooner you act, the easier it is to treat. At HappyTooth Dental Care, we specialize in pain-free root canal treatments using modern techniques to ensure comfort and long-lasting results.
          </p>
         </div>
-
-        {/* Scraped Elementor block content placeholder */}
-        <div className="italic text-xs border-t border-gray-100 pt-6 text-gray-400">
-         But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.
-        </div>
        </div>
       </div>
 
@@ -196,12 +200,16 @@ export default function BlogPost() {
         <div className="bg-bg-light-blue/40 border border-gray-150 rounded-2xl p-6">
          <h3 className="text-lg font-bold text-navy-blue mb-4">Recent Posts</h3>
          <ul className="space-y-3">
-          <li>
-           <span className="text-xs text-soft-gray block">12 Apr 2026</span>
-           <span className="text-sm font-semibold text-navy-blue block leading-snug">
-            5 Signs You Might Need a Root Canal (And Why You Shouldn’t Ignore Them)
-           </span>
-          </li>
+          {recentPosts(CURRENT_SLUG).map((post) => (
+           <li key={post.slug}>
+            <Link href={`/blog/${post.slug}`} className="group block">
+             <span className="text-xs text-soft-gray block">{post.date} {post.year}</span>
+             <span className="text-sm font-semibold text-navy-blue group-hover:text-primary-teal transition-colors block leading-snug">
+              {post.title}
+             </span>
+            </Link>
+           </li>
+          ))}
          </ul>
         </div>
        </ScrollReveal>
@@ -216,7 +224,7 @@ export default function BlogPost() {
             href="/blog"
             className="text-sm text-navy-blue hover:text-primary-teal font-medium flex justify-between"
            >
-            <span>Uncategorized</span>
+            <span>Endodontics</span>
             <span className="text-soft-gray">(1)</span>
            </Link>
           </li>

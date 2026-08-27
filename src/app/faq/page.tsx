@@ -18,6 +18,12 @@ export const metadata = {
    },
   ],
  },
+ twitter: {
+  card: "summary_large_image",
+  title: "Dental FAQ & Root Canal Questions",
+  description: "Get answers to common questions about dental root canal treatments, prices, aligners, braces, timings, and clinical practices at HappyTooth.",
+  images: ["/images/FAQs.webp"],
+ },
 };
 
 
@@ -126,7 +132,7 @@ const faqSchema = {
    name: "Where are HappyTooth dental clinics located?",
    acceptedAnswer: {
     "@type": "Answer",
-    text: "We have two clinics in Thiruvananthapuram: HappyTooth Smile Studio at Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram 695302 (phone: +91 73561 00602), and HappyTooth Dental Care & Root Canal Centre at Alinmoodu, Kallambalam, Thiruvananthapuram 695605 (phone: +91 87144 70808).",
+    text: "We have two clinics in Thiruvananthapuram: HappyTooth Smile Studio at Ground Floor, Mangalasseri Tower, Thoppumukku, Murukkumpuzha, Thiruvananthapuram 695302 (phone: +91 73561 00602), and HappyTooth Dental Care & Root Canal Centre at Alinmoodu, Kallambalam, Thiruvananthapuram 695605 (phone: +91 87144 70808).",
    },
   },
   {

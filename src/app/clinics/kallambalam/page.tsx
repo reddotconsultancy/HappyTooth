@@ -20,6 +20,12 @@ export const metadata = {
    },
   ],
  },
+ twitter: {
+  card: "summary_large_image",
+  title: "Best Dentist in Kallambalam | HappyTooth Dental Care & Root Canal Centre",
+  description: "HappyTooth Dental Care & Root Canal Centre in Kallambalam, Thiruvananthapuram — advanced root canals, family dental care, and emergency treatments since 2021.",
+  images: ["/images/happytooth-varkala10.webp"],
+ },
 };
 
 const clinicSchema = {
@@ -65,10 +71,6 @@ const clinicSchema = {
    ],
    "medicalSpecialty": [
     "Endodontics"
-   ],
-   "sameAs": [
-    "TODO_JUSTDIAL_PROFILE_LINK",
-    "TODO_QUICKERALA_PROFILE_LINK"
    ]
   },
   {
@@ -77,7 +79,7 @@ const clinicSchema = {
    "name": "Dr. Thushara Sudhakaran",
    "medicalSpecialty": "Endodontics",
    "jobTitle": "Clinical Director & Root Canal Specialist",
-   "credentials": "BDS, MDS Endodontics",
+   "honorificSuffix": "BDS, MDS Endodontics",
    "alumniOf": {
     "@type": "EducationalOrganization",
     "name": "A B Shetty Memorial Institute of Dental Sciences"
@@ -108,7 +110,7 @@ export default function KallambalamClinic() {
    branch: "Murukkumpuzha, Thiruvananthapuram",
    badge: "Flagship Studio · Open Daily",
    status: "Open All 7 Days",
-   address: "Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram – 695302",
+   address: "Ground Floor, Mangalasseri Tower, Thoppumukku, Murukkumpuzha, Thiruvananthapuram – 695302",
    phone: "+91 73561 00602",
    telLink: "tel:+917356100602",
    waLink: "https://wa.me/917356100602",
@@ -202,6 +204,102 @@ export default function KallambalamClinic() {
         </div>
        );
       })}
+    </div>
+   </section>
+
+   {/* About this clinic */}
+   <section className="py-20 bg-bg-light-blue/20 border-t border-gray-100">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <ScrollReveal animation="fade-up">
+      <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
+       <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-primary-teal/10 py-1.5 px-4 rounded-full inline-block">
+        About the Clinic
+       </span>
+       <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue">
+        A Specialist Dental Clinic in Kallambalam
+       </h2>
+      </div>
+     </ScrollReveal>
+
+     <ScrollReveal animation="fade-up" delay={1}>
+      <div className="max-w-3xl mx-auto space-y-4 text-soft-gray text-sm md:text-base leading-relaxed">
+       <p>
+        HappyTooth Dental Care &amp; Root Canal Centre at Alinmoodu has been treating patients in Kallambalam for years. It is where the practice began, and it is where our reputation in northern Thiruvananthapuram was built — on honest answers, specialist-led treatment, and a dentist who explains what is actually going on inside the tooth.
+       </p>
+       <p>
+        The full range of dental care is available here — from routine check-ups, cleaning and fillings through to crowns, veneers, smile design, implants, aligners and children&rsquo;s dentistry. Every patient is seen by a specialist in the relevant field rather than by a general dentist working outside their training.
+       </p>
+       <p>
+        The clinic is led by Dr. Thushara Sudhakaran, BDS, MDS in Endodontics, who has completed more than 1,000 root canal treatments. That specialism means complex cases other clinics refer elsewhere are handled here from the first appointment.
+       </p>
+       <p>
+        We work to a &ldquo;save the tooth first&rdquo; philosophy. Almost every tooth a patient arrives expecting to lose, we would rather try to save. Where a tooth genuinely cannot be saved we say so plainly, explain why, and discuss the best replacement option before anything is agreed.
+       </p>
+      </div>
+     </ScrollReveal>
+    </div>
+   </section>
+
+   {/* Visiting the clinic */}
+   <section className="py-20 bg-white">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <ScrollReveal animation="fade-up">
+      <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
+       <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-primary-teal/10 py-1.5 px-4 rounded-full inline-block">
+        Visiting Us
+       </span>
+       <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue">
+        Finding the Clinic &amp; Planning Your Visit
+       </h2>
+      </div>
+     </ScrollReveal>
+
+     <ScrollReveal animation="fade-up" delay={1}>
+      <div className="max-w-3xl mx-auto space-y-4 text-soft-gray text-sm md:text-base leading-relaxed">
+       <p>
+        The clinic is at Alinmoodu on the Kallambalam&ndash;Varkala Road, Thiruvananthapuram 695605. Street parking is available near the front. We regularly see patients from Kallambalam itself and from Varkala, Kazhakkoottam, Nedumangad and across the southern Thiruvananthapuram district.
+       </p>
+       <p>
+        The clinic is open Monday to Saturday, 9:30 AM to 6:30 PM, and closed on Sundays. If you need a Sunday appointment, our Smile Studio at Murukkumpuzha is open all seven days and the same clinical team works across both locations.
+       </p>
+       <p>
+        Walk-ins are welcome, but booking ahead is strongly recommended &mdash; particularly for root canals, crowns and other time-intensive treatments. For an emergency, call ahead on +91 87144 70808 and we will make every effort to see you the same day. Our team speaks Malayalam, English and Hindi.
+       </p>
+       <p>
+        Bring any previous dental records, X-rays and a list of current medications if you have them. There is no complicated paperwork. You will receive a transparent cost estimate before treatment begins, broken down stage by stage for multi-step work, and we accept UPI, debit and credit cards, and cash.
+       </p>
+      </div>
+     </ScrollReveal>
+    </div>
+   </section>
+
+   {/* Treatments & standards */}
+   <section className="py-20 bg-bg-light-blue/20 border-t border-gray-100">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <ScrollReveal animation="fade-up">
+      <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
+       <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-primary-teal/10 py-1.5 px-4 rounded-full inline-block">
+        Standards
+       </span>
+       <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue">
+        What We Treat &amp; How We Work
+       </h2>
+      </div>
+     </ScrollReveal>
+
+     <ScrollReveal animation="fade-up" delay={1}>
+      <div className="max-w-3xl mx-auto space-y-4 text-soft-gray text-sm md:text-base leading-relaxed">
+       <p>
+        The full range of HappyTooth treatments is available at Kallambalam. Alongside specialist endodontics we handle conservative dentistry, general and family dental care, scaling and polishing, fillings, crowns and bridges, veneers, smile design, dental implants, aligners and braces, gum care, extractions and children&rsquo;s dental care. You are not referred elsewhere for the larger cases &mdash; they are planned and carried out here.
+       </p>
+       <p>
+        Root canal treatment uses rotary nickel-titanium files and, where required, magnification for precision. Many cases finish in a single sitting; molars, curved canals and retreatments may need two visits. A crown is fitted afterwards to protect the tooth, and that is planned and priced as part of the same treatment rather than sprung on you later.
+       </p>
+       <p>
+        Instruments are sterilised to hospital-grade standards between every single patient, and digital X-rays keep radiation exposure far below conventional film. We also take dental anxiety seriously &mdash; patients who have avoided treatment for years because of a bad experience elsewhere are common here rather than unusual. If that describes you, say so when you book and we will plan the appointment accordingly.
+       </p>
+      </div>
+     </ScrollReveal>
     </div>
    </section>
   </div>

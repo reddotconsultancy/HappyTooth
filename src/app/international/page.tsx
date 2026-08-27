@@ -20,6 +20,12 @@ export const metadata = {
    },
   ],
  },
+ twitter: {
+  card: "summary_large_image",
+  title: "Dental Tourism Kerala | NRI & International Dental Care \u2014 HappyTooth",
+  description: "Specialist dental treatments in Kerala for NRI & international patients. Pre-travel consultations, root canals, implants, aligners. Book your visit at HappyTooth.",
+  images: ["/images/happytooth-varkala12-1.webp"],
+ },
 };
 
 export default function InternationalPatients() {

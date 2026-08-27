@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { servicesData, getServiceBySlug, getAllSlugs } from "@/lib/services-data";
+import { getLocalitiesForService } from "@/lib/locality-services";
 
 // ─── Static generation ────────────────────────────────────────────────────────
 export function generateStaticParams() {
@@ -50,6 +51,9 @@ export default async function ServicePage({
  const svc = getServiceBySlug(slug);
  if (!svc) notFound();
 
+ // Locality pages that exist for this service, linked below so they are not orphaned
+ const localities = getLocalitiesForService(slug);
+
  // Find adjacent services for navigation
  const currentIndex = servicesData.findIndex((s) => s.slug === slug);
  const prevSvc = currentIndex > 0 ? servicesData[currentIndex - 1] : null;
@@ -76,7 +80,7 @@ export default async function ServicePage({
    address: [
     {
      "@type": "PostalAddress",
-     streetAddress: "Ground Floor, Mangalasseri Tower, Murukkumpuzha",
+     streetAddress: "Ground Floor, Mangalasseri Tower, Thoppumukku, Murukkumpuzha",
      addressLocality: "Thiruvananthapuram",
      addressRegion: "Kerala",
      postalCode: "695302",
@@ -257,6 +261,33 @@ export default async function ServicePage({
      </div>
     </div>
    </section>
+
+   {/* ── This treatment by location ───────────────────────────────────────── */}
+   {localities.length > 0 && (
+    <section className="py-12 bg-white border-t border-gray-100">
+     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+       <div>
+        <h3 className="text-sm font-extrabold text-navy-blue uppercase tracking-wider mb-1">
+         {svc.title} By Location
+        </h3>
+        <p className="text-xs text-soft-gray">Directions, timings and clinic detail for each location</p>
+       </div>
+       <div className="flex gap-3 flex-wrap justify-center sm:justify-end">
+        {localities.map((loc) => (
+         <Link
+          key={loc.localitySlug}
+          href={`/services/${loc.serviceSlug}/${loc.localitySlug}`}
+          className="flex items-center gap-2 text-xs font-bold text-navy-blue hover:text-accent-teal border border-gray-200 hover:border-accent-teal py-2.5 px-5 rounded-full transition-all duration-200"
+         >
+          {loc.heading}
+         </Link>
+        ))}
+       </div>
+      </div>
+     </div>
+    </section>
+   )}
 
    {/* ── Other services strip ─────────────────────────────────────────────── */}
    <section className="py-12 bg-bg-light-blue/30 border-t border-gray-100">
