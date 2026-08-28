@@ -33,6 +33,12 @@ export const metadata = {
 
 export default function Blog() {
  const posts = blogPosts.filter((p) => p.published);
+ const categories = Array.from(
+  posts.reduce<Map<string, number>>(
+   (acc, p) => acc.set(p.category, (acc.get(p.category) ?? 0) + 1),
+   new Map()
+  )
+ );
 
  return (
   <div>
@@ -185,18 +191,19 @@ export default function Blog() {
         <div className="bg-bg-light-blue/40 border border-gray-150 rounded-3xl p-6">
          <h3 className="text-base font-extrabold text-navy-blue mb-4">Categories</h3>
          <ul className="space-y-2 text-xs font-bold text-navy-blue">
-          <li className="flex justify-between border-b border-gray-200/40 pb-2">
-           <span className="hover:text-primary-teal cursor-pointer">Endodontics</span>
-           <span className="text-soft-gray">(1)</span>
-          </li>
-          <li className="flex justify-between border-b border-gray-200/40 pb-2">
-           <span className="hover:text-primary-teal cursor-pointer">Cosmetic Dentistry</span>
-           <span className="text-soft-gray">(1)</span>
-          </li>
-          <li className="flex justify-between">
-           <span className="hover:text-primary-teal cursor-pointer">Preventive Dentistry</span>
-           <span className="text-soft-gray">(1)</span>
-          </li>
+          {categories.map(([name, count], i) => (
+           <li
+            key={name}
+            className={
+             i < categories.length - 1
+              ? "flex justify-between border-b border-gray-200/40 pb-2"
+              : "flex justify-between"
+            }
+           >
+            <span className="hover:text-primary-teal cursor-pointer">{name}</span>
+            <span className="text-soft-gray">{`(${count})`}</span>
+           </li>
+          ))}
          </ul>
         </div>
        </ScrollReveal>

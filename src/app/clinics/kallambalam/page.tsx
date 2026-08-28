@@ -32,48 +32,6 @@ const clinicSchema = {
  "@context": "https://schema.org",
  "@graph": [
   {
-   "@type": "Dentist",
-   "@id": "https://happytoothdental.in/#clinic-kallambalam",
-   "name": "HappyTooth Dental Care & Root Canal Centre (Kallambalam)",
-   "parentOrganization": {
-    "@id": "https://happytoothdental.in/#organization"
-   },
-   "image": "https://happytoothdental.in/images/happytooth-varkala10.webp",
-   "telephone": "+91 87144 70808",
-   "priceRange": "$$",
-   "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Alinmoodu, Kallambalam–Varkala Road, Kallambalam",
-    "addressLocality": "Alinmoodu, Kallambalam",
-    "addressRegion": "Kerala",
-    "postalCode": "695605",
-    "addressCountry": "IN"
-   },
-   "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 8.7610,
-    "longitude": 76.7946
-   },
-   "openingHoursSpecification": [
-    {
-     "@type": "OpeningHoursSpecification",
-     "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday"
-     ],
-     "opens": "09:30",
-     "closes": "18:30"
-    }
-   ],
-   "medicalSpecialty": [
-    "Endodontics"
-   ]
-  },
-  {
    "@type": "Physician",
    "@id": "https://happytoothdental.in/#dr-thushara-sudhakaran",
    "name": "Dr. Thushara Sudhakaran",
@@ -142,7 +100,7 @@ export default function KallambalamClinic() {
   <div>
    <script
     type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicSchema) }}
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicSchema).replace(/</g, "\\u003c") }}
    />
    <BreadcrumbHero
     title="Kallambalam Clinic"

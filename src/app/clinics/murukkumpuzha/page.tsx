@@ -32,52 +32,6 @@ const clinicSchema = {
  "@context": "https://schema.org",
  "@graph": [
   {
-   "@type": "Dentist",
-   "@id": "https://happytoothdental.in/#clinic-murukkumpuzha",
-   "name": "HappyTooth Smile Studio (Murukkumpuzha)",
-   "parentOrganization": {
-    "@id": "https://happytoothdental.in/#organization"
-   },
-   "image": "https://happytoothdental.in/images/happytooth-varkala12-1.webp",
-   "telephone": "+91 73561 00602",
-   "priceRange": "$$",
-   "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Ground Floor, Mangalasseri Tower, Thoppumukku, Murukkumpuzha",
-    "addressLocality": "Thiruvananthapuram",
-    "addressRegion": "Kerala",
-    "postalCode": "695302",
-    "addressCountry": "IN"
-   },
-   "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 8.6136824,
-    "longitude": 76.8352005
-   },
-   "openingHoursSpecification": [
-    {
-     "@type": "OpeningHoursSpecification",
-     "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday"
-     ],
-     "opens": "09:30",
-     "closes": "18:30"
-    }
-   ],
-   "medicalSpecialty": [
-    "Endodontics",
-    "Orthodontics",
-    "CosmeticDentistry",
-    "Implantology"
-   ]
-  },
-  {
    "@type": "Physician",
    "@id": "https://happytoothdental.in/#dr-thushara-sudhakaran",
    "name": "Dr. Thushara Sudhakaran",
@@ -146,7 +100,7 @@ export default function MurukkumpuzhaClinic() {
   <div>
    <script
     type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicSchema) }}
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicSchema).replace(/</g, "\\u003c") }}
    />
    <BreadcrumbHero
     title="Murukkumpuzha Smile Studio"

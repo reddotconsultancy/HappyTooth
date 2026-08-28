@@ -93,8 +93,8 @@ export default function RootLayout({
    {
     "@type": "WebSite",
     "@id": "https://happytoothdental.in/#website",
-    "name": "HappyTooth Smile Studio",
-    "alternateName": ["Happy Tooth Smile Studio", "HappyTooth", "HappyTooth Dental Clinics"],
+    "name": "HappyTooth Dental Clinics",
+    "alternateName": ["HappyTooth", "Happy Tooth", "HappyTooth Smile Studio", "HappyTooth Dental Care & Root Canal Centre"],
     "url": "https://happytoothdental.in",
     "publisher": {
      "@id": "https://happytoothdental.in/#organization"
@@ -116,8 +116,11 @@ export default function RootLayout({
     "email": "smile@happytoothdental.in",
     "foundingDate": "2021",
     "sameAs": [
-     "https://www.facebook.com/HappyToothDentalCare.21?mibextid=wwXIfr&rdid=Nw9MQinokZ0zBFrJ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17XNV4oarF%2F%3Fmibextid%3DwwXIfr",
-     "https://www.instagram.com/happytooth_dentalcare?igsh=cThmeGZ2ZmJycHhm&utm_source=qr"
+     "https://www.facebook.com/HappyToothDentalCare.21",
+     "https://www.instagram.com/happytooth_dentalcare",
+     "https://www.linkedin.com/company/happy-tooth-dental-care-root-canal-centre",
+     "https://www.justdial.com/Thiruvananthapuram/Happy-Tooth-Dental-Care-Root-Canal-Centre-Alinmoodu-Kallambalam-Kallambalam/0471PX471-X471-220103222006-X1T5_BZDET",
+     "https://www.quickerala.com/trivandrum/kallambalam/happy-tooth-dental-care-root-canal-centre/432944"
     ]
    },
    {
@@ -159,6 +162,19 @@ export default function RootLayout({
      }
     ],
     "medicalSpecialty": "Endodontics",
+    "areaServed": [
+     "Kallambalam",
+     "Varkala",
+     "Kazhakkoottam",
+     "Nedumangad",
+     "Thiruvananthapuram"
+    ],
+    "sameAs": [
+     "https://www.facebook.com/HappyToothDentalCare.21",
+     "https://www.instagram.com/happytooth_dentalcare",
+     "https://www.justdial.com/Thiruvananthapuram/Happy-Tooth-Dental-Care-Root-Canal-Centre-Alinmoodu-Kallambalam-Kallambalam/0471PX471-X471-220103222006-X1T5_BZDET",
+     "https://www.quickerala.com/trivandrum/kallambalam/happy-tooth-dental-care-root-canal-centre/432944"
+    ],
     "founder": {
      "@type": "Person",
      "name": "Dr. Thushara Sudhakaran",
@@ -210,6 +226,20 @@ export default function RootLayout({
      "CosmeticDentistry",
      "Implantology"
     ],
+    "areaServed": [
+     "Murukkumpuzha",
+     "Thoppumukku",
+     "Kazhakkoottam",
+     "Attingal",
+     "Pothencode",
+     "Varkala",
+     "Kovalam",
+     "Thiruvananthapuram"
+    ],
+    "sameAs": [
+     "https://www.facebook.com/HappyToothDentalCare.21",
+     "https://www.instagram.com/happytooth_dentalcare"
+    ],
     "founder": {
      "@type": "Person",
      "name": "Dr. Thushara Sudhakaran",
@@ -229,7 +259,7 @@ export default function RootLayout({
     {/* Structured JSON-LD Data */}
     <script
      type="application/ld+json"
-     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
     />
     <Header />
     <main className="flex-grow">{children}</main>

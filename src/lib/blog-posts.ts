@@ -3,6 +3,7 @@ export type BlogPost = {
  slug: string;    // URL slug for /blog/[slug]
  date: string;    // day + short month, e.g. "12 Apr"
  year: string;
+ isoDate: string; // ISO 8601 for structured data, e.g. "2026-04-12"
  author: string;
  category: string;
  excerpt: string;
@@ -16,6 +17,7 @@ export const blogPosts: BlogPost[] = [
   slug: "5-signs-you-might-need-a-root-canal-and-why-you-shouldnt-ignore-them",
   date: "12 Apr",
   year: "2026",
+  isoDate: "2026-04-12",
   author: "Dr. Thushara Sudhakaran, BDS, MDS",
   category: "Endodontics",
   excerpt:
@@ -28,6 +30,7 @@ export const blogPosts: BlogPost[] = [
   slug: "cosmetic-dentistry-smile-makeover-options",
   date: "18 Apr",
   year: "2026",
+  isoDate: "2026-04-18",
   author: "Dr. Thushara Sudhakaran, BDS, MDS",
   category: "Cosmetic Dentistry",
   excerpt:
@@ -40,6 +43,7 @@ export const blogPosts: BlogPost[] = [
   slug: "preventive-dental-tips-for-families",
   date: "25 Apr",
   year: "2026",
+  isoDate: "2026-04-25",
   author: "Dr. Thushara Sudhakaran, BDS, MDS",
   category: "Preventive Dentistry",
   excerpt:
@@ -52,6 +56,7 @@ export const blogPosts: BlogPost[] = [
   slug: "smile-studio-murukkumpuzha-now-open",
   date: "12 Jul",
   year: "2026",
+  isoDate: "2026-07-12",
   author: "Dr. Thushara Sudhakaran, BDS, MDS",
   category: "Clinic News",
   excerpt:

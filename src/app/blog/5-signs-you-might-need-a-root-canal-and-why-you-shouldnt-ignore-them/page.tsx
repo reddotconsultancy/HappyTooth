@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 import ScrollReveal from "@/components/ScrollReveal";
+import BlogPostingSchema from "@/components/BlogPostingSchema";
 import { recentPosts } from "@/lib/blog-posts";
 
 export const metadata = {
@@ -36,6 +37,7 @@ const CURRENT_SLUG = "5-signs-you-might-need-a-root-canal-and-why-you-shouldnt-i
 export default function BlogPost() {
  return (
   <div>
+   <BlogPostingSchema slug={CURRENT_SLUG} />
    {/* Breadcrumb Header */}
    <BreadcrumbHero
     title="5 Signs You Might Need a Root Canal (And Why You Shouldn’t Ignore Them)"

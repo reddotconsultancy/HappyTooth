@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 import ScrollReveal from "@/components/ScrollReveal";
+import BlogPostingSchema from "@/components/BlogPostingSchema";
 import { recentPosts } from "@/lib/blog-posts";
 
 export const metadata = {
@@ -36,6 +37,7 @@ const CURRENT_SLUG = "smile-studio-murukkumpuzha-now-open";
 export default function BlogPost() {
  return (
   <div>
+   <BlogPostingSchema slug={CURRENT_SLUG} />
    {/* Breadcrumb Header */}
    <BreadcrumbHero
     title="Our New Smile Studio in Murukkumpuzha Is Now Open"

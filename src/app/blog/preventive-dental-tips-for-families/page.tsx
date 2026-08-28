@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 import ScrollReveal from "@/components/ScrollReveal";
+import BlogPostingSchema from "@/components/BlogPostingSchema";
 import { recentPosts } from "@/lib/blog-posts";
 
 export const metadata = {
@@ -36,6 +37,7 @@ const CURRENT_SLUG = "preventive-dental-tips-for-families";
 export default function BlogPost() {
  return (
   <div>
+   <BlogPostingSchema slug={CURRENT_SLUG} />
    {/* Breadcrumb Header */}
    <BreadcrumbHero
     title="Preventive Dental Tips for Families: Daily Actions for Strong Teeth"
