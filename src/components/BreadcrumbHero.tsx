@@ -15,7 +15,7 @@ export default function BreadcrumbHero({
 }: BreadcrumbHeroProps) {
  return (
   <section 
-   className="relative py-16 md:py-20 overflow-hidden border-b border-gray-100 parallax-bg"
+   className="relative py-10 md:py-20 overflow-hidden border-b border-gray-100 parallax-bg"
    style={{ backgroundImage: `url(${bgImage})` }}
   >
    {/* Glassmorphism Overlay for Readability */}
@@ -32,10 +32,10 @@ export default function BreadcrumbHero({
        HappyTooth Clinic
       </span>
       {/* Dark navy color explicitly styled via inline-style or text-navy-blue to override global CSS overrides */}
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-navy-blue leading-tight" style={{ animation: 'fade-in-up 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards' }}>
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-navy-blue leading-tight">
        {title}
       </h1>
-      <nav className="flex items-center space-x-2 text-xs md:text-sm text-soft-gray pt-1" style={{ animation: 'fade-in 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards', opacity: 0 }}>
+      <nav className="flex items-center space-x-2 text-xs md:text-sm text-soft-gray pt-1">
        <Link href="/" className="hover:text-primary-teal transition-colors font-bold text-navy-blue">
         Home
        </Link>
@@ -45,7 +45,7 @@ export default function BreadcrumbHero({
      </div>
 
      {/* Right Column: Visual Topic Image */}
-     <div className="relative flex justify-center md:justify-end" style={{ animation: 'fade-in-up 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s forwards', opacity: 0 }}>
+     <div className="relative hidden md:flex justify-center md:justify-end">
       <div className="relative w-full max-w-sm h-48 md:h-56 rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-white p-2">
        <div className="relative w-full h-full rounded-xl overflow-hidden">
         <Image

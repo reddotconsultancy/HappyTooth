@@ -222,19 +222,27 @@ export default function Header() {
 
    {/* Mobile Menu Drawer */}
    <div
-    className={`fixed inset-0 z-50 transition-opacity duration-300 lg:hidden ${
-     isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+    /* Sits just below the header (z-9999) so the close button stays on top, but
+       above page content: the appointment form field and the floating action bar
+       are also z-50 and come later in the DOM, so they used to paint over it.
+       Visibility, not opacity: animating an ancestor's opacity stops the browser
+       compositing the backdrop-filter below, which made the blur snap on at the
+       end instead of ramping up. */
+    className={`fixed inset-0 z-[9990] lg:hidden transition-[visibility] duration-500 ${
+     isOpen ? "visible pointer-events-auto" : "invisible pointer-events-none"
     }`}
    >
-    {/* Backdrop overlay */}
+    {/* Backdrop overlay — dim and blur are transitioned directly */}
     <div
-     className="absolute inset-0 bg-black/40 backdrop-blur-xs transition-opacity duration-300"
+     className={`absolute inset-0 transition-[background-color,backdrop-filter,-webkit-backdrop-filter] duration-500 ease-out ${
+      isOpen ? "bg-black/40 backdrop-blur-[6px]" : "bg-black/0 backdrop-blur-[0px]"
+     }`}
      onClick={() => setIsOpen(false)}
     ></div>
 
     {/* Drawer content */}
     <div
-     className={`absolute top-0 right-0 max-w-xs w-full h-full glass-panel shadow-2xl flex flex-col p-6 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] transform ${
+     className={`absolute top-0 right-0 max-w-xs w-full h-full bg-[#F8F5EE] border-l border-border-gray shadow-2xl flex flex-col p-6 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] transform ${
       isOpen ? "translate-x-0" : "translate-x-full"
      }`}
     >
